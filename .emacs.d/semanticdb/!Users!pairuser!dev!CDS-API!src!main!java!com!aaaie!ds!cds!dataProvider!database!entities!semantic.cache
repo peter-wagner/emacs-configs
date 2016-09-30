@@ -1,0 +1,177 @@
+;; Object entities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entities/"
+  :tables
+  (list
+    (semanticdb-table "DirectAccess.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.dataProvider.database.entities" package nil nil [1 57])
+            ("javax.persistence.*" include nil nil [59 86])
+            ("java.io.Serializable" include nil nil [87 115])
+            ("java.sql.Timestamp" include nil nil [116 142])
+            ("DirectAccess" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("id" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [515 530])
+                    ("email" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [535 556])
+                    ("firstName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [561 586])
+                    ("lastName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [591 615])
+                    ("username" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [620 644])
+                    ("zipCode" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [649 672])
+                    ("mdmId" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [677 698])
+                    ("policyNumber" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [703 731])
+                    ("daId" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [736 756])
+                    ("registered" variable
+                       (:typemodifiers ("private")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [761 788])
+                    ("emailTransactionId" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [793 827])
+                    ("getDirectAccessId" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1062 1119])
+                    ("setDirectAccessId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol formal_parameters) [1155 1160]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1125 1190])
+                    ("getEmail" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1273 1327])
+                    ("setEmail" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [1354 1362]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1333 1395])
+                    ("getFirstName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1483 1545])
+                    ("setFirstName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [1576 1584]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1551 1621])
+                    ("getLastName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1707 1767])
+                    ("setLastName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [1797 1805]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1773 1841])
+                    ("getUsername" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1927 1987])
+                    ("setUsername" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [2017 2025]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1993 2061])
+                    ("getZipCode" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2147 2205])
+                    ("setZipCode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [2234 2242]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2211 2277])
+                    ("getMdmId" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2363 2417])
+                    ("setMdmId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [2444 2452]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2423 2485])
+                    ("getPolicyNumber" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2576 2644])
+                    ("setPolicyNumber" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [2678 2686]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2650 2726])
+                    ("getDaId" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2812 2864])
+                    ("setDaId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [2890 2898]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2870 2930])
+                    ("getRegistered" function
+                       (:typemodifiers ("public")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [3017 3082])
+                    ("setRegistered" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("b" variable (:type "Boolean") (reparse-symbol formal_parameters) [3114 3123]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3088 3161])
+                    ("getEmailTransactionId" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3259 3339])
+                    ("setEmailTransactionId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [3379 3387]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3345 3433]))                  
+                :type "class")
+                nil [482 3437]))          
+      :file "DirectAccess.java"
+      :pointmax 3438
+      :unmatched-syntax '((IDENTIFIER 3236 . 3246) (EQ 3247 . 3248) (EQ 3227 . 3228) (COMMA 3216 . 3217) (STRING_LITERAL 3194 . 3216) (IDENTIFIER 3187 . 3191) (EQ 3192 . 3193) (IDENTIFIER 2994 . 3004) (EQ 3005 . 3006) (EQ 2985 . 2986) (COMMA 2974 . 2975) (STRING_LITERAL 2962 . 2974) (IDENTIFIER 2955 . 2959) (EQ 2960 . 2961) (IDENTIFIER 2789 . 2799) (EQ 2800 . 2801) (EQ 2780 . 2781) (COMMA 2769 . 2770) (STRING_LITERAL 2762 . 2769) (IDENTIFIER 2755 . 2759) (EQ 2760 . 2761) (IDENTIFIER 2553 . 2563) (EQ 2564 . 2565) (EQ 2544 . 2545) (COMMA 2533 . 2534) (STRING_LITERAL 2518 . 2533) (IDENTIFIER 2511 . 2515) (EQ 2516 . 2517) (IDENTIFIER 2340 . 2350) (EQ 2351 . 2352) (EQ 2331 . 2332) (COMMA 2320 . 2321) (STRING_LITERAL 2313 . 2320) (IDENTIFIER 2306 . 2310) (EQ 2311 . 2312) (IDENTIFIER 2124 . 2134) (EQ 2135 . 2136) (EQ 2115 . 2116) (COMMA 2104 . 2105) (STRING_LITERAL 2094 . 2104) (IDENTIFIER 2087 . 2091) (EQ 2092 . 2093) (IDENTIFIER 1904 . 1914) (EQ 1915 . 1916) (EQ 1895 . 1896) (COMMA 1884 . 1885) (STRING_LITERAL 1874 . 1884) (IDENTIFIER 1867 . 1871) (EQ 1872 . 1873) (IDENTIFIER 1684 . 1694) (EQ 1695 . 1696) (EQ 1675 . 1676) (COMMA 1664 . 1665) (STRING_LITERAL 1653 . 1664) (IDENTIFIER 1646 . 1650) (EQ 1651 . 1652) (IDENTIFIER 1460 . 1470) (EQ 1471 . 1472) (EQ 1451 . 1452) (COMMA 1440 . 1441) (STRING_LITERAL 1428 . 1440) (IDENTIFIER 1421 . 1425) (EQ 1426 . 1427) (IDENTIFIER 1250 . 1260) (EQ 1261 . 1262) (EQ 1241 . 1242) (COMMA 1230 . 1231) (STRING_LITERAL 1223 . 1230) (IDENTIFIER 1216 . 1220) (EQ 1221 . 1222) (STRING_LITERAL 1048 . 1056) (IDENTIFIER 1036 . 1045) (EQ 1046 . 1047) (IDENTIFIER 1000 . 1008) (EQ 1009 . 1010) (NUMBER_LITERAL 977 . 978) (EQ 976 . 977) (COMMA 960 . 961) (STRING_LITERAL 952 . 960) (EQ 951 . 952) (COMMA 937 . 938) (STRING_LITERAL 929 . 937) (IDENTIFIER 922 . 926) (EQ 927 . 928) (IDENTIFIER 880 . 890) (EQ 891 . 892) (EQ 871 . 872) (COMMA 860 . 861) (STRING_LITERAL 856 . 860) (IDENTIFIER 849 . 853) (EQ 854 . 855) (PAREN_BLOCK 188 . 481) (IDENTIFIER 175 . 188) (PAREN_BLOCK 158 . 174) (IDENTIFIER 152 . 158) (IDENTIFIER 144 . 151))))
+  :file "!Users!pairuser!dev!CDS-API!src!main!java!com!aaaie!ds!cds!dataProvider!database!entities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

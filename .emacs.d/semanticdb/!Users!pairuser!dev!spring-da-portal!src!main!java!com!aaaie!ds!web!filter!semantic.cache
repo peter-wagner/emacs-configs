@@ -1,0 +1,98 @@
+;; Object filter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "filter/"
+  :tables
+  (list
+    (semanticdb-table "DirectAccessFilter.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.aaaie.ds.web.filter" package nil nil [1 33])
+            ("java.io.IOException" include nil nil [35 62])
+            ("java.util.ArrayList" include nil nil [63 90])
+            ("java.util.Base64.Decoder" include nil nil [91 123])
+            ("java.util.Base64" include nil nil [124 148])
+            ("java.util.Collections" include nil nil [149 178])
+            ("java.util.Enumeration" include nil nil [179 208])
+            ("java.util.HashMap" include nil nil [209 234])
+            ("java.util.HashSet" include nil nil [235 260])
+            ("java.util.List" include nil nil [261 283])
+            ("java.util.Map" include nil nil [284 305])
+            ("java.util.Set" include nil nil [306 327])
+            ("java.util.regex.Matcher" include nil nil [328 359])
+            ("java.util.regex.Pattern" include nil nil [360 391])
+            ("javax.servlet.Filter" include nil nil [393 421])
+            ("javax.servlet.FilterChain" include nil nil [422 455])
+            ("javax.servlet.FilterConfig" include nil nil [456 490])
+            ("javax.servlet.ServletException" include nil nil [491 529])
+            ("javax.servlet.ServletRequest" include nil nil [530 566])
+            ("javax.servlet.ServletResponse" include nil nil [567 604])
+            ("javax.servlet.annotation.WebFilter" include nil nil [605 647])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [648 693])
+            ("javax.servlet.http.HttpServletRequestWrapper" include nil nil [694 746])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [747 793])
+            ("org.slf4j.Logger" include nil nil [795 819])
+            ("org.slf4j.LoggerFactory" include nil nil [820 851])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [852 914])
+            ("com.aaaie.ds.cds.security.util.Constants" include nil nil [916 964])
+            ("DirectAccessFilter" type
+               (:typemodifiers ("public")
+                :interfaces ("Filter" "Constants" "com.aaaie.ds.web.util.Constants")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1130 1211])
+                    ("DIRECT_ACCESS_ID" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1217 1277])
+                    ("LAST_NAME" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1282 1328])
+                    ("CLUB_CODE" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1333 1379])
+                    ("FIRST_NAME" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1384 1432])
+                    ("PREFERRED_EMAIL" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1437 1495])
+                    ("AUTHORIZATION" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1500 1554])
+                    ("init" function
+                       (:throws ("ServletException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("filterConfig" variable (:type "FilterConfig") (reparse-symbol formal_parameters) [2226 2251]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2209 2279])
+                    ("doFilter" function
+                       (:throws ("IOException" "ServletException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("servletRequest" variable (:type "ServletRequest") (reparse-symbol formal_parameters) [2324 2353])
+                            ("servletResponse" variable (:type "ServletResponse") (reparse-symbol formal_parameters) [2355 2386])
+                            ("filterChain" variable (:type "FilterChain") (reparse-symbol formal_parameters) [2388 2411]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2303 5009])
+                    ("destroy" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5029 5053]))                  
+                :type "class")
+                nil [1030 5056]))          
+      :file "DirectAccessFilter.java"
+      :pointmax 5057
+      :fsize 5056
+      :lastmodtime '(22338 56900 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 976 . 1029) (IDENTIFIER 966 . 976))))
+  :file "!Users!pairuser!dev!spring-da-portal!src!main!java!com!aaaie!ds!web!filter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

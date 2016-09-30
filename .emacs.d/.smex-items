@@ -1,0 +1,21 @@
+
+;; ----- smex-history -----
+(
+ eval-buffer
+ package-list-packages
+ eval-current-buffer
+ customize-themes
+ custom-theme-visit-theme
+ shell
+ cd
+)
+
+;; ----- smex-data -----
+(
+ (shell . 1)
+ (custom-theme-visit-theme . 2)
+ (customize-themes . 3)
+ (package-list-packages . 4)
+ (eval-current-buffer . 1)
+ (eval-buffer . 3)
+)

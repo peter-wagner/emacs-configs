@@ -1,0 +1,336 @@
+;; Object conf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "conf/"
+  :tables
+  (list
+    (semanticdb-table "ApplicationConfiguration.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.conf" package nil nil [1 31])
+            ("com.aaaie.ds.cds.cache.aspects.CacheableAspect" include nil nil [33 87])
+            ("com.aaaie.ds.cds.exceptionhandler.ExtendedExceptionHandlerExceptionResolver" include nil nil [88 171])
+            ("com.aaaie.ds.cds.exceptionhandler.GlobalExceptionHandler" include nil nil [172 236])
+            ("com.aaaie.ds.cds.interceptor.AgentSecurityInterceptor" include nil nil [237 298])
+            ("com.aaaie.ds.cds.interceptor.HttpInterceptor" include nil nil [299 351])
+            ("com.aaaie.ds.cds.jmx.Log4jJmxService" include nil nil [352 396])
+            ("com.aaaie.ds.cds.security.aspects.SecureableAspect" include nil nil [397 455])
+            ("com.aaaie.ds.cds.security.config.SecurityConfiguration" include nil nil [456 518])
+            ("com.aaaie.ds.cds.security.interceptor.client.InsurancePortalSecurityInterceptor" include nil nil [519 606])
+            ("com.aaaie.ds.cds.security.interceptor.client.LastSecurityInterceptor" include nil nil [607 683])
+            ("com.aaaie.ds.cds.security.interceptor.client.SelfServiceSecurityInterceptor" include nil nil [684 767])
+            ("com.aaaie.ds.cds.soa.client.config.*" include nil nil [768 812])
+            ("com.aaaie.ds.cds.soa.client.find.policy.config.FindPolicyConfiguration" include nil nil [813 891])
+            ("com.aaaie.ds.cds.sso.AAASSLSocketFactory" include nil nil [892 940])
+            ("com.aaaie.ds.config.BaseCDSConfiguration" include nil nil [941 989])
+            ("com.aaaie.ds.config.SOAConfiguration" include nil nil [990 1034])
+            ("com.mangofactory.swagger.configuration.SpringSwaggerConfig" include nil nil [1035 1101])
+            ("com.mangofactory.swagger.plugin.EnableSwagger" include nil nil [1102 1155])
+            ("com.mangofactory.swagger.plugin.SwaggerSpringMvcPlugin" include nil nil [1156 1218])
+            ("com.pingidentity.opentoken.AgentConfiguration" include nil nil [1219 1272])
+            ("com.wordnik.swagger.model.ApiInfo" include nil nil [1273 1314])
+            ("org.apache.http.client.HttpClient" include nil nil [1315 1356])
+            ("org.apache.http.config.Registry" include nil nil [1357 1396])
+            ("org.apache.http.config.RegistryBuilder" include nil nil [1397 1443])
+            ("org.apache.http.conn.HttpClientConnectionManager" include nil nil [1444 1500])
+            ("org.apache.http.conn.socket.ConnectionSocketFactory" include nil nil [1501 1560])
+            ("org.apache.http.conn.socket.PlainConnectionSocketFactory" include nil nil [1561 1625])
+            ("org.apache.http.conn.ssl.SSLConnectionSocketFactory" include nil nil [1626 1685])
+            ("org.apache.http.conn.ssl.SSLContexts" include nil nil [1686 1730])
+            ("org.apache.http.impl.client.HttpClients" include nil nil [1731 1778])
+            ("org.apache.http.impl.conn.PoolingHttpClientConnectionManager" include nil nil [1779 1847])
+            ("org.perf4j.log4j.aop.TimingAspect" include nil nil [1848 1889])
+            ("org.slf4j.Logger" include nil nil [1890 1914])
+            ("org.slf4j.LoggerFactory" include nil nil [1915 1946])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [1947 2005])
+            ("org.springframework.beans.factory.config.MethodInvokingFactoryBean" include nil nil [2006 2080])
+            ("org.springframework.beans.factory.config.PropertiesFactoryBean" include nil nil [2081 2151])
+            ("org.springframework.context.annotation.Bean" include nil nil [2152 2203])
+            ("org.springframework.context.annotation.ComponentScan" include nil nil [2204 2264])
+            ("org.springframework.context.annotation.Configuration" include nil nil [2265 2325])
+            ("org.springframework.context.annotation.EnableAspectJAutoProxy" include nil nil [2326 2395])
+            ("org.springframework.core.env.Environment" include nil nil [2396 2444])
+            ("org.springframework.core.io.ClassPathResource" include nil nil [2445 2498])
+            ("org.springframework.core.io.Resource" include nil nil [2499 2543])
+            ("org.springframework.core.task.SimpleAsyncTaskExecutor" include nil nil [2544 2605])
+            ("org.springframework.http.client.HttpComponentsClientHttpRequestFactory" include nil nil [2606 2684])
+            ("org.springframework.http.converter.HttpMessageConverter" include nil nil [2685 2748])
+            ("org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" include nil nil [2749 2832])
+            ("org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" include nil nil [2833 2905])
+            ("org.springframework.web.client.RestTemplate" include nil nil [2906 2957])
+            ("org.springframework.web.context.request.async.DeferredResult" include nil nil [2958 3026])
+            ("org.springframework.web.servlet.HandlerExceptionResolver" include nil nil [3027 3091])
+            ("org.springframework.web.servlet.ViewResolver" include nil nil [3092 3144])
+            ("org.springframework.web.servlet.config.annotation.InterceptorRegistry" include nil nil [3145 3222])
+            ("org.springframework.web.servlet.view.InternalResourceViewResolver" include nil nil [3223 3296])
+            ("org.springframework.web.servlet.view.JstlView" include nil nil [3297 3350])
+            ("javax.inject.Inject" include nil nil [3352 3379])
+            ("javax.net.ssl.*" include nil nil [3380 3403])
+            ("java.io.File" include nil nil [3404 3424])
+            ("java.io.IOException" include nil nil [3425 3452])
+            ("java.io.InputStream" include nil nil [3453 3480])
+            ("java.security.KeyStore" include nil nil [3481 3511])
+            ("java.security.SecureRandom" include nil nil [3512 3546])
+            ("java.util.ArrayList" include nil nil [3547 3574])
+            ("java.util.HashMap" include nil nil [3575 3600])
+            ("java.util.List" include nil nil [3601 3623])
+            ("java.util.Map" include nil nil [3624 3645])
+            ("ApplicationConfiguration" type
+               (:typemodifiers ("public")
+                :superclasses "BaseCDSConfiguration"
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [3827 3914])
+                    ("env" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3941 3960])
+                    ("enableAuthorization" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4014 4050])
+                    ("apiVerison" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4085 4111])
+                    ("environment" variable
+                       (:typemodifiers ("private")
+                        :type "Environment")
+                        (reparse-symbol class_member_declaration) [4129 4161])
+                    ("typeCause" function
+                       (:typemodifiers ("public" "static")
+                        :type "PropertiesFactoryBean")
+                        (reparse-symbol class_member_declaration) [4259 4474])
+                    ("typeCoverage" function
+                       (:typemodifiers ("public" "static")
+                        :type "PropertiesFactoryBean")
+                        (reparse-symbol class_member_declaration) [4513 4734])
+                    ("typeCauseHome" function
+                       (:typemodifiers ("public" "static")
+                        :type "PropertiesFactoryBean")
+                        (reparse-symbol class_member_declaration) [4774 4997])
+                    ("getSSLSocketFactory" function
+                       (:typemodifiers ("public")
+                        :type "javax.net.ssl.SSLSocketFactory")
+                        (reparse-symbol class_member_declaration) [5045 5562])
+                    ("retrieveCustomerDetailsConfiguration" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [5605 5990])
+                    ("recordRegistrationConfiguration" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [6033 6419])
+                    ("validateRelatedPoliciesConfiguration" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [6467 6859])
+                    ("recordCustomers" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [6899 7255])
+                    ("rard" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [7284 7645])
+                    ("rd" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [7672 7995])
+                    ("retrieveWalletDetailConfiguration" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [8039 8419])
+                    ("retrievePaymentTransaction" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [8469 8860])
+                    ("retrievePolicyTransactions" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [8910 9301])
+                    ("retrieveClaimSummaries" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [9347 9724])
+                    ("findPolicy" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [9758 10085])
+                    ("retrieveAgentSummary" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [10129 10496])
+                    ("retrieveZipcodeDetails" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [10542 10917])
+                    ("retrievePaymentEnrollmentDetailConfiguration" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [10972 11396])
+                    ("recordAutoPayEnrollmentStatusConfiguration" function
+                       (:typemodifiers ("public")
+                        :type "com.aaaie.ds.config.SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [11450 11886])
+                    ("retrieveBankDetailConfiguration" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [11928 12326])
+                    ("recordWallet" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [12362 12697])
+                    ("viewResolver" function
+                       (:typemodifiers ("public")
+                        :type "ViewResolver")
+                        (reparse-symbol class_member_declaration) [12712 13013])
+                    ("insurancePortalSecurityInterceptor" variable
+                       (:typemodifiers ("private")
+                        :type "InsurancePortalSecurityInterceptor")
+                        (reparse-symbol class_member_declaration) [13031 13109])
+                    ("lastSecurityInterceptor" variable
+                       (:typemodifiers ("private")
+                        :type "LastSecurityInterceptor")
+                        (reparse-symbol class_member_declaration) [13127 13183])
+                    ("agentSecurityInterceptor" variable
+                       (:typemodifiers ("private")
+                        :type "AgentSecurityInterceptor")
+                        (reparse-symbol class_member_declaration) [13201 13259])
+                    ("addInterceptors" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("registry" variable (:type "InterceptorRegistry") (reparse-symbol formal_parameters) [13308 13336]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [13280 14824])
+                    ("timingAspect" function
+                       (:typemodifiers ("public")
+                        :type "TimingAspect")
+                        (reparse-symbol class_member_declaration) [14861 14976])
+                    ("log4jInit" function
+                       (:typemodifiers ("public")
+                        :type "MethodInvokingFactoryBean")
+                        (reparse-symbol class_member_declaration) [15021 15509])
+                    ("mBean" function
+                       (:typemodifiers ("public")
+                        :type "org.springframework.jmx.export.MBeanExporter")
+                        (reparse-symbol class_member_declaration) [15541 16000])
+                    ("log4jJmxService" function
+                       (:typemodifiers ("public")
+                        :type "Log4jJmxService")
+                        (reparse-symbol class_member_declaration) [16040 16125])
+                    ("rapd" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [16155 16498])
+                    ("rppd" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [16527 16878])
+                    ("rpbs" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [16911 17266])
+                    ("rpbh" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [17323 17674])
+                    ("rps" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [17706 18045])
+                    ("retrieveIssueDirectPaymentServiceConfiguration" function
+                       (:typemodifiers ("public")
+                        :type "SOAConfiguration")
+                        (reparse-symbol class_member_declaration) [18090 18477])
+                    ("cacheableAspect" function
+                       (:typemodifiers ("public")
+                        :type "CacheableAspect")
+                        (reparse-symbol class_member_declaration) [18493 18578])
+                    ("secureableAspect" function
+                       (:typemodifiers ("public")
+                        :type "SecureableAspect")
+                        (reparse-symbol class_member_declaration) [18594 18682])
+                    ("configureHandlerExceptionResolvers" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "exceptionResolvers") (reparse-symbol formal_parameters) [18841 18859]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [18763 19425])
+                    ("springSwaggerConfig" variable
+                       (:typemodifiers ("private")
+                        :type "SpringSwaggerConfig")
+                        (reparse-symbol class_member_declaration) [19432 19480])
+                    ("setSpringSwaggerConfig" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("springSwaggerConfig" variable (:type "SpringSwaggerConfig") (reparse-symbol formal_parameters) [19533 19572]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19498 19637])
+                    ("customImplementation" function
+                       (:typemodifiers ("public")
+                        :type "SwaggerSpringMvcPlugin")
+                        (reparse-symbol class_member_declaration) [19689 20008])
+                    ("apiInfo" function
+                       (:typemodifiers ("private")
+                        :type "ApiInfo")
+                        (reparse-symbol class_member_declaration) [20013 20389])
+                    ("getAsyncTaskExecutor" function
+                       (:typemodifiers ("public")
+                        :type "SimpleAsyncTaskExecutor")
+                        (reparse-symbol class_member_declaration) [20404 20565])
+                    ("taskExecutor" function
+                       (:typemodifiers ("public")
+                        :type "ThreadPoolTaskExecutor")
+                        (reparse-symbol class_member_declaration) [20603 20943])
+                    ("setCert" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("soaConfiguration" variable (:type "SOAConfiguration") (reparse-symbol formal_parameters) [20970 21003])
+                            ("sslSocketFactory" variable (:type "javax.net.ssl.SSLSocketFactory") (reparse-symbol formal_parameters) [21005 21052]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [20949 21190])
+                    ("getIPortalAgentConfig" function
+                       (:throws ("IOException")
+                        :typemodifiers ("public")
+                        :type "AgentConfiguration")
+                        (reparse-symbol class_member_declaration) [21236 21753])
+                    ("getRestTemplate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("httpComponentsClientHttpRequestFactory" variable (:type "HttpComponentsClientHttpRequestFactory") (reparse-symbol formal_parameters) [21805 21882]))                          
+                        :type "RestTemplate")
+                        (reparse-symbol class_member_declaration) [21769 21964])
+                    ("getHttpComponentsClientHttpRequestFactory" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("httpClient" variable (:type "HttpClient") (reparse-symbol formal_parameters) [22068 22089]))                          
+                        :type "HttpComponentsClientHttpRequestFactory")
+                        (reparse-symbol class_member_declaration) [21980 22297])
+                    ("getSSLContext" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "SSLContext")
+                        (reparse-symbol class_member_declaration) [22338 23491])
+                    ("getHttpClientConnectionManager" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "HttpClientConnectionManager")
+                        (reparse-symbol class_member_declaration) [23508 24167])
+                    ("getHttpClient" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("httpClientConnectionManager" variable (:type "HttpClientConnectionManager") (reparse-symbol formal_parameters) [24215 24270]))                          
+                        :type "HttpClient")
+                        (reparse-symbol class_member_declaration) [24183 24374]))                  
+                :type "class")
+                nil [3753 24378]))          
+      :file "ApplicationConfiguration.java"
+      :pointmax 24360
+      :fsize 24378
+      :lastmodtime '(22338 31169 0 0)
+      :unmatched-syntax '((STRING_LITERAL 22316 . 22332) (IDENTIFIER 22309 . 22313) (EQ 22314 . 22315) (STRING_LITERAL 21210 . 21230) (IDENTIFIER 21205 . 21209) (EQ 21209 . 21210) (STRING_LITERAL 20583 . 20597) (IDENTIFIER 20576 . 20580) (EQ 20581 . 20582) (GT 18839 . 18840) (IDENTIFIER 18810 . 18814) (LT 18814 . 18815) (STRING_LITERAL 18064 . 18084) (IDENTIFIER 18057 . 18061) (EQ 18062 . 18063) (STRING_LITERAL 17695 . 17700) (IDENTIFIER 17690 . 17694) (EQ 17694 . 17695) (STRING_LITERAL 17287 . 17317) (IDENTIFIER 17282 . 17286) (EQ 17286 . 17287) (STRING_LITERAL 16899 . 16905) (IDENTIFIER 16894 . 16898) (EQ 16898 . 16899) (STRING_LITERAL 16515 . 16521) (IDENTIFIER 16510 . 16514) (EQ 16514 . 16515) (STRING_LITERAL 16143 . 16149) (IDENTIFIER 16138 . 16142) (EQ 16142 . 16143) (STRING_LITERAL 16017 . 16034) (IDENTIFIER 16012 . 16016) (EQ 16016 . 16017) (STRING_LITERAL 15525 . 15535) (IDENTIFIER 15520 . 15524) (EQ 15524 . 15525) (STRING_LITERAL 14994 . 15015) (IDENTIFIER 14989 . 14993) (EQ 14993 . 14994) (STRING_LITERAL 14841 . 14855) (IDENTIFIER 14836 . 14840) (EQ 14840 . 14841) (STRING_LITERAL 12342 . 12356) (IDENTIFIER 12337 . 12341) (EQ 12341 . 12342) (STRING_LITERAL 11902 . 11922) (IDENTIFIER 11897 . 11901) (EQ 11901 . 11902) (STRING_LITERAL 11413 . 11444) (IDENTIFIER 11408 . 11412) (EQ 11412 . 11413) (STRING_LITERAL 10933 . 10966) (IDENTIFIER 10928 . 10932) (EQ 10932 . 10933) (STRING_LITERAL 10512 . 10536) (IDENTIFIER 10507 . 10511) (EQ 10511 . 10512) (STRING_LITERAL 10101 . 10123) (IDENTIFIER 10096 . 10100) (EQ 10100 . 10101) (STRING_LITERAL 9740 . 9752) (IDENTIFIER 9735 . 9739) (EQ 9739 . 9740) (STRING_LITERAL 9317 . 9341) (IDENTIFIER 9312 . 9316) (EQ 9316 . 9317) (STRING_LITERAL 8876 . 8904) (IDENTIFIER 8871 . 8875) (EQ 8875 . 8876) (STRING_LITERAL 8435 . 8463) (IDENTIFIER 8430 . 8434) (EQ 8434 . 8435) (STRING_LITERAL 8011 . 8033) (IDENTIFIER 8006 . 8010) (EQ 8010 . 8011) (STRING_LITERAL 7662 . 7666) (IDENTIFIER 7657 . 7661) (EQ 7661 . 7662) (STRING_LITERAL 7272 . 7278) (IDENTIFIER 7267 . 7271) (EQ 7271 . 7272) (STRING_LITERAL 6876 . 6893) (IDENTIFIER 6871 . 6875) (EQ 6875 . 6876) (STRING_LITERAL 6436 . 6461) (IDENTIFIER 6431 . 6435) (EQ 6435 . 6436) (STRING_LITERAL 6007 . 6027) (IDENTIFIER 6002 . 6006) (EQ 6006 . 6007) (STRING_LITERAL 5580 . 5599) (IDENTIFIER 5575 . 5579) (EQ 5579 . 5580) (STRING_LITERAL 5017 . 5039) (IDENTIFIER 5010 . 5014) (EQ 5015 . 5016) (STRING_LITERAL 4753 . 4768) (IDENTIFIER 4746 . 4750) (EQ 4751 . 4752) (STRING_LITERAL 4493 . 4507) (IDENTIFIER 4486 . 4490) (EQ 4491 . 4492) (STRING_LITERAL 4242 . 4253) (IDENTIFIER 4235 . 4239) (EQ 4240 . 4241) (IDENTIFIER 4167 . 4174) (IDENTIFIER 4201 . 4222) (SEMICOLON 4222 . 4223) (STRING_LITERAL 4063 . 4079) (STRING_LITERAL 3973 . 4008) (STRING_LITERAL 3927 . 3935) (PAREN_BLOCK 3715 . 3752) (IDENTIFIER 3701 . 3715) (IDENTIFIER 3686 . 3700) (IDENTIFIER 3662 . 3685) (IDENTIFIER 3647 . 3661))))
+  :file "!Users!pairuser!dev!CDS-API!src!main!java!com!aaaie!ds!cds!conf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

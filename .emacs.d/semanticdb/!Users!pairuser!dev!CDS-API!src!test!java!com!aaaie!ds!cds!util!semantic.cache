@@ -1,0 +1,74 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables
+  (list
+    (semanticdb-table "ClaimUtilsTest.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.util" package nil nil [1 31])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [33 70])
+            ("com.aaaie.ds.cds.business.impl.CustomerServiceImpl" include nil nil [71 129])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [130 198])
+            ("com.aaaie.ds.cds.controller.CustomersController" include nil nil [199 254])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.PolicyClaimSummary" include nil nil [255 324])
+            ("com.aaaie.ds.cds.model.pbs.PolicyBillingDetails" include nil nil [325 380])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [381 431])
+            ("org.junit.Assert" include nil nil [432 456])
+            ("org.junit.Before" include nil nil [457 481])
+            ("org.junit.Test" include nil nil [482 504])
+            ("org.junit.runner.RunWith" include nil nil [505 537])
+            ("org.junit.runners.JUnit4" include nil nil [538 570])
+            ("org.mockito.MockitoAnnotations" include nil nil [571 609])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [612 657])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [658 704])
+            ("java.io.BufferedReader" include nil nil [705 735])
+            ("java.io.FileReader" include nil nil [736 762])
+            ("java.nio.file.Path" include nil nil [763 789])
+            ("java.nio.file.Paths" include nil nil [790 817])
+            ("java.text.SimpleDateFormat" include nil nil [818 852])
+            ("java.util.*" include nil nil [853 872])
+            ("ClaimUtilsTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("claimUtils" variable
+                       (:typemodifiers ("public")
+                        :type "ClaimUtils")
+                        (reparse-symbol class_member_declaration) [1163 1192])
+                    ("httpServletRequest" variable (:type "HttpServletRequest") (reparse-symbol class_member_declaration) [1197 1235])
+                    ("custId" variable (:type "String") (reparse-symbol class_member_declaration) [1240 1269])
+                    ("setUp" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1395 1833])
+                    ("testClaimsSummaryOneYear" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2088 4198])
+                    ("testClaimsSummarySorted" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4205 5666])
+                    ("testClaimsSummaryCauseCoverageType" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5788 9316])
+                    ("testClaimsSummaryPhoneNumber" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9414 11468]))                  
+                :type "class")
+                nil [1128 11472]))          
+      :file "ClaimUtilsTest.java"
+      :pointmax 11473
+      :fsize 13711
+      :lastmodtime '(22338 31169 0 0)
+      :unmatched-syntax '((SEMICOLON 1375 . 1376) (GT 1361 . 1362) (COMMA 1354 . 1355) (LT 1347 . 1348) (SEMICOLON 1338 . 1339) (GT 1325 . 1326) (COMMA 1318 . 1319) (LT 1311 . 1312) (SEMICOLON 1302 . 1303) (GT 1292 . 1293) (COMMA 1285 . 1286) (IDENTIFIER 1275 . 1278) (LT 1278 . 1279) (PAREN_BLOCK 1113 . 1127) (IDENTIFIER 1105 . 1113) (IDENTIFIER 1086 . 1102) (DOT 1085 . 1086) (IDENTIFIER 1077 . 1085) (DOT 1076 . 1077) (IDENTIFIER 1069 . 1076) (DOT 1068 . 1069) (IDENTIFIER 1059 . 1068) (DOT 1058 . 1059) (IMPORT 1041 . 1047) (STATIC 1048 . 1054) (IDENTIFIER 1055 . 1058) (IDENTIFIER 1035 . 1039) (DOT 1034 . 1035) (IDENTIFIER 1027 . 1034) (DOT 1026 . 1027) (IDENTIFIER 1019 . 1026) (DOT 1018 . 1019) (IMPORT 1001 . 1007) (STATIC 1008 . 1014) (IDENTIFIER 1015 . 1018) (IDENTIFIER 995 . 999) (DOT 994 . 995) (IDENTIFIER 987 . 994) (DOT 986 . 987) (IDENTIFIER 979 . 986) (DOT 978 . 979) (IMPORT 961 . 967) (STATIC 968 . 974) (IDENTIFIER 975 . 978) (IDENTIFIER 950 . 959) (DOT 949 . 950) (IDENTIFIER 941 . 949) (DOT 940 . 941) (IDENTIFIER 933 . 940) (DOT 932 . 933) (IMPORT 915 . 921) (STATIC 922 . 928) (IDENTIFIER 929 . 932) (IDENTIFIER 910 . 913) (DOT 909 . 910) (IDENTIFIER 901 . 909) (DOT 900 . 901) (IDENTIFIER 893 . 900) (DOT 892 . 893) (IMPORT 875 . 881) (STATIC 882 . 888) (IDENTIFIER 889 . 892))))
+  :file "!Users!pairuser!dev!CDS-API!src!test!java!com!aaaie!ds!cds!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,726 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables
+  (list
+    (semanticdb-table "CustomerServiceImpl.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.impl" package nil nil [1 40])
+            ("com.aaaie.ds.cds.business.mappers.*" include nil nil [42 85])
+            ("com.aaaie.ds.cds.business.mappers.util.LevelOfDetailsNeeded" include nil nil [86 153])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [154 222])
+            ("com.aaaie.ds.cds.business.mappers.util.PolicyToBeValidatedAgainstCustomerKey" include nil nil [223 307])
+            ("com.aaaie.ds.cds.business.mappers.util.RolesToBeConsidered" include nil nil [308 374])
+            ("com.aaaie.ds.cds.business.services.CustomerService" include nil nil [375 433])
+            ("com.aaaie.ds.cds.dataProvider.impl.RetrieveAutopayEnrollmentDetailProviderImpl" include nil nil [434 520])
+            ("com.aaaie.ds.cds.dataProvider.impl.RetrievePolicyBillingHistoryProviderImpl" include nil nil [521 604])
+            ("com.aaaie.ds.cds.dataProvider.services.*" include nil nil [605 653])
+            ("com.aaaie.ds.cds.exceptions.*" include nil nil [654 691])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.PolicyClaimSummaries" include nil nil [692 763])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.PolicyClaimSummary" include nil nil [764 833])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.b2c.CustomerClaimSummary" include nil nil [834 909])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollStatusRequest" include nil nil [910 987])
+            ("com.aaaie.ds.cds.model.pbs.PolicyBillingDetails" include nil nil [988 1043])
+            ("com.aaaie.ds.cds.model.policybillinghistory.AccountTransaction" include nil nil [1044 1114])
+            ("com.aaaie.ds.cds.model.policybillinghistory.PolicyHistoryResponse" include nil nil [1115 1188])
+            ("com.aaaie.ds.cds.model.policybillinghistory.PolicyTransactionHistory" include nil nil [1189 1265])
+            ("com.aaaie.ds.cds.model.policydetail.*" include nil nil [1266 1311])
+            ("com.aaaie.ds.cds.model.policydetail.ConvertedPolicy" include nil nil [1312 1371])
+            ("com.aaaie.ds.cds.soa.client.RecordCustomerDetailRequest" include nil nil [1372 1435])
+            ("com.aaaie.ds.cds.soa.client.RecordCustomerDetailResponse" include nil nil [1436 1500])
+            ("com.aaaie.ds.cds.soa.client.record.registration.details.RecordRegistrationDetailsRequest" include nil nil [1501 1597])
+            ("com.aaaie.ds.cds.soa.client.record.registration.details.RecordRegistrationDetailsResponse" include nil nil [1598 1695])
+            ("com.aaaie.ds.cds.soa.client.retrieve.auto.policy.detail.RetrieveAutoPolicyDetailRequest" include nil nil [1696 1791])
+            ("com.aaaie.ds.cds.soa.client.retrieve.auto.policy.detail.RetrieveAutoPolicyDetailResponse" include nil nil [1792 1888])
+            ("com.aaaie.ds.cds.soa.client.retrieve.claim.summaries.RetrieveClaimSummariesRequest" include nil nil [1889 1979])
+            ("com.aaaie.ds.cds.soa.client.retrieve.claim.summaries.RetrieveClaimSummariesResponse" include nil nil [1980 2071])
+            ("com.aaaie.ds.cds.soa.client.retrieve.payment.enrollment.detail.RetrievePaymentEnrollmentDetail" include nil nil [2072 2174])
+            ("com.aaaie.ds.cds.soa.client.retrieve.payment.enrollment.detail.RetrievePaymentEnrollmentDetailRequest" include nil nil [2175 2284])
+            ("com.aaaie.ds.cds.soa.client.retrieve.payment.enrollment.detail.RetrievePaymentEnrollmentDetailResponse" include nil nil [2285 2395])
+            ("com.aaaie.ds.cds.soa.client.retrieve.policy.billing.history.RetrievePolicyBillingHistoryRequest" include nil nil [2396 2499])
+            ("com.aaaie.ds.cds.soa.client.retrieve.policy.billing.history.RetrievePolicyBillingHistoryResponse" include nil nil [2500 2604])
+            ("com.aaaie.ds.cds.soa.client.retrieve.policy.summaries.RetrievePolicySummariesRequest" include nil nil [2605 2697])
+            ("com.aaaie.ds.cds.soa.client.retrieve.policy.summaries.RetrievePolicySummariesResponse" include nil nil [2698 2791])
+            ("com.aaaie.ds.cds.soa.client.retrieve.property.policy.detail.RetrievePropertyPolicyDetailRequest" include nil nil [2792 2895])
+            ("com.aaaie.ds.cds.soa.client.retrieve.property.policy.detail.RetrievePropertyPolicyDetailResponse" include nil nil [2896 3000])
+            ("com.aaaie.ds.cds.soa.client.retrievecustomer.Customer" include nil nil [3001 3062])
+            ("com.aaaie.ds.cds.soa.client.retrievecustomer.RetrieveCustomerDetailsRequest" include nil nil [3063 3146])
+            ("com.aaaie.ds.cds.soa.client.retrievecustomer.RetrieveCustomerDetailsResponse" include nil nil [3147 3231])
+            ("com.aaaie.ds.cds.util.AESEncryption" include nil nil [3232 3275])
+            ("com.aaaie.ds.cds.util.ClaimUtils" include nil nil [3276 3316])
+            ("com.aaaie.ds.cds.util.Constants" include nil nil [3317 3356])
+            ("com.aaaie.ds.cds.util.DateUtil" include nil nil [3357 3395])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [3396 3450])
+            ("org.apache.commons.collections.MapUtils" include nil nil [3451 3498])
+            ("org.apache.commons.lang.StringUtils" include nil nil [3499 3542])
+            ("org.perf4j.StopWatch" include nil nil [3543 3571])
+            ("org.perf4j.aop.Profiled" include nil nil [3572 3603])
+            ("org.perf4j.log4j.Log4JStopWatch" include nil nil [3604 3643])
+            ("org.slf4j.Logger" include nil nil [3644 3668])
+            ("org.slf4j.LoggerFactory" include nil nil [3669 3700])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [3701 3763])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [3764 3822])
+            ("org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" include nil nil [3823 3895])
+            ("org.springframework.stereotype.Component" include nil nil [3896 3944])
+            ("javax.annotation.Resource" include nil nil [3946 3979])
+            ("javax.inject.Inject" include nil nil [3980 4007])
+            ("javax.servlet.http.Cookie" include nil nil [4008 4041])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [4042 4087])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [4088 4134])
+            ("java.util.*" include nil nil [4135 4154])
+            ("java.util.concurrent.Callable" include nil nil [4155 4192])
+            ("java.util.concurrent.ExecutionException" include nil nil [4193 4240])
+            ("java.util.concurrent.FutureTask" include nil nil [4241 4280])
+            ("CustomerServiceImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("CustomerService")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [4359 4438])
+                    ("retrieveCustomerDetailsProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveCustomerDetailsProvider")
+                        (reparse-symbol class_member_declaration) [4456 4528])
+                    ("retrievePolicyBillingSummariesProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RetrievePolicyBillingSummariesProvider")
+                        (reparse-symbol class_member_declaration) [4546 4632])
+                    ("retrieveAutoPolicyDetailProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveAutoPolicyDetailProvider")
+                        (reparse-symbol class_member_declaration) [4650 4724])
+                    ("retrievePropertyPolicyDetailProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RetrievePropertyPolicyDetailProvider")
+                        (reparse-symbol class_member_declaration) [4742 4824])
+                    ("retrievePolicySummariesProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RetrievePolicySummariesProvider")
+                        (reparse-symbol class_member_declaration) [4842 4914])
+                    ("retrieveAutoPolicyDetailMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveAutoPolicyDetailMapperUtil")
+                        (reparse-symbol class_member_declaration) [4932 5010])
+                    ("retrievePropertyPolicyDetailMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrievePropertyPolicyDetailMapperUtil")
+                        (reparse-symbol class_member_declaration) [5028 5114])
+                    ("recordCustomerDetailProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RecordCustomerDetailProvider")
+                        (reparse-symbol class_member_declaration) [5132 5198])
+                    ("retrievePolicyBillingHistoryMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrievePolicyBillingHistoryMapperUtil")
+                        (reparse-symbol class_member_declaration) [5302 5388])
+                    ("taskExecutor" variable
+                       (:typemodifiers ("private")
+                        :type "ThreadPoolTaskExecutor")
+                        (reparse-symbol class_member_declaration) [5406 5450])
+                    ("retrieveAutopayEnrollmentDetailProvider" variable
+                       (:typemodifiers ("public")
+                        :type "RetrieveAutopayEnrollmentDetailProvider")
+                        (reparse-symbol class_member_declaration) [5468 5555])
+                    ("retrieveAutopayEnrollmentDetailMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveAutopayEnrollmentDetailMapperUtil")
+                        (reparse-symbol class_member_declaration) [5573 5665])
+                    ("retrieveAutoPayEnrollmentDetail" variable
+                       (:typemodifiers ("public")
+                        :type "RetrievePaymentEnrollmentDetail")
+                        (reparse-symbol class_member_declaration) [5685 5756])
+                    ("retrievePolicyBillingHistory" variable
+                       (:typemodifiers ("private")
+                        :type "com.aaaie.ds.cds.soa.client.retrieve.policy.billing.history.RetrievePolicyBillingHistory")
+                        (reparse-symbol class_member_declaration) [5822 5948])
+                    ("retrieveClaimSummariesB2CMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveClaimSummariesB2CMapperUtil")
+                        (reparse-symbol class_member_declaration) [5966 6046])
+                    ("enableRecordRegistrationNew" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6187 6231])
+                    ("secureCookie" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [6268 6297])
+                    ("cookieTime" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [6335 6358])
+                    ("recordRegistrationDetailProvider" variable
+                       (:typemodifiers ("public")
+                        :type "RecordRegistrationDetailProvider")
+                        (reparse-symbol class_member_declaration) [6420 6493])
+                    ("getPolicies" function
+                       (:constructor-flag t
+                        :throws ("CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [6822 6842])
+                            ("policiesToBeRetrievedEnum" variable (:type "PoliciesToBeRetrieved") (reparse-symbol formal_parameters) [6844 6891])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [6892 6918]))                          )
+                        (reparse-symbol class_member_declaration) [6810 8141])
+                    ("getPoliciesSummary" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [8557 8577])
+                            ("policiesToBeRetrievedEnum" variable (:type "PoliciesToBeRetrieved") (reparse-symbol formal_parameters) [8628 8675])
+                            ("levelOfDetailsNeededEnum" variable
+                               (:typemodifiers ("final")
+                                :type "LevelOfDetailsNeeded")
+                                (reparse-symbol formal_parameters) [8726 8777])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [8778 8804])
+                            ("convertedPolicyDetails" variable (:type "boolean") (reparse-symbol formal_parameters) [8805 8835])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [8836 8864]))                          )
+                        (reparse-symbol class_member_declaration) [8538 18883])
+                    ("getBillingDetails" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "NoContentException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [18955 18975])
+                            ("policiesToBeRetrievedEnum" variable (:type "PoliciesToBeRetrieved") (reparse-symbol formal_parameters) [18977 19024])
+                            ("autopay" variable (:type "boolean") (reparse-symbol formal_parameters) [19025 19040])
+                            ("policy" variable (:type "Policy") (reparse-symbol formal_parameters) [19041 19054])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [19055 19081])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [19082 19110]))                          )
+                        (reparse-symbol class_member_declaration) [18937 24388])
+                    ("processConversionPoliciesDetails" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("customerId" variable (:type "String") (reparse-symbol formal_parameters) [24440 24457])
+                            ("" variable (:type "policyBillingDetails") (reparse-symbol formal_parameters) [24485 24505])
+                            ("" variable (:type "policies") (reparse-symbol formal_parameters) [24519 24527])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [24528 24556]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24394 27155])
+                    ("setCookieForConvertedPoliciesBilling" function
+                       (:arguments 
+                          ( ("customerId" variable (:type "String") (reparse-symbol formal_parameters) [27203 27220])
+                            ("" variable (:type "convertedPoliciesList") (reparse-symbol formal_parameters) [27248 27269])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [27270 27298]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27161 27771])
+                    ("setCookieForConvertedPoliciesForAuto" function
+                       (:arguments 
+                          ( ("customerId" variable (:type "String") (reparse-symbol formal_parameters) [27818 27835])
+                            ("" variable (:type "policyDetails") (reparse-symbol formal_parameters) [27855 27868])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [27869 27897]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27776 28310])
+                    ("setCookieForConvertedList" function
+                       (:arguments 
+                          ( ("sb" variable (:type "StringBuffer") (reparse-symbol formal_parameters) [28347 28362])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [28363 28391]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28316 28999])
+                    ("getAutoPolicyConversion" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("policyBillingData" variable (:type "PolicyBillingDetails") (reparse-symbol formal_parameters) [29041 29079])
+                            ("" variable (:type "convertedPoliciesList") (reparse-symbol formal_parameters) [29107 29128])
+                            ("" variable (:type "removePolicies") (reparse-symbol formal_parameters) [29156 29170])
+                            ("" variable (:type "allOriginalPolicyDetails") (reparse-symbol formal_parameters) [29198 29222]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [29004 33919])
+                    ("setLegacyPolicyNumber" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "allOriginalPolicyDetails") (reparse-symbol formal_parameters) [33986 34010])
+                            ("convertedPolicyObject" variable (:type "PolicyBillingDetails") (reparse-symbol formal_parameters) [34011 34053]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [33924 34706])
+                    ("getAutoPayDetailsForAllPolicies" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("" variable (:type "policies") (reparse-symbol formal_parameters) [34818 34826]))                          )
+                        (reparse-symbol class_member_declaration) [34759 37382])
+                    ("getPolicyDetails" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [38117 38137])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [38180 38199])
+                            ("policyToBeValidatedAgainstCustomerKeyEnum" variable (:type "PolicyToBeValidatedAgainstCustomerKey") (reparse-symbol formal_parameters) [38242 38321])
+                            ("levelOfDetailsNeededEnum" variable (:type "LevelOfDetailsNeeded") (reparse-symbol formal_parameters) [38364 38409])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [38410 38436]))                          
+                        :type "PolicyDetail")
+                        (reparse-symbol class_member_declaration) [38080 40299])
+                    ("getAutoPolicyDetails" function
+                       (:throws ("SystemErrorException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("policy" variable (:type "Policy") (reparse-symbol formal_parameters) [40422 40435])
+                            ("levelOfDetailsNeededEnum" variable (:type "LevelOfDetailsNeeded") (reparse-symbol formal_parameters) [40437 40482]))                          
+                        :type "AutoPolicyDetail")
+                        (reparse-symbol class_member_declaration) [40376 41505])
+                    ("getPropertyPolicyDetails" function
+                       (:throws ("SystemErrorException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("policy" variable (:type "Policy") (reparse-symbol formal_parameters) [41640 41653])
+                            ("levelOfDetailsNeededEnum" variable (:type "LevelOfDetailsNeeded") (reparse-symbol formal_parameters) [41655 41700]))                          
+                        :type "PropertyPolicyDetail")
+                        (reparse-symbol class_member_declaration) [41586 42436])
+                    ("getPolicyDetails" function
+                       (:throws ("SystemErrorException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("policy" variable (:type "Policy") (reparse-symbol formal_parameters) [42667 42680])
+                            ("levelOfDetailsNeededEnum" variable (:type "LevelOfDetailsNeeded") (reparse-symbol formal_parameters) [42682 42727]))                          
+                        :type "PolicyDetail")
+                        (reparse-symbol class_member_declaration) [42629 43578])
+                    ("getPolicy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "policyList") (reparse-symbol formal_parameters) [43735 43745])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [43747 43766]))                          
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [43698 43974])
+                    ("retrievePoliciesSummary" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "policies") (reparse-symbol formal_parameters) [44238 44246]))                          )
+                        (reparse-symbol class_member_declaration) [44201 45161])
+                    ("linkPolicy" function
+                       (:throws ("PolicyLinkageFailureException" "PolicyAlreadyLinkedException" "PolicyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [45678 45698])
+                            ("last4DigitPolicyNumber" variable (:type "String") (reparse-symbol formal_parameters) [45700 45729])
+                            ("policiesToBeRetrievedEnum" variable (:type "PoliciesToBeRetrieved") (reparse-symbol formal_parameters) [45731 45778])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [45779 45805]))                          
+                        :type "LinkedPolicy")
+                        (reparse-symbol class_member_declaration) [45647 50814])
+                    ("getDiscountsOfCustomer" function
+                       (:constructor-flag t
+                        :throws ("CustomerDetailsRetrievalFailureException" "SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [51101 51121])
+                            ("policiesToBeRetrievedEnum" variable (:type "PoliciesToBeRetrieved") (reparse-symbol formal_parameters) [51123 51170])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [51171 51197]))                          )
+                        (reparse-symbol class_member_declaration) [51078 51513])
+                    ("isPolicyValidToBeLinked" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("policy" variable (:type "Policy") (reparse-symbol formal_parameters) [51672 51685]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [51632 52371])
+                    ("getPolicyBillingHistory" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [52522 52542])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [52543 52569]))                          
+                        :type "PolicyHistoryResponse")
+                        (reparse-symbol class_member_declaration) [52469 59470])
+                    ("getClaimSummaries" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerId" variable (:type "String") (reparse-symbol formal_parameters) [59540 59557])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [59558 59584]))                          )
+                        (reparse-symbol class_member_declaration) [59522 61596])
+                    ("getClaimDetails" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("policyNum" variable (:type "String") (reparse-symbol formal_parameters) [61722 61738])
+                            ("type" variable (:type "String") (reparse-symbol formal_parameters) [61739 61750])
+                            ("claimNumber" variable (:type "String") (reparse-symbol formal_parameters) [61751 61769]))                          
+                        :type "PolicyClaimSummaries")
+                        (reparse-symbol class_member_declaration) [61677 62537])
+                    ("getClaimDetails" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerId" variable (:type "String") (reparse-symbol formal_parameters) [62601 62618])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [62620 62639])
+                            ("claimNumber" variable (:type "String") (reparse-symbol formal_parameters) [62641 62659])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [62661 62687]))                          
+                        :type "PolicyClaimSummaries")
+                        (reparse-symbol class_member_declaration) [62557 63831])
+                    ("getCustomerDetails" function
+                       (:throws ("CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [63951 63971]))                          
+                        :type "Customer")
+                        (reparse-symbol class_member_declaration) [63916 64470]))                  
+                :type "class")
+                nil [4293 64473]))          
+      :file "CustomerServiceImpl.java"
+      :pointmax 64474
+      :fsize 64473
+      :lastmodtime '(22338 31169 0 0)
+      :unmatched-syntax '((GT 59520 . 59521) (IDENTIFIER 59476 . 59485) (PUBLIC 59490 . 59496) (LT 59501 . 59502) (GT 51076 . 51077) (IDENTIFIER 51038 . 51047) (PUBLIC 51052 . 51058) (LT 51063 . 51064) (GT 44236 . 44237) (IDENTIFIER 44225 . 44229) (LT 44229 . 44230) (GT 44199 . 44200) (IDENTIFIER 44161 . 44170) (PUBLIC 44175 . 44181) (LT 44186 . 44187) (GT 43733 . 43734) (IDENTIFIER 43722 . 43726) (LT 43726 . 43727) (GT 34816 . 34817) (IDENTIFIER 34791 . 34795) (LT 34795 . 34796) (GT 34757 . 34758) (COMMA 34730 . 34731) (PRIVATE 34712 . 34719) (LT 34723 . 34724) (GT 33984 . 33985) (IDENTIFIER 33959 . 33963) (LT 33963 . 33964) (GT 29196 . 29197) (IDENTIFIER 29171 . 29175) (LT 29175 . 29176) (GT 29154 . 29155) (IDENTIFIER 29129 . 29133) (LT 29133 . 29134) (GT 29105 . 29106) (IDENTIFIER 29080 . 29084) (LT 29084 . 29085) (GT 27853 . 27854) (IDENTIFIER 27836 . 27840) (LT 27840 . 27841) (GT 27246 . 27247) (IDENTIFIER 27221 . 27225) (LT 27225 . 27226) (GT 24517 . 24518) (IDENTIFIER 24506 . 24510) (LT 24510 . 24511) (GT 24483 . 24484) (IDENTIFIER 24458 . 24462) (LT 24462 . 24463) (GT 18935 . 18936) (IDENTIFIER 18889 . 18898) (PUBLIC 18903 . 18909) (LT 18914 . 18915) (GT 8536 . 8537) (IDENTIFIER 8445 . 8454) (PUBLIC 8512 . 8518) (LT 8523 . 8524) (STRING_LITERAL 8475 . 8506) (IDENTIFIER 8469 . 8472) (EQ 8473 . 8474) (GT 6808 . 6809) (PUBLIC 6790 . 6796) (LT 6801 . 6802) (IDENTIFIER 6364 . 6374) (IDENTIFIER 6390 . 6400) (SEMICOLON 6400 . 6401) (STRING_LITERAL 6310 . 6329) (STRING_LITERAL 6244 . 6262) (STRING_LITERAL 6139 . 6181) (IDENTIFIER 6052 . 6059) (IDENTIFIER 6095 . 6125) (SEMICOLON 6125 . 6126) (IDENTIFIER 5762 . 5769) (IDENTIFIER 5788 . 5801) (SEMICOLON 5801 . 5802) (IDENTIFIER 5204 . 5211) (IDENTIFIER 5250 . 5283) (SEMICOLON 5283 . 5284) (IDENTIFIER 4282 . 4292)))
+    (semanticdb-table "DocumentServiceImpl.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.impl" package nil nil [1 40])
+            ("com.aaaie.ds.cds.business.mappers.RetrieveAgreementRelatedDocumentsMapperUtil" include nil nil [43 128])
+            ("com.aaaie.ds.cds.business.mappers.RetrieveDocumentMapperUtil" include nil nil [129 197])
+            ("com.aaaie.ds.cds.business.mappers.util.*" include nil nil [198 246])
+            ("com.aaaie.ds.cds.business.services.CustomerService" include nil nil [247 305])
+            ("com.aaaie.ds.cds.business.services.DocumentService" include nil nil [306 364])
+            ("com.aaaie.ds.cds.dataProvider.services.RetrieveAgreementRelatedDocumentsProvider" include nil nil [365 453])
+            ("com.aaaie.ds.cds.dataProvider.services.RetrieveDocumentProvider" include nil nil [454 525])
+            ("com.aaaie.ds.cds.exceptions.CustomerDetailsRetrievalFailureException" include nil nil [526 602])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [603 656])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [657 713])
+            ("com.aaaie.ds.cds.model.documents.Document" include nil nil [714 763])
+            ("com.aaaie.ds.cds.model.documents.DocumentLocation" include nil nil [764 821])
+            ("com.aaaie.ds.cds.model.documents.DocumentsInPolicy" include nil nil [822 880])
+            ("com.aaaie.ds.cds.model.documents.PolicyDocuments" include nil nil [881 937])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [938 988])
+            ("com.aaaie.ds.cds.model.policydetail.PolicyDetail" include nil nil [989 1045])
+            ("com.aaaie.ds.cds.soa.client.retrieve.agreement.related.documents.RetrieveAgreementRelatedDocumentsRequest" include nil nil [1046 1159])
+            ("com.aaaie.ds.cds.soa.client.retrieve.agreement.related.documents.RetrieveAgreementRelatedDocumentsResponse" include nil nil [1160 1274])
+            ("com.aaaie.ds.cds.soa.client.retrieve.document.RetrieveDocumentRequest" include nil nil [1275 1352])
+            ("com.aaaie.ds.cds.soa.client.retrieve.document.RetrieveDocumentResponse" include nil nil [1353 1431])
+            ("com.aaaie.ds.cds.util.Constants" include nil nil [1432 1471])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [1472 1526])
+            ("org.apache.commons.lang.StringUtils" include nil nil [1527 1570])
+            ("org.perf4j.StopWatch" include nil nil [1571 1599])
+            ("org.perf4j.log4j.Log4JStopWatch" include nil nil [1600 1639])
+            ("org.slf4j.Logger" include nil nil [1640 1664])
+            ("org.slf4j.LoggerFactory" include nil nil [1665 1696])
+            ("org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" include nil nil [1697 1769])
+            ("org.springframework.stereotype.Service" include nil nil [1770 1816])
+            ("javax.inject.Inject" include nil nil [1818 1845])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [1846 1891])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [1892 1938])
+            ("java.util.ArrayList" include nil nil [1939 1966])
+            ("java.util.Date" include nil nil [1967 1989])
+            ("java.util.List" include nil nil [1990 2012])
+            ("java.util.concurrent.Callable" include nil nil [2013 2050])
+            ("java.util.concurrent.FutureTask" include nil nil [2051 2090])
+            ("DocumentServiceImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("DocumentService")
+                :members 
+                  ( ("retrieveAgreementRelatedDocumentsProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveAgreementRelatedDocumentsProvider")
+                        (reparse-symbol class_member_declaration) [2179 2271])
+                    ("retrieveDocumentProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveDocumentProvider")
+                        (reparse-symbol class_member_declaration) [2289 2347])
+                    ("customerService" variable
+                       (:typemodifiers ("private")
+                        :type "CustomerService")
+                        (reparse-symbol class_member_declaration) [2365 2405])
+                    ("retrieveAgreementRelatedDocumentsMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveAgreementRelatedDocumentsMapperUtil")
+                        (reparse-symbol class_member_declaration) [2427 2523])
+                    ("retrieveDocumentMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveDocumentMapperUtil")
+                        (reparse-symbol class_member_declaration) [2545 2607])
+                    ("taskExecutor" variable
+                       (:typemodifiers ("private")
+                        :type "ThreadPoolTaskExecutor")
+                        (reparse-symbol class_member_declaration) [2625 2669])
+                    ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [2675 2763])
+                    ("getIDCardsForCustomer" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2948 2974])
+                            ("policiesToBeRetrievedEnum" variable (:type "PoliciesToBeRetrieved") (reparse-symbol formal_parameters) [3031 3078])
+                            ("documentsToBeRetrievedEnum" variable
+                               (:typemodifiers ("final")
+                                :type "DocumentsToBeRetrieved")
+                                (reparse-symbol formal_parameters) [3135 3190])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3191 3217])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [3218 3246]))                          )
+                        (reparse-symbol class_member_declaration) [2926 9266])
+                    ("reorderPolicyDocuments" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "policyList") (reparse-symbol formal_parameters) [9614 9624])
+                            ("" variable (:type "policyDocumentsList") (reparse-symbol formal_parameters) [9648 9667]))                          )
+                        (reparse-symbol class_member_declaration) [9572 10201])
+                    ("checkIfAutoPoliciesToBeDisplayed" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "policyList") (reparse-symbol formal_parameters) [10473 10483]))                          
+                        :type "PoliciesForWhichIDCardsToBeDisplayed")
+                        (reparse-symbol class_member_declaration) [10376 11256])
+                    ("getIDCardsForPolicy" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [11392 11412])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [11414 11433])
+                            ("documentsToBeRetrievedEnum" variable (:type "DocumentsToBeRetrieved") (reparse-symbol formal_parameters) [11435 11484])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [11485 11511]))                          
+                        :type "PolicyDocuments")
+                        (reparse-symbol class_member_declaration) [11349 13383])
+                    ("retrieveDocumentsFromService" function
+                       (:throws ("SystemErrorException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("policyDetail" variable (:type "PolicyDetail") (reparse-symbol formal_parameters) [13619 13644])
+                            ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [13646 13666])
+                            ("documentsToBeRetrievedEnum" variable (:type "DocumentsToBeRetrieved") (reparse-symbol formal_parameters) [13668 13717]))                          
+                        :type "PolicyDocuments")
+                        (reparse-symbol class_member_declaration) [13566 16008])
+                    ("getDocumentsForPolicy" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [16198 16218])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [16220 16239])
+                            ("documentsToBeRetrievedEnum" variable (:type "DocumentsToBeRetrieved") (reparse-symbol formal_parameters) [16241 16290])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [16291 16317]))                          
+                        :type "PolicyDocuments")
+                        (reparse-symbol class_member_declaration) [16153 17284])
+                    ("getDocumentLocation" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [17422 17442])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [17444 17463])
+                            ("objectId" variable (:type "String") (reparse-symbol formal_parameters) [17465 17480])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [17482 17508]))                          
+                        :type "DocumentLocation")
+                        (reparse-symbol class_member_declaration) [17378 18298])
+                    ("getDocumentLocation" function
+                       (:throws ("SystemErrorException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [18396 18416])
+                            ("objectId" variable (:type "String") (reparse-symbol formal_parameters) [18418 18433]))                          
+                        :type "DocumentLocation")
+                        (reparse-symbol class_member_declaration) [18351 19620])
+                    ("getDocumentsForPolicy" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [19686 19706])
+                            ("policyDetail" variable (:type "PolicyDetail") (reparse-symbol formal_parameters) [19708 19733])
+                            ("billType" variable (:type "String") (reparse-symbol formal_parameters) [19734 19749])
+                            ("transactionDate" variable (:type "Date") (reparse-symbol formal_parameters) [19750 19770])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [19771 19797]))                          
+                        :type "DocumentLocation")
+                        (reparse-symbol class_member_declaration) [19640 22363])
+                    ("getPolicyDeclarationURL" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [22985 23005])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [23007 23026])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [23027 23053]))                          
+                        :type "DocumentLocation")
+                        (reparse-symbol class_member_declaration) [22937 25825]))                  
+                :type "class")
+                nil [2101 25827]))          
+      :file "DocumentServiceImpl.java"
+      :pointmax 25827
+      :fsize 25826
+      :lastmodtime '(22338 24474 0 0)
+      :unmatched-syntax '((GT 10471 . 10472) (IDENTIFIER 10454 . 10458) (LT 10458 . 10459) (GT 9646 . 9647) (IDENTIFIER 9626 . 9630) (LT 9630 . 9631) (GT 9612 . 9613) (IDENTIFIER 9595 . 9599) (LT 9599 . 9600) (GT 9570 . 9571) (PRIVATE 9542 . 9549) (LT 9554 . 9555) (GT 2924 . 2925) (IDENTIFIER 2883 . 2892) (PUBLIC 2897 . 2903) (LT 2908 . 2909) (IDENTIFIER 2092 . 2100)))
+    (semanticdb-table "WalletServiceImpl.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.impl" package nil nil [1 40])
+            ("com.aaaie.ds.cds.business.mappers.RecordWalletMapperUtil" include nil nil [43 107])
+            ("com.aaaie.ds.cds.business.mappers.RetrieveWalletDetailsMapperUtil" include nil nil [108 181])
+            ("com.aaaie.ds.cds.business.services.WalletService" include nil nil [182 238])
+            ("com.aaaie.ds.cds.dataProvider.services.RecordWalletService" include nil nil [239 305])
+            ("com.aaaie.ds.cds.dataProvider.services.RetrieveWalletDetailService" include nil nil [306 380])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [381 434])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [435 491])
+            ("com.aaaie.ds.cds.model.wallet.PaymentWallet" include nil nil [492 543])
+            ("com.aaaie.ds.cds.model.wallet.request.WalletRequest" include nil nil [544 603])
+            ("com.aaaie.ds.cds.model.wallet.response.WalletResponse" include nil nil [604 665])
+            ("com.aaaie.ds.cds.soa.client.record.wallet.RecordWalletRequest" include nil nil [666 735])
+            ("com.aaaie.ds.cds.soa.client.record.wallet.RecordWalletResponse" include nil nil [736 806])
+            ("com.aaaie.ds.cds.soa.client.retrieve.wallet.detail.RetrieveWalletDetailResponse" include nil nil [807 894])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [895 957])
+            ("org.springframework.stereotype.Service" include nil nil [958 1004])
+            ("WalletServiceImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("WalletService")
+                :members 
+                  ( ("getWalletDetail" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [1418 1438]))                          
+                        :type "PaymentWallet")
+                        (reparse-symbol class_member_declaration) [1381 1710])
+                    ("createWallets" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("walletRequest" variable (:type "WalletRequest") (reparse-symbol formal_parameters) [1766 1793]))                          
+                        :type "WalletResponse")
+                        (reparse-symbol class_member_declaration) [1730 2163]))                  
+                :type "class")
+                nil [1015 2167]))          
+      :file "WalletServiceImpl.java"
+      :pointmax 2168
+      :fsize 2167
+      :lastmodtime '(22286 33643 0 0)
+      :unmatched-syntax '((IDENTIFIER 1329 . 1360) (SEMICOLON 1360 . 1361) (IDENTIFIER 1253 . 1275) (SEMICOLON 1275 . 1276) (IDENTIFIER 1189 . 1208) (SEMICOLON 1208 . 1209) (IDENTIFIER 1077 . 1087) (IDENTIFIER 1120 . 1147) (SEMICOLON 1147 . 1148) (IDENTIFIER 1006 . 1014)))
+    (semanticdb-table "PaymentServiceImpl.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.impl" package nil nil [1 40])
+            ("com.aaaie.ds.cds.business.mappers.AutoPayMapperUtil" include nil nil [42 101])
+            ("com.aaaie.ds.cds.business.mappers.IssueDirectPaymentMapperUtil" include nil nil [102 172])
+            ("com.aaaie.ds.cds.business.mappers.RetrieveAutopayEnrollmentDetailMapperUtil" include nil nil [173 256])
+            ("com.aaaie.ds.cds.business.mappers.RetrievePaymentTransactionMapperUtil" include nil nil [257 335])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [336 404])
+            ("com.aaaie.ds.cds.business.services.CustomerService" include nil nil [405 463])
+            ("com.aaaie.ds.cds.business.services.PaymentService" include nil nil [464 521])
+            ("com.aaaie.ds.cds.dataProvider.services.*" include nil nil [522 570])
+            ("com.aaaie.ds.cds.exceptions.CustomerDetailsRetrievalFailureException" include nil nil [571 647])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [648 701])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [702 758])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutoPayEnrollmentStatus" include nil nil [759 833])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollStatusRequest" include nil nil [834 911])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollmentDetailResponse" include nil nil [912 994])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.request.LineItem" include nil nil [995 1061])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.request.PolicyPaymentRequest" include nil nil [1062 1140])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.response.PolicyPaymentResponse" include nil nil [1141 1221])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [1222 1272])
+            ("com.aaaie.ds.cds.model.wallet.LastPaymentTransaction" include nil nil [1273 1333])
+            ("com.aaaie.ds.cds.security.util.Constants" include nil nil [1334 1382])
+            ("com.aaaie.ds.cds.soa.client.issue.direct.payment.IssueDirectPaymentRequest" include nil nil [1383 1465])
+            ("com.aaaie.ds.cds.soa.client.issue.direct.payment.IssueDirectPaymentResponse" include nil nil [1466 1549])
+            ("com.aaaie.ds.cds.soa.client.record.payment.enrollment.status.RecordPaymentEnrollmentStatus" include nil nil [1550 1648])
+            ("com.aaaie.ds.cds.soa.client.record.payment.enrollment.status.RecordPaymentEnrollmentStatusRequest" include nil nil [1649 1754])
+            ("com.aaaie.ds.cds.soa.client.record.payment.enrollment.status.RecordPaymentEnrollmentStatusResponse" include nil nil [1755 1861])
+            ("com.aaaie.ds.cds.soa.client.retrieve.payment.enrollment.detail.RetrievePaymentEnrollmentDetailRequest" include nil nil [1862 1971])
+            ("com.aaaie.ds.cds.soa.client.retrieve.payment.enrollment.detail.RetrievePaymentEnrollmentDetailResponse" include nil nil [1972 2082])
+            ("com.aaaie.ds.cds.soa.client.retrieve.payment.transactions.RetrievePaymentTransactionRequest" include nil nil [2083 2182])
+            ("com.aaaie.ds.cds.soa.client.retrieve.payment.transactions.RetrievePaymentTransactionResponse" include nil nil [2183 2283])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [2284 2338])
+            ("org.apache.commons.lang.StringUtils" include nil nil [2339 2382])
+            ("org.slf4j.Logger" include nil nil [2383 2407])
+            ("org.slf4j.LoggerFactory" include nil nil [2408 2439])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [2440 2502])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [2503 2561])
+            ("org.springframework.stereotype.Service" include nil nil [2562 2608])
+            ("javax.inject.Inject" include nil nil [2610 2637])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [2638 2683])
+            ("java.util.List" include nil nil [2684 2706])
+            ("java.util.Map" include nil nil [2707 2728])
+            ("PaymentServiceImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("PaymentService")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [2804 2882])
+                    ("issueDirectPaymentProvider" variable
+                       (:typemodifiers ("public")
+                        :type "IssueDirectPaymentProvider")
+                        (reparse-symbol class_member_declaration) [2994 3055])
+                    ("issueDirectPaymentMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "IssueDirectPaymentMapperUtil")
+                        (reparse-symbol class_member_declaration) [3076 3142])
+                    ("authorizationError" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3204 3238])
+                    ("retrieveAutopayEnrollmentDetailProvider" variable
+                       (:typemodifiers ("public")
+                        :type "RetrieveAutopayEnrollmentDetailProvider")
+                        (reparse-symbol class_member_declaration) [3425 3512])
+                    ("retrieveAutopayEnrollmentDetailMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrieveAutopayEnrollmentDetailMapperUtil")
+                        (reparse-symbol class_member_declaration) [3530 3622])
+                    ("retrievePaymentTransactionProvider" variable
+                       (:typemodifiers ("public")
+                        :type "RetrievePaymentTransactionProvider")
+                        (reparse-symbol class_member_declaration) [3693 3770])
+                    ("retrievePaymentTransactionMapperUtil" variable
+                       (:typemodifiers ("private")
+                        :type "RetrievePaymentTransactionMapperUtil")
+                        (reparse-symbol class_member_declaration) [3791 3873])
+                    ("issueDirectPayment" function
+                       (:throws ("SystemErrorException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("policyPaymentRequest" variable (:type "PolicyPaymentRequest") (reparse-symbol formal_parameters) [3942 3983])
+                            ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [3984 4004])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [4005 4031])
+                            ("application" variable (:type "String") (reparse-symbol formal_parameters) [4032 4050]))                          
+                        :type "PolicyPaymentResponse")
+                        (reparse-symbol class_member_declaration) [3894 5253])
+                    ("validatePolicyList" function
+                       (:throws ("SystemErrorException")
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "policyList") (reparse-symbol formal_parameters) [5307 5317])
+                            ("policyPaymentRequest" variable (:type "PolicyPaymentRequest") (reparse-symbol formal_parameters) [5319 5360]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5259 6567])
+                    ("autopayEnrollment" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("autopayEnrollStatusRequest" variable (:type "AutopayEnrollStatusRequest") (reparse-symbol formal_parameters) [6636 6689])
+                            ("transactionType" variable (:type "String") (reparse-symbol formal_parameters) [6690 6712])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [6713 6739]))                          
+                        :type "AutoPayEnrollmentStatus")
+                        (reparse-symbol class_member_declaration) [6587 8118])
+                    ("autopayEnrollmentDetail" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [8201 8221])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [8223 8242])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [8243 8269]))                          
+                        :type "AutopayEnrollmentDetailResponse")
+                        (reparse-symbol class_member_declaration) [8138 9411])
+                    ("getPaymentTransaction" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [9483 9503])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [9505 9524])
+                            ("dataSource" variable (:type "String") (reparse-symbol formal_parameters) [9525 9542])
+                            ("policyType" variable (:type "String") (reparse-symbol formal_parameters) [9543 9560])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [9561 9587]))                          
+                        :type "LastPaymentTransaction")
+                        (reparse-symbol class_member_declaration) [9431 10650])
+                    ("getPolicy" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "policyList") (reparse-symbol formal_parameters) [10692 10702])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [10704 10723]))                          
+                        :type "Policy")
+                        (reparse-symbol class_member_declaration) [10655 10977]))                  
+                :type "class")
+                nil [2739 10979]))          
+      :file "PaymentServiceImpl.java"
+      :pointmax 10980
+      :fsize 10979
+      :lastmodtime '(22338 24474 0 0)
+      :unmatched-syntax '((GT 10690 . 10691) (IDENTIFIER 10679 . 10683) (LT 10683 . 10684) (GT 5305 . 5306) (IDENTIFIER 5294 . 5298) (LT 5298 . 5299) (IDENTIFIER 3628 . 3638) (IDENTIFIER 3659 . 3674) (SEMICOLON 3674 . 3675) (IDENTIFIER 3388 . 3405) (SEMICOLON 3405 . 3406) (IDENTIFIER 3244 . 3254) (IDENTIFIER 3304 . 3348) (SEMICOLON 3348 . 3349) (STRING_LITERAL 3155 . 3198) (IDENTIFIER 2887 . 2897) (IDENTIFIER 2939 . 2975) (SEMICOLON 2975 . 2976) (IDENTIFIER 2730 . 2738))))
+  :file "!Users!pairuser!dev!CDS-API!src!main!java!com!aaaie!ds!cds!business!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

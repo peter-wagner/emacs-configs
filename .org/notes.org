@@ -1,0 +1,326 @@
+* Inbox
+** DONE identity_jwt_filter
+*** look for x-digital-auth = "Encrypted JWT. Always created by Security Core Identity_JWT_Filter. Transform DA's JWT into this new JWT." and decrypt
+**** if not there 401 unauthenticated
+** DONE 401 status middleware
+*** look for x-digital-401 and send back 401 status
+** DONE 401 redirect middleware
+*** redirect if x-digital-401 if exists to correct idp
+** TODO make all middleware user a config
+** TODO make constants in connect-core
+** TODO double check on ring-mock lowercaseing header names
+** TODO clean up project clj
+*** add git url
+*** move ring/mock dep to dev dependency
+*** remove shapshot
+*** add cloverage
+*** DONE identitiy
+*** DONE 401 status
+*** DONE 401 redirect
+*** DONE customers service
+** DO NEXT connect services
+*** expect headers with app/user id
+** Header chain
+Headers as processes through Security Identity filter and Header Filters:
+x-digital-auth = "Encrypted JWT. Always created by Security Core Identity_JWT_Filter. Transform DA's JWT into this new JWT."
+x-digital-user-id = "Sub from x-digital-jwt and not JWT anymore, just value"
+
+* Note
+** untar file: tar -xzf rebol.tar.gz
+** C-c C-x reloads repl
+** C-c C-e evals buffer in repl
+** search 5 result for mdmid
+*** {
+	"facets": {
+		"totalCustomerfound": 1
+	},
+	"customers": [{
+		"mdmId": "1184649189263",
+		"fullName": "sammy espinoza",
+		"firstName": "sammy",
+		"lastName": "espinoza",
+		"gender": "MALE",
+		"cutomerStatus": "Y",
+		"dob": "1944/01/10",
+		"dobYear": "1944",
+		"driverLicense": "J0819727",
+		"maritalStatus": "MARRIED",
+		"emailId": "yeahpauline@yahoo.com",
+		"memNum": "4290054116063114",
+		"memDt": "2015/05/10",
+		"partyTransactionTimeStamp": "2015/11/08 08:32:45.261",
+		"customerLoadedToESTimeStamp": "2016/07/02 09:27:36.194",
+		"phoneList": [{
+			"phoneType": "homephonenumber",
+			"phoneExchange": "421",
+			"phoneAreaCode": "916",
+			"phoneNumber": "9647",
+			"phoneFullNumber": "9164219647"
+		}, {
+			"phoneType": "workphonenumber",
+			"phoneExchange": "421",
+			"phoneAreaCode": "916",
+			"phoneNumber": "9657",
+			"phoneFullNumber": "9164219657"
+		}, {
+			"phoneType": "primaryphonenumber",
+			"phoneExchange": "421",
+			"phoneAreaCode": "916",
+			"phoneNumber": "9657",
+			"phoneFullNumber": "9164219657"
+		}],
+		"partyAdresses": [{
+			"addressType": "mailing",
+			"address1": "7440 COURT PKWY",
+			"zipCode": "95823-3048",
+			"city": "SACRAMENTO",
+			"state": "CA"
+		}, {
+			"addressType": "home",
+			"address1": "7440 COURT PKWY",
+			"zipCode": "95823-3048",
+			"city": "SACRAMENTO",
+			"state": "CA"
+		}],
+		"quoteList": [],
+		"policyList": [{
+			"agencyCode": "500001005",
+			"agentid": "60322833",
+			"sourceSystem": "HDES",
+			"termEffectiveDate": "2016/06/28",
+			"termExpirationDate": "2017/06/28",
+			"contractTransactionTimeStamp": "2016/06/29 12:25:46.514",
+			"policyInceptionDate": "2012/06/28",
+			"policyNumber": "XC12259",
+			"policyStatus": "ACTIVE",
+			"prodTypeCode": "HO",
+			"productCode": "HO3",
+			"memType": "HO3",
+			"riskState": "CA",
+			"contractAddress": [{
+				"addressType": "risk",
+				"address1": "7440 COURT PKWY",
+				"zipCode": "95823-3048",
+				"city": "SACRAMENTO",
+				"pinLatLongLoc": {},
+				"state": "CA"
+			}],
+			"roleList": [{
+				"roleType": "NAMED INSURED",
+				"sourceId": "me4EqdtlyurfJ5oU85pDVw",
+				"roleStatus": "ACTIVE"
+			}]
+		}],
+		"membershipList": [{
+			"sourceSystem": "NCNU_MEM",
+			"termEffectiveDate": "2015/07/03",
+			"termExpirationDate": "2016/07/03",
+			"contractTransactionTimeStamp": "2016/03/24 07:32:45.528",
+			"policyInceptionDate": "2000/07/03",
+			"policyNumber": "41160631",
+			"policyStatus": "ACTIVE",
+			"prodTypeCode": "MSHP",
+			"productCode": "PREMIER",
+			"memType": "MSHP",
+			"contractAddress": [],
+			"roleList": [{
+				"roleType": "PRIMARY MEMBER",
+				"sourceId": "me4EqdtlyurfJ5oU85pDVw",
+				"roleStatus": "ACTIVE",
+				"membershipNumber": "4290054116063114"
+			}]
+		}]
+	}]
+}
+** clojure notes
+*** how to test a private function
+**** #'<before the method name>
+*** how to mock a method in a test
+**** (with-redefs-fn {#'method-to-mock (fn [arg] do-stuff)})
+     #(place where function is called needs a hash in front to tell it to use mocked version)
+*** ring middleware processes things in reverse order because you are loading methods into methods and then executing the entire set. think of putting things in to boxes and then unpacking them.
+**** http://squirrel.pl/blog/2012/04/10/ring-handlers-functional-decorator-pattern/
+*** 
+* Work
+** Testing frame work
+** "Other" rules
+*** PremiumEntry premiumEntry = coverageSummary.getCoveragePremium();
+                if (isNotNull(premiumEntry)) {
+                    BigDecimal annualPremium = premiumEntry.getAnnualPremium();
+                    if (isNotNull(annualPremium)) {
+                        autoCoverageDetailsOnVehicle.setPremium(annualPremium.doubleValue());
+                    } else {
+                        BigDecimal actualPremium = premiumEntry.getActualPremium();
+                        if (isNotNull(actualPremium)) {
+                            autoCoverageDetailsOnVehicle.setPremium(actualPremium.doubleValue());
+                        }
+                    }
+                }
+*** AvailableDeductible availableDeductible = coverageSummary.getDeductible();
+               if (isNotNull(availableDeductible) && isNotNull(availableDeductible.getAmount())) {
+                   autoCoverageDetailsOnVehicle.setDeductible(availableDeductible.getAmount().doubleValue());
+               }
+*** List<Extn> extnList = coverageSummary.getExtn();
+               if (CollectionUtils.isNotEmpty(extnList)) {
+                   for (Extn extn : extnList) {
+                       if (StringUtils.isNotEmpty(extn.getAttrName())) {
+                           autoCoverageDetailsOnVehicle.getExtensions().put(extn.getAttrName(), extn.getAttrValue());
+                       }
+                   }
+               }
+*** AvailableLimit availableLimit = coverageSummary.getLimit();
+               if (isNotNull(availableLimit)) {
+                   if (isNotNull(availableLimit.getIndividualLimitAmount())) {
+                       autoCoverageDetailsOnVehicle.setIndividualLimit(availableLimit.getIndividualLimitAmount().doubleValue());
+                   }
+                   if (isNotNull(availableLimit.getOccurrenceLimitAmount())) {
+                       autoCoverageDetailsOnVehicle.setOccurrenceLimit(availableLimit.getOccurrenceLimitAmount().doubleValue());
+                   }
+                   if (StringUtils.isNotEmpty(availableLimit.getDisplayValue())) {
+                       autoCoverageDetailsOnVehicle.setDisplayValue(availableLimit.getDisplayValue());
+                   }
+               }
+*** List<AvailableLimit> additionalLimits = coverageSummary.getAdditionalLimit();
+               if (CollectionUtils.isNotEmpty(additionalLimits)) {
+                   for (AvailableLimit additionalLimit : additionalLimits) {
+                       CoverageLimit coverageLimit = new CoverageLimit();
+                       coverageLimit.setDescription(additionalLimit.getDescription());
+                       coverageLimit.setDisplayValue(additionalLimit.getDisplayValue());
+                       coverageLimit.setIndividualLimit(additionalLimit.getIndividualLimitAmount().doubleValue());
+                       coverageLimit.setOccurrenceLimit(additionalLimit.getOccurrenceLimitAmount().doubleValue());
+                       autoCoverageDetailsOnVehicle.getAdditionalLimits().add(coverageLimit);
+                   }
+               }
+*** GF coverages
+**** String gf_coverage = autoPolicyDetail.getDataSource() + ":" + (autoPolicyDetail.getRiskState() + ":" + autoCoverage.getCode()).toUpperCase();
+
+            // Check grand father coverage COMP
+            boolean resetDeductibeToZero = false;
+            if (Constants.COMP_GF_COVERAGES.contains(gf_coverage)) {
+                if (autoCoverageDetailsOnVehicle!= null && autoCoverageDetailsOnVehicle.getDeductible() == 50) {
+                    autoCoverage.setGrandFatherCoverage(true);
+                }
+                if (autoCoverageDetailsOnVehicle!= null && autoCoverageDetailsOnVehicle.getDeductible() == -1) {
+                    autoCoverage.setGrandFatherCoverage(true);
+                    resetDeductibeToZero = true;
+                }
+            }
+**** GF CONSTANTS
+     make these risk state rules not generic
+     List<String> COMP_GF_COVERAGES = asList("PAS:VA:COMP", "PAS:MD:COMP", "PAS:PA:COMP");
+     List<String> TOW_GF_COVERAGES = asList("PAS:MD:TOW", "PAS:PA:TOW");
+**** Check grand father coverage TOW and reset the displayValue
+            if (autoCoverage.getCode().equals("TOW") && autoCoverage.isGrandFatherCoverage() && autoCoverage.getDisplayValue().equals("75/0")) {
+                autoCoverage.setDisplayValue("$75/disablement");
+                autoCoverage.setIndividualLimitDelimiter(CoverageDelimiterHelper.getDelimiterForGivenCoverage(
+                        autoPolicyDetail.getRiskState(),
+                        autoCoverage.getCode(),
+                        Constants.INDIVIDUAL_DELIMITER));
+                autoCoverage.setOccurrenceLimitDelimiter(CoverageDelimiterHelper.getDelimiterForGivenCoverage(
+                        autoPolicyDetail.getRiskState(),
+                        autoCoverage.getCode(),
+                        Constants.OCCURRENCE_DELIMITER));
+            }
+*** Deductible
+           if (resetDeductibeToZero) {
+               autoCoverage.setDeductible("0");
+           } else {
+               autoCoverage.setDeductible(String.valueOf(autoCoverageDetailsOnVehicle.getDeductible()));
+           }
+
+           // Check grand father coverage TOW
+           if (Constants.TOW_GF_COVERAGES.contains(gf_coverage)
+                       && autoCoverageDetailsOnVehicle!= null && autoCoverageDetailsOnVehicle.getDisplayValue().equalsIgnoreCase("75/0")) {
+               autoCoverage.setGrandFatherCoverage(true);
+           }
+*** coverages on vehicle but not displayed ... why do we do this
+      // If coverage is not on vehicle, set display of it as FALSE
+              if (autoCoverageDetailsOnVehicle == null) {
+                  autoCoverage.setPresentOnVehicle(false);
+                  this.addToVehicleOrGeneralCoveragesList(vehicle, autoPolicyDetail, metaDataOfCurrentCoverage, autoCoverage);
+                  log.debug("Coverage not on vehicle - adding but making visibility FALSE");
+                  continue;
+              }
+      log.debug("Coverage on vehicle - adding and making visibility TRUE");
+      autoCoverage.setPresentOnVehicle(true);
+*** Limits - dont consider occurrence limit for TOW coverage - applicable for all states
+
+            if(!Constants.LLP.equalsIgnoreCase(autoCoverage.getCode())) {
+                autoCoverage.setIndividualLimit(autoCoverageDetailsOnVehicle.getIndividualLimit());
+            }
+            if(!Constants.TOW.equalsIgnoreCase(autoCoverage.getCode()) && !Constants.LLP.equalsIgnoreCase(autoCoverage.getCode())) {
+                autoCoverage.setOccurrenceLimit(autoCoverageDetailsOnVehicle.getOccurrenceLimit());
+            }
+*** Premium
+            if(autoCoverageDetailsOnVehicle.getPremium() == 0) {
+                autoCoverage.setPremium(Constants.INCLUDED);
+            }else{
+                autoCoverage.setPremium(String.valueOf(autoCoverageDetailsOnVehicle.getPremium()));
+            }
+**** String INCLUDED = "Included";
+*** Set individual limit's delimiter
+            if(autoCoverage.getIndividualLimit() != 0 || autoCoverage.getIndividualLimit() == 0 && (
+                    autoPolicyDetail.getRiskState().equalsIgnoreCase("CA") && 
+                            autoPolicyDetail.getProductCode().equalsIgnoreCase("CHC") && 
+                            autoCoverageDetailsOnVehicle.getCode().equalsIgnoreCase("RNT"))) {
+                autoCoverage.setIndividualLimitDelimiter(CoverageDelimiterHelper.getDelimiterForGivenCoverage(
+                        autoPolicyDetail.getRiskState(),
+                        autoCoverage.getCode(),
+                        Constants.INDIVIDUAL_DELIMITER));
+            }
+**** Const
+     String INDIVIDUAL_DELIMITER = "IndividualDelimiter";
+*** Set occurrence limit's delimiter
+            if (autoCoverage.getOccurrenceLimit() != 0) {
+                autoCoverage.setOccurrenceLimitDelimiter(CoverageDelimiterHelper.getDelimiterForGivenCoverage(
+                        autoPolicyDetail.getRiskState(),
+                        autoCoverage.getCode(),
+                        Constants.OCCURRENCE_DELIMITER));
+            }
+**** Const
+     String OCCURRENCE_DELIMITER = "OccurrenceDelimiter";
+*** CA Select rate changes and CA Choice
+    if (autoPolicyDetail.getRiskState().equalsIgnoreCase("CA") && autoPolicyDetail.getProductCode().equalsIgnoreCase("SEL") && Constants.PAS_CA_SEL_RATE_CHANGES.contains(autoCoverageDetailsOnVehicle.getCode())
+                    || (autoPolicyDetail.getRiskState().equalsIgnoreCase("CA") && autoPolicyDetail.getProductCode().equalsIgnoreCase("CHC") && (autoCoverageDetailsOnVehicle.getCode().equalsIgnoreCase("RNT")))) {
+                autoCoverage.setOccurrenceLimit(0.0);
+                autoCoverage.setDisplayValue(null);
+            }
+*** update coverage label for every state method
+    private void updateCoverageLabel(AutoCoverage autoCoverage, AutoCoverageDetailsOnVehicle autoCoverageDetailsOnVehicle)
+    {
+        // Add glass coverage related label, if applicable for COMP
+        if(Constants.COMPREHENSIVE.equalsIgnoreCase(autoCoverageDetailsOnVehicle.getCode())){
+            if(Constants.YES_SHORT_FORM.equalsIgnoreCase(autoCoverageDetailsOnVehicle.getExtensions().get(Constants.GLASS_INDICATOR))){
+                autoCoverage.setLabel(autoCoverage.getLabel().concat(" (less deductible) Safety Glass ($0 Deductible)"));
+            }else{
+                autoCoverage.setLabel(autoCoverage.getLabel().concat(" (less deductible)"));
+            }
+        }
+
+        // Update label for COLL coverage
+        if(Constants.COLLISION.equalsIgnoreCase(autoCoverageDetailsOnVehicle.getCode())){
+            autoCoverage.setLabel(autoCoverage.getLabel().concat(" (less deductible)"));
+        }
+    }
+*** Suppress occurrence limit and its delimiter and deductible for LLP coverage for the states "CO", "KY", "MT", "OK", "WV" ::::: put this in each state
+            if(Constants.STATES_FOR_GENERAL_POLICY_COVERAGES.contains(autoPolicyDetail.getRiskState())
+                    && autoCoverage.getCode().equals(Constants.LLP))
+            {
+                autoCoverage.setOccurrenceLimit(0);
+                autoCoverage.setDeductible(null);
+                autoCoverage.setOccurrenceLimitDelimiter(null);
+            }
+*** BPIP PIPB coverage patch
+        if(vehicle != null && vehicle.getAutoCoverages() != null) {
+            for (AutoCoverage autoCoverage : vehicle.getAutoCoverages()) {
+                if (autoCoverage.getCode().equals(Constants.PERSONAL_INJURY_PROTECTION_BASIC_KY)) {
+                    AutoCoverageDetailsOnVehicle coverage = coveragesOnVehicle.get(Constants.PERSONAL_INJURY_PROTECTION_BASIC);
+                    if (coverage != null) {
+                        autoCoverage.setDeductible(String.valueOf(coverage.getDeductible()));
+                    }
+                }
+            }
+        }
+** "CT" rules
+* Misc
+

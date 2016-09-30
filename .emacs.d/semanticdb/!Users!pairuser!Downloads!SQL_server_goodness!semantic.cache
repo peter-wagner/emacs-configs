@@ -1,0 +1,16 @@
+;; Object SQL_server_goodness/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SQL_server_goodness/"
+  :tables
+  (list
+    (semanticdb-table "ConnectMSSQLServer.Java"
+      :major-mode 'java-mode
+      :tags nil
+      :file "ConnectMSSQLServer.Java"
+      :pointmax 694
+      :fsize 693
+      :lastmodtime '(22334 19408 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 688 . 694) (IDENTIFIER 683 . 686) (IDENTIFIER 675 . 682) (IDENTIFIER 647 . 674) (IDENTIFIER 636 . 646) (IDENTIFIER 632 . 635) (BRACK_BLOCK 624 . 631) (DOT 623 . 624) (BRACK_BLOCK 618 . 623) (IDENTIFIER 612 . 617) (IDENTIFIER 606 . 611) (PAREN_BLOCK 55 . 605) (BRACK_BLOCK 47 . 54) (DOT 46 . 47) (BRACK_BLOCK 41 . 46) (IDENTIFIER 35 . 40) (IDENTIFIER 28 . 34) (BRACK_BLOCK 18 . 25) (DOT 17 . 18) (BRACK_BLOCK 12 . 17) (IDENTIFIER 6 . 11) (IDENTIFIER 1 . 5))))
+  :file "!Users!pairuser!Downloads!SQL_server_goodness!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

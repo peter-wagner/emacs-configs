@@ -1,0 +1,292 @@
+;; Object services/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "services/"
+  :tables
+  (list
+    (semanticdb-table "CustomerService.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.services" package nil nil [1 44])
+            ("com.aaaie.ds.cds.business.mappers.util.LevelOfDetailsNeeded" include nil nil [46 113])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [114 182])
+            ("com.aaaie.ds.cds.business.mappers.util.PolicyToBeValidatedAgainstCustomerKey" include nil nil [183 267])
+            ("com.aaaie.ds.cds.exceptions.*" include nil nil [268 305])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.PolicyClaimSummaries" include nil nil [306 377])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.PolicyClaimSummary" include nil nil [378 447])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.b2c.CustomerClaimSummary" include nil nil [448 523])
+            ("com.aaaie.ds.cds.model.pbs.PolicyBillingDetails" include nil nil [524 579])
+            ("com.aaaie.ds.cds.model.policybillinghistory.PolicyHistoryResponse" include nil nil [580 653])
+            ("com.aaaie.ds.cds.model.policydetail.LinkedPolicy" include nil nil [654 710])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [711 761])
+            ("com.aaaie.ds.cds.model.policydetail.PolicyDetail" include nil nil [762 818])
+            ("com.aaaie.ds.cds.soa.client.retrievecustomer.Customer" include nil nil [819 880])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [882 927])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [928 974])
+            ("java.util.List" include nil nil [975 997])
+            ("CustomerService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getPolicyDetails" function
+                       (:throws ("CustomerDetailsRetrievalFailureException" "SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [2049 2069])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [2105 2124])
+                            ("policyToBeValidatedAgainstCustomerKeyEnum" variable (:type "PolicyToBeValidatedAgainstCustomerKey") (reparse-symbol formal_parameters) [2160 2239])
+                            ("levelOfDetailsNeededEnum" variable (:type "LevelOfDetailsNeeded") (reparse-symbol formal_parameters) [2275 2320])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2322 2348]))                          
+                        :type "PolicyDetail")
+                        (reparse-symbol interface_member_declaration) [2019 2451])
+                    ("linkPolicy" function
+                       (:throws ("PolicyLinkageFailureException" "PolicyAlreadyLinkedException" "PolicyNotFoundException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [2710 2730])
+                            ("last4DigitPolicyNumber" variable (:type "String") (reparse-symbol formal_parameters) [2760 2789])
+                            ("policiesToBeRetrievedEnum" variable (:type "PoliciesToBeRetrieved") (reparse-symbol formal_parameters) [2819 2866])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2868 2894]))                          
+                        :type "LinkedPolicy")
+                        (reparse-symbol interface_member_declaration) [2686 3000])
+                    ("getPolicyBillingHistory" function
+                       (:throws ("CustomerDetailsRetrievalFailureException" "SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [3300 3320])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3322 3348]))                          
+                        :type "PolicyHistoryResponse")
+                        (reparse-symbol interface_member_declaration) [3254 3451])
+                    ("getPolicy" function
+                       (:arguments 
+                          ( ("" variable (:type "policyList") (reparse-symbol formal_parameters) [3487 3497])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [3499 3518]))                          
+                        :type "Policy")
+                        (reparse-symbol interface_member_declaration) [3457 3520])
+                    ("getClaimDetails" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerId" variable (:type "String") (reparse-symbol formal_parameters) [3564 3581])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [3583 3602])
+                            ("claimNumber" variable (:type "String") (reparse-symbol formal_parameters) [3604 3622])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3624 3650]))                          
+                        :type "PolicyClaimSummaries")
+                        (reparse-symbol interface_member_declaration) [3527 3741])
+                    ("getClaimDetails" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("policyNum" variable (:type "String") (reparse-symbol formal_parameters) [4128 4144])
+                            ("type" variable (:type "String") (reparse-symbol formal_parameters) [4145 4156])
+                            ("claimNumber" variable (:type "String") (reparse-symbol formal_parameters) [4157 4175]))                          
+                        :type "PolicyClaimSummaries")
+                        (reparse-symbol interface_member_declaration) [4091 4265])
+                    ("getCustomerDetails" function
+                       (:throws ("CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [5068 5088]))                          
+                        :type "Customer")
+                        (reparse-symbol interface_member_declaration) [5040 5139]))                  
+                :type "interface")
+                nil [999 5141]))          
+      :file "CustomerService.java"
+      :pointmax 5142
+      :fsize 5141
+      :lastmodtime '(22338 31169 0 0)
+      :unmatched-syntax '((SEMICOLON 4841 . 4842) (COMMA 4799 . 4800) (COMMA 4780 . 4781) (THROWS 4753 . 4759) (PAREN_BLOCK 4705 . 4752) (GT 4686 . 4687) (IDENTIFIER 4663 . 4667) (LT 4667 . 4668) (GT 3485 . 3486) (IDENTIFIER 3474 . 3478) (LT 3478 . 3479) (SEMICOLON 3247 . 3248) (COMMA 3228 . 3229) (COMMA 3206 . 3207) (THROWS 3159 . 3165) (PAREN_BLOCK 3047 . 3146) (GT 3023 . 3024) (IDENTIFIER 3006 . 3010) (LT 3010 . 3011) (SEMICOLON 2679 . 2680) (COMMA 2660 . 2661) (THROWS 2633 . 2639) (PAREN_BLOCK 2609 . 2632) (GT 2584 . 2585) (IDENTIFIER 2567 . 2571) (LT 2571 . 2572) (SEMICOLON 2012 . 2013) (COMMA 1993 . 1994) (COMMA 1974 . 1975) (COMMA 1952 . 1953) (THROWS 1905 . 1911) (PAREN_BLOCK 1731 . 1892) (GT 1712 . 1713) (LT 1691 . 1692) (SEMICOLON 1680 . 1681) (COMMA 1661 . 1662) (COMMA 1639 . 1640) (THROWS 1592 . 1598) (PAREN_BLOCK 1287 . 1579) (GT 1267 . 1268) (LT 1254 . 1255) (SEMICOLON 1243 . 1244) (COMMA 1221 . 1222) (THROWS 1174 . 1180) (PAREN_BLOCK 1062 . 1161) (GT 1049 . 1050) (IDENTIFIER 1038 . 1042) (LT 1042 . 1043)))
+    (semanticdb-table "PaymentService.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.services" package nil nil [1 44])
+            ("com.aaaie.ds.cds.exceptions.CustomerDetailsRetrievalFailureException" include nil nil [46 122])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [123 176])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [177 233])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutoPayEnrollmentStatus" include nil nil [234 308])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollStatusRequest" include nil nil [309 386])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollmentDetailResponse" include nil nil [387 469])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.request.PolicyPaymentRequest" include nil nil [470 548])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.response.PolicyPaymentResponse" include nil nil [549 629])
+            ("com.aaaie.ds.cds.model.wallet.LastPaymentTransaction" include nil nil [630 690])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [692 737])
+            ("PaymentService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("issueDirectPayment" function
+                       (:throws ("SystemErrorException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("policyPaymentRequest" variable (:type "PolicyPaymentRequest") (reparse-symbol formal_parameters) [818 859])
+                            ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [860 880])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [881 907])
+                            ("application" variable (:type "String") (reparse-symbol formal_parameters) [908 926]))                          
+                        :type "PolicyPaymentResponse")
+                        (reparse-symbol interface_member_declaration) [777 1010])
+                    ("autopayEnrollment" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("autopayEnrollStatusRequest" variable (:type "AutopayEnrollStatusRequest") (reparse-symbol formal_parameters) [1058 1111])
+                            ("transactionType" variable (:type "String") (reparse-symbol formal_parameters) [1112 1134])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [1135 1161]))                          
+                        :type "AutoPayEnrollmentStatus")
+                        (reparse-symbol interface_member_declaration) [1016 1264])
+                    ("autopayEnrollmentDetail" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [1326 1346])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [1348 1367])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [1368 1394]))                          
+                        :type "AutopayEnrollmentDetailResponse")
+                        (reparse-symbol interface_member_declaration) [1270 1497])
+                    ("getPaymentTransaction" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [1548 1568])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [1570 1589])
+                            ("dataSource" variable (:type "String") (reparse-symbol formal_parameters) [1590 1607])
+                            ("policyType" variable (:type "String") (reparse-symbol formal_parameters) [1608 1625])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [1626 1652]))                          
+                        :type "LastPaymentTransaction")
+                        (reparse-symbol interface_member_declaration) [1503 1754]))                  
+                :type "interface")
+                nil [739 1757]))          
+      :file "PaymentService.java"
+      :pointmax 1758
+      :fsize 1757
+      :lastmodtime '(22338 24474 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "DocumentService.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.services" package nil nil [1 44])
+            ("com.aaaie.ds.cds.business.mappers.util.DocumentsToBeRetrieved" include nil nil [46 115])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [116 184])
+            ("com.aaaie.ds.cds.exceptions.CustomerDetailsRetrievalFailureException" include nil nil [185 261])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [262 315])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [316 372])
+            ("com.aaaie.ds.cds.model.documents.DocumentLocation" include nil nil [373 430])
+            ("com.aaaie.ds.cds.model.documents.PolicyDocuments" include nil nil [431 487])
+            ("com.aaaie.ds.cds.model.policydetail.PolicyDetail" include nil nil [488 544])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [546 591])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [592 638])
+            ("java.util.Date" include nil nil [639 661])
+            ("java.util.List" include nil nil [662 684])
+            ("DocumentService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getIDCardsForPolicy" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [1389 1409])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [1460 1479])
+                            ("documentsToBeRetrievedEnum" variable (:type "DocumentsToBeRetrieved") (reparse-symbol formal_parameters) [1530 1579])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [1580 1606]))                          
+                        :type "PolicyDocuments")
+                        (reparse-symbol interface_member_declaration) [1353 1729])
+                    ("getDocumentsForPolicy" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [1773 1793])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [1844 1863])
+                            ("documentsToBeRetrievedEnum" variable (:type "DocumentsToBeRetrieved") (reparse-symbol formal_parameters) [1914 1963])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [1964 1990]))                          
+                        :type "PolicyDocuments")
+                        (reparse-symbol interface_member_declaration) [1735 2113])
+                    ("getDocumentLocation" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [2156 2176])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [2178 2197])
+                            ("objectId" variable (:type "String") (reparse-symbol formal_parameters) [2199 2214])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2215 2241]))                          
+                        :type "DocumentLocation")
+                        (reparse-symbol interface_member_declaration) [2119 2364])
+                    ("getDocumentsForPolicy" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [2409 2429])
+                            ("policyDetail" variable (:type "PolicyDetail") (reparse-symbol formal_parameters) [2480 2505])
+                            ("billType" variable (:type "String") (reparse-symbol formal_parameters) [2506 2521])
+                            ("transactionDate" variable (:type "Date") (reparse-symbol formal_parameters) [2522 2542])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2543 2569]))                          
+                        :type "DocumentLocation")
+                        (reparse-symbol interface_member_declaration) [2370 2692])
+                    ("getPolicyDeclarationURL" function
+                       (:throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [2739 2759])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [2761 2780])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2781 2807]))                          
+                        :type "DocumentLocation")
+                        (reparse-symbol interface_member_declaration) [2698 2930]))                  
+                :type "interface")
+                nil [686 2932]))          
+      :file "DocumentService.java"
+      :pointmax 2933
+      :fsize 2932
+      :lastmodtime '(22338 24474 0 0)
+      :unmatched-syntax '((SEMICOLON 1277 . 1278) (COMMA 1235 . 1236) (COMMA 1216 . 1217) (THROWS 1189 . 1195) (PAREN_BLOCK 868 . 1156) (GT 845 . 846) (IDENTIFIER 825 . 829) (LT 829 . 830)))
+    (semanticdb-table "WalletService.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.services" package nil nil [1 44])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [47 100])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [101 157])
+            ("com.aaaie.ds.cds.model.wallet.PaymentWallet" include nil nil [158 209])
+            ("com.aaaie.ds.cds.model.wallet.request.WalletRequest" include nil nil [210 269])
+            ("com.aaaie.ds.cds.model.wallet.response.WalletResponse" include nil nil [270 331])
+            ("WalletService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getWalletDetail" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [400 420]))                          
+                        :type "PaymentWallet")
+                        (reparse-symbol interface_member_declaration) [370 468])
+                    ("createWallets" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("walletRequest" variable (:type "WalletRequest") (reparse-symbol formal_parameters) [503 530]))                          
+                        :type "WalletResponse")
+                        (reparse-symbol interface_member_declaration) [474 578]))                  
+                :type "interface")
+                nil [333 592]))          
+      :file "WalletService.java"
+      :pointmax 594
+      :fsize 593
+      :lastmodtime '(22028 23560 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "AgentBillingService.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.services" package nil nil [1 44])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [46 99])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [100 156])
+            ("com.aaaie.ds.cds.model.agent.policy.activity.ActivityHistory" include nil nil [157 225])
+            ("com.aaaie.ds.cds.model.agent.policy.billing.history.BillingHistory" include nil nil [226 300])
+            ("com.aaaie.ds.cds.model.pbs.PolicyBillingDetails" include nil nil [301 356])
+            ("java.util.List" include nil nil [358 380])
+            ("AgentBillingService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getBillingHistory" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("agentId" variable (:type "String") (reparse-symbol formal_parameters) [1026 1040])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [1042 1061])
+                            ("dataSource" variable (:type "String") (reparse-symbol formal_parameters) [1063 1080])
+                            ("policyType" variable (:type "String") (reparse-symbol formal_parameters) [1082 1099]))                          
+                        :type "BillingHistory")
+                        (reparse-symbol interface_member_declaration) [993 1148])
+                    ("getActivityHistory" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("agentId" variable (:type "String") (reparse-symbol formal_parameters) [1189 1203])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [1205 1224])
+                            ("dataSource" variable (:type "String") (reparse-symbol formal_parameters) [1226 1243])
+                            ("policyType" variable (:type "String") (reparse-symbol formal_parameters) [1245 1262]))                          
+                        :type "ActivityHistory")
+                        (reparse-symbol interface_member_declaration) [1154 1311]))                  
+                :type "interface")
+                nil [424 1313]))          
+      :file "AgentBillingService.java"
+      :pointmax 1314
+      :fsize 1313
+      :lastmodtime '(22286 33643 0 0)
+      :unmatched-syntax '((SEMICOLON 986 . 987) (COMMA 967 . 968) (THROWS 940 . 946) (PAREN_BLOCK 846 . 939) (GT 819 . 820) (LT 798 . 799) (SEMICOLON 787 . 788) (COMMA 768 . 769) (THROWS 741 . 747) (PAREN_BLOCK 665 . 740) (GT 646 . 647) (LT 625 . 626) (SEMICOLON 614 . 615) (COMMA 595 . 596) (THROWS 568 . 574) (PAREN_BLOCK 511 . 567) (GT 492 . 493) (IDENTIFIER 467 . 471) (LT 471 . 472))))
+  :file "!Users!pairuser!dev!CDS-API!src!main!java!com!aaaie!ds!cds!business!services!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

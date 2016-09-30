@@ -1,0 +1,41 @@
+;; Object pf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pf/"
+  :tables
+  (list
+    (semanticdb-table "App.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.aaaie.pf" package nil nil [1 22])
+            ("java.io.*" include nil nil [24 41])
+            ("java.lang.*" include nil nil [42 61])
+            ("java.net.*" include nil nil [62 80])
+            ("org.apache.http.params.HttpConnectionParams" include nil nil [755 755])
+            ("org.apache.http.params.HttpParams" include nil nil [755 755])
+            ("App" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [898 964])
+                    ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [994 1007]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [970 1067]))                  
+                :type "class")
+                nil [875 1069]))          
+      :file "App.java"
+      :pointmax 1070
+      :fsize 1101
+      :lastmodtime '(22336 64863 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!pairuser!dev!pf!src!main!java!com!aaaie!pf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

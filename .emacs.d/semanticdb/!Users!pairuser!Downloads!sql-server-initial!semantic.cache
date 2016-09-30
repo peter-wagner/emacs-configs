@@ -1,0 +1,40 @@
+;; Object sql-server-initial/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sql-server-initial/"
+  :tables
+  (list
+    (semanticdb-table "ConnectMSSQLServer.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("java.sql.Connection" include nil nil [1 28])
+            ("java.sql.DriverManager" include nil nil [29 59])
+            ("java.sql.ResultSet" include nil nil [60 86])
+            ("java.sql.Statement" include nil nil [87 113])
+            ("ConnectMSSQLServer" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("dbConnect" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("db_connect_string" variable (:type "String") (reparse-symbol formal_parameters) [175 199]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [153 1577])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1607 1620]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1583 1844]))                  
+                :type "class")
+                nil [115 1846]))          
+      :file "ConnectMSSQLServer.java"
+      :pointmax 1846
+      :fsize 1845
+      :lastmodtime '(22334 20245 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!pairuser!Downloads!sql-server-initial!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

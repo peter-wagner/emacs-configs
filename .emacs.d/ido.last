@@ -1,0 +1,497 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/pairuser/workspace/ds-ezpay-custom-element/src/" . "scss/")
+ ("/Users/pairuser/workspace/ds-connect-framework/service-template/src/leiningen/" . "new/")
+ ("/Users/pairuser/workspace/ds-connect-framework/service-template/src/" . "leiningen/")
+ ("/Users/pairuser/workspace/ds-connect-framework/service-template/" . "src/")
+ ("/Users/pairuser/workspace/digital-connect-template/resources/leiningen/new/" . "digital_connect_service/")
+ ("/Users/pairuser/workspace/digital-connect-template/resources/leiningen/" . "new/")
+ ("/Users/pairuser/workspace/digital-connect-template/resources/" . "leiningen/")
+ ("/Users/pairuser/workspace/digital-connect-template/src/leiningen/" . "new/")
+ ("/Users/pairuser/workspace/digital-connect-template/src/" . "leiningen/")
+ ("/Users/pairuser/workspace/digital-connect-template/" . "resources/")
+ ("/Users/pairuser/workspace/ds-connect-framework/src/framework/" . "test/")
+ ("/Users/pairuser/workspace/ds-connect-framework/test/framework/" . "test/")
+ ("/Users/pairuser/workspace/ds-connect-framework/test/" . "framework/")
+ ("/Users/pairuser/workspace/ds-connect-framework/src/" . "framework/")
+ ("/Users/pairuser/workspace/ds-connect-framework/" . "bin/")
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/target/" . "coverage/")
+ ("/Users/pairuser/workspace/ds-connect-policies/test/" . "policies/")
+ ("/Users/pairuser/workspace/ds-connect-policies/" . "test-resources/")
+ ("/Users/pairuser/workspace/ds-connect-policies/src/" . "policies/")
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/test/" . "ds_connect_coverages_service/")
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/src/" . "ds_connect_coverages_service/")
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/" . "src/")
+ ("/Users/pairuser/workspace/ds-connect-customer-search/" . "src/")
+ ("/Users/pairuser/workspace/ds-connect-customer-search/test/" . "customer_search/")
+ ("/Users/pairuser/workspace/ds-connect-customer-search/src/" . "customer_search/")
+ ("/Users/pairuser/workspace/ds-cds-envoy/test/" . "ds_cds_envoy/")
+ ("/Users/pairuser/workspace/ds-cds-envoy/src/" . "ds_cds_envoy/")
+ ("/Users/pairuser/workspace/ds-cds-envoy/" . "test/")
+ ("/Users/pairuser/workspace/ds-connect-policies-service/resources/" . "templates/")
+ ("/Users/pairuser/workspace/ds-connect-policies-service/src/" . "ds_connect_policies_service/")
+ ("/Users/pairuser/workspace/ds-connect-policies-service/test/" . "ds_connect_policies_service/")
+ ("/Users/pairuser/workspace/ds-connect-policies-service/" . "test/")
+ ("/Users/pairuser/workspace/ds-connect-customers-service/" . "src/")
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/" . "src/")
+ ("/Users/pairuser/workspace/ds-connect-customers-service/test/" . "ds_connect_customers_service/")
+ ("/Users/pairuser/workspace/ds-connect-customers-service/src/" . "ds_connect_customers_service/")
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/test/" . "identity_middleware/")
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/src/" . "identity_middleware/")
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/" . "src/")
+ ("/Users/pairuser/workspace/ds-connect-core/src/" . "ds_connect_core/")
+ ("/Users/pairuser/workspace/ds-connect-core/" . "src/")
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/test/" . "redirect_middleware/")
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/src/" . "redirect_middleware/")
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/" . "test/")
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/src/" . "status_middleware/")
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/test/" . "status_middleware/")
+ ("/Users/pairuser/workspace/ds-architecture/" . "digital-connect/")
+ ("/Users/pairuser/workspace/ds-ddc-identity-middleware/test/" . "ds_ddc_identity_middleware/")
+ ("/Users/pairuser/workspace/ds-ddc-identity-middleware/" . "test/")
+ ("/Users/pairuser/workspace/ds-ddc-identity-middleware/src/" . "ds_ddc_identity_middleware/")
+ ("/Users/pairuser/workspace/ds-cds-clojure-reference/" . "test/")
+ ("/Users/pairuser/workspace/ds-cds-clojure-reference/src/" . "client_data_services_reference/")
+ ("/Users/pairuser/workspace/ds-cds-clojure-reference/test/" . "client_data_services_reference/")
+ ("/Users/pairuser/workspace/" . "ds-connect-framework/")
+ ("/Users/pairuser/Downloads/" . "tmp/")
+ ("/Users/pairuser/dev/pf/src/test/java/com/aaaie/" . "prawler/")
+ ("/Users/pairuser/dev/pf/src/test/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/pf/src/test/java/" . "com/")
+ ("/Users/pairuser/dev/pf/src/test/" . "java/")
+ ("/Users/pairuser/dev/pf/src/" . "test/")
+ ("/Users/pairuser/dev/pf/" . "src/")
+ ("/Users/pairuser/dev/pf/src/main/java/com/aaaie/" . "pf/")
+ ("/Users/pairuser/dev/pf/src/main/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/pf/src/main/java/" . "com/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/main/resources/META-INF/wsdl/" . "v1/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/main/resources/META-INF/" . "wsdl/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/main/resources/" . "META-INF/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/main/java/com/aaaie/ds/" . "cds/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/main/java/com/aaaie/" . "ds/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/main/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/main/java/" . "com/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/main/" . "resources/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/src/" . "main/")
+ ("/Users/pairuser/dev/ds-cds-libraries/ds-cds-retrieve-wallet-detail-library/" . "src/")
+ ("/Users/pairuser/dev/ds-cds-libraries/" . "ds-cds-retrieve-wallet-detail-library/")
+ ("/Users/pairuser/dev/ds-architecture/directaccess/" . "src/")
+ ("/Users/pairuser/dev/ds-architecture/" . "directaccess/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/resources/" . "PERF/")
+ ("/Users/pairuser/dev/matchroutes/src/main/java/com/aaaie/" . "matchroutes/")
+ ("/Users/pairuser/dev/matchroutes/src/main/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/matchroutes/src/main/java/" . "com/")
+ ("/Users/pairuser/dev/matchroutes/src/main/" . "java/")
+ ("/Users/pairuser/dev/matchroutes/" . "src/")
+ ("/Users/pairuser/dev/matchroutes/src/test/java/com/aaaie/" . "matchroutes/")
+ ("/Users/pairuser/dev/matchroutes/src/test/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/matchroutes/src/test/java/" . "com/")
+ ("/Users/pairuser/dev/matchroutes/src/test/" . "java/")
+ ("/Users/pairuser/dev/matchroutes/src/" . "main/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/java/com/aaaie/ds/web/service/" . "impl/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/ds/cds/business/" . "services/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/ID-card/src/" . "js/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/ID-card/" . "src/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/payments/src/" . "js/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/payments/" . "src/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/aaaie-claims/src/" . "js/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/aaaie-claims/" . "src/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/webapp/WEB-INF/tiles/" . "template/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/webapp/WEB-INF/" . "tiles/")
+ ("/Users/pairuser/dev/javascript-core/" . "src/")
+ ("/Users/pairuser/dev/ds-security-core/src/main/java/com/aaaie/ds/cds/security/interceptor/" . "client/")
+ ("/Users/pairuser/dev/ds-security-core/src/main/java/com/aaaie/ds/cds/security/" . "interceptor/")
+ ("/Users/pairuser/dev/ds-security-core/src/main/java/com/aaaie/ds/cds/" . "security/")
+ ("/Users/pairuser/dev/ds-security-core/src/main/java/com/aaaie/ds/" . "cds/")
+ ("/Users/pairuser/dev/ds-security-core/src/main/java/com/aaaie/" . "ds/")
+ ("/Users/pairuser/dev/ds-security-core/src/main/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/ds-security-core/src/main/java/" . "com/")
+ ("/Users/pairuser/dev/ds-security-core/src/main/" . "java/")
+ ("/Users/pairuser/dev/ds-security-core/src/" . "main/")
+ ("/Users/pairuser/dev/ds-security-core/" . "src/")
+ ("/etc/" . "apache2/")
+ ("/var/log/" . "apache2/")
+ ("/var/" . "log/")
+ ("/sudo::/etc/" . "apache2/")
+ ("/sudo::/" . "etc/")
+ ("/Users/pairuser/dev/CDS-API/src/test/java/com/aaaie/ds/cds/dataProvider/database/" . "dao/")
+ ("/Users/pairuser/dev/CDS-API/src/test/resources/TEST/" . "agent/")
+ ("/Users/pairuser/dev/jdbc/" . "com/")
+ ("/Users/pairuser/dev/CDS-API/src/test/resources/" . "META-INF/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/ds/cds/dataProvider/database/dao/" . "impl/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/ds/cds/dataProvider/" . "database/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/ds/cds/model/" . "autopayEnrollDetail/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/ds/cds/dataProvider/database/" . "dao/")
+ ("/opt/DigitalServices/WLP/" . "logs/")
+ ("/opt/" . "DigitalServices/")
+ ("/usr/local/wlp/usr/servers/defaultServer/" . "logs/")
+ ("/usr/local/wlp/usr/servers/" . "defaultServer/")
+ ("/usr/local/wlp/usr/" . "servers/")
+ ("/usr/local/wlp/" . "usr/")
+ ("/Users/pairuser/apps/wlp/usr/servers/" . "server1/")
+ ("/Users/pairuser/apps/wlp/usr/" . "servers/")
+ ("/Users/pairuser/apps/wlp/dev/" . "api/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/tutorial-card/dist/aaaie-tutorial-card/" . "latest/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/tutorial-card/dist/" . "aaaie-tutorial-card/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/tutorial-card/" . "dist/")
+ ("/Users/pairuser/dev/cheezy-idp/src/" . "sql/")
+ ("/Users/pairuser/dev/cheezy-idp/" . "src/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/test/java/com/aaaie/ds/cds/controller/mobile/" . "service/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/test/java/com/aaaie/ds/cds/controller/" . "mobile/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/test/java/com/aaaie/ds/cds/" . "controller/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/test/java/com/aaaie/ds/" . "cds/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/test/java/com/aaaie/" . "ds/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/test/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/test/java/" . "com/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/test/" . "java/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/src/" . "test/")
+ ("/Users/pairuser/dev/CDS-Mobile-Controller/" . "src/")
+ ("/Users/pairuser/dev/spring-da-portal/src/test/" . "java/")
+ ("/Users/pairuser/dev/CDS-API/src/test/java/com/aaaie/ds/cds/dataProvider/" . "impl/")
+ ("/Users/pairuser/dev/thirdparty/cool/" . "fun/")
+ ("/Users/pairuser/dev/thirdparty/" . "cool/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/ds/cds/service/" . "impl/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/ds/cds/" . "service/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/ds/" . "cds/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/aaaie/" . "ds/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/CDS-API/src/main/java/" . "com/")
+ ("/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/" . "security/")
+ ("/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/" . "lib/")
+ ("/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/" . "jre/")
+ ("/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/" . "Home/")
+ ("/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/" . "Contents/")
+ ("/Library/Java/JavaVirtualMachines/" . "jdk1.8.0_45.jdk/")
+ ("/Library/Java/" . "JavaVirtualMachines/")
+ ("/Library/" . "Java/")
+ ("/Users/pairuser/dev/CDS-API/src/main/webapp/" . "META-INF/")
+ ("/Users/pairuser/dev/CDS-API/src/main/resources/" . "PERF/")
+ ("/Users/pairuser/dev/CDS-API/src/main/" . "resources/")
+ ("/Users/pairuser/dev/CDS-API/src/test/java/com/aaaie/ds/cds/controller/" . "routing/")
+ ("/Users/pairuser/dev/CDS-API/src/test/java/com/aaaie/ds/cds/" . "service/")
+ ("/Users/pairuser/dev/CDS-API/src/test/java/com/aaaie/ds/" . "cds/")
+ ("/Users/pairuser/dev/CDS-API/src/test/java/com/aaaie/" . "ds/")
+ ("/Users/pairuser/dev/CDS-API/src/test/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/CDS-API/src/test/java/" . "com/")
+ ("/Users/pairuser/dev/CDS-API/src/test/" . "java/")
+ ("/Users/pairuser/dev/CDS-API/src/" . "main/")
+ ("/Users/pairuser/dev/CDS-API/" . "src/")
+ ("/Users/pairuser/dev/spring-da-portal/src/test/java/com/aaaie/ds/web/" . "controller/")
+ ("/Users/pairuser/dev/spring-da-portal/src/test/java/com/aaaie/ds/" . "web/")
+ ("/Users/pairuser/dev/spring-da-portal/src/test/java/com/aaaie/" . "ds/")
+ ("/Users/pairuser/dev/spring-da-portal/src/test/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/spring-da-portal/src/test/java/" . "com/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/aaaie-contact-us/" . "src/")
+ ("/Users/pairuser/dev/ds-b2c-custom-elements/" . "faq-card/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/java/com/aaaie/ds/" . "web/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/java/com/aaaie/" . "ds/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/java/com/" . "aaaie/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/java/" . "com/")
+ ("/Users/pairuser/dev/spring-da-portal/src/" . "main/")
+ ("/Users/pairuser/dev/spring-da-portal/" . "src/")
+ ("/opt/DigitalServices/" . "WLP/")
+ ("/Users/pairuser/dev/cheese-wiz/src/" . "cheese_wiz/")
+ ("/Users/pairuser/dev/cheese-wiz/" . "src/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/webapp/" . "WEB-INF/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/" . "resources/")
+ ("/Users/pairuser/dev/spring-da-portal/src/main/java/com/aaaie/ds/web/" . "filter/")
+ ("/Users/pairuser/dev/spring-da-portal/target/selfservice/" . "WEB-INF/")
+ ("/Users/pairuser/dev/spring-da-portal/target/" . "selfservice/")
+ ("/Users/pairuser/apps/wlp/" . "usr/")
+ ("/Users/pairuser/apps/" . "wlp/")
+ ("/Users/pairuser/apps/wlp/usr/servers/server1/" . "logs/")
+ ("/usr/local/apache-tomcat-8.0.33/conf/Catalina/" . "localhost/")
+ ("/usr/local/apache-tomcat-8.0.33/conf/" . "Catalina/")
+ ("/Users/pairuser/dev/cheese-board/src-clojure/" . "cheese_board/")
+ ("/Users/pairuser/dev/DigitalServices/WLP/" . "logs/")
+ ("/Users/pairuser/dev/DigitalServices/" . "WLP/")
+ ("/usr/local/apache-tomcat-8.0.33/" . "conf/")
+ ("/usr/local/" . "wlp/")
+ ("/usr/" . "local/")
+ ("/" . "Users/")
+ ("/Users/pairuser/dev/cheese-board/src-js/js/" . "containers/")
+ ("/Users/pairuser/dev/cheese-board/src-js/" . "js/")
+ ("/Users/pairuser/.emacs.d/" . "elpa/")
+ ("/Users/pairuser/" . "workspace/")
+ ("/Users/pairuser/dev/cheese-board/src/js/" . "components/")
+ ("/Users/pairuser/dev/cheese-board/src/" . "js/")
+ ("/Users/pairuser/dev/cheese-board/" . "src-clojure/")
+ ("/Users/pairuser/dev/" . "spring-da-portal/")
+ ("/Users/" . "pairuser/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/pairuser/workspace/ds-ezpay-custom-element/"
+ "/Users/pairuser/workspace/ds-ezpay-custom-element/src/scss/"
+ "/Users/pairuser/workspace/ds-b2c-custom-elements/aaaie-claims/"
+ "/Users/pairuser/workspace/ds-connect-framework/"
+ "/Users/pairuser/workspace/ds-connect-framework/bin/"
+ "/Users/pairuser/workspace/ds-connect-framework/service-template/src/leiningen/new/"
+ "/Users/pairuser/workspace/ds-connect-framework/service-template/"
+ "/Users/pairuser/workspace/digital-connect-template/resources/leiningen/new/digital_connect_service/"
+ "/Users/pairuser/workspace/digital-connect-template/"
+ "/Users/pairuser/workspace/digital-connect-template/src/leiningen/new/"
+ "/Users/pairuser/workspace/ds-connect-framework/src/framework/"
+ "/Users/pairuser/workspace/ds-connect-coverages-service/"
+ "/Users/pairuser/workspace/ds-connect-framework/src/framework/test/"
+ "/Users/pairuser/workspace/ds-connect-coverages-service/src/ds_connect_coverages_service/"
+ "/Users/pairuser/workspace/ds-connect-coverages-service/test/ds_connect_coverages_service/"
+ "/Users/pairuser/workspace/ds-connect-framework/test/framework/"
+ "/Users/pairuser/workspace/ds-connect-customers-service/src/ds_connect_customers_service/"
+ "/Users/pairuser/workspace/ds-connect-framework/test/framework/test/"
+ "/Users/pairuser/workspace/ds-connect-customers-service/"
+ "/Users/pairuser/workspace/ds-connect-policies-service/test/ds_connect_policies_service/"
+ "/Users/pairuser/workspace/ds-connect-customers-service/test/ds_connect_customers_service/"
+ "/Users/pairuser/workspace/ds-connect-policies-service/src/ds_connect_policies_service/"
+ "/Users/pairuser/workspace/ds-connect-policies-service/"
+ "/Users/pairuser/workspace/ds-connect-framework/test-resources/"
+ "/Users/pairuser/workspace/ds-connect-identity-middleware/"
+ "/Users/pairuser/workspace/ds-connect-policies/"
+ "/Users/pairuser/workspace/ds-connect-customer-search/"
+ "/Users/pairuser/workspace/ds-connect-framework/test/ds_connect_framework/"
+ "/Users/pairuser/workspace/ds-connect-framework/src/ds_connect_framework/"
+ "/Users/pairuser/.lein/"
+ "/Users/pairuser/workspace/ds-connect-identity-middleware/src/identity_middleware/"
+ "/Users/pairuser/workspace/ds-connect-policies-service/test-resources/"
+ "/Users/pairuser/workspace/ds-connect-coverages-service/target/coverage/"
+ "/Users/pairuser/workspace/ds-connect-policies/test/policies/"
+ "/Users/pairuser/workspace/ds-connect-policies/test-resources/"
+ "/Users/pairuser/workspace/ds-connect-policies/src/policies/"
+ "/Users/pairuser/workspace/ds-connect-coverages-service/test-resources/"
+ "/Users/pairuser/workspace/ds-connect-customers-service/test-resources/"
+ "/Users/pairuser/workspace/ds-connect-customer-search/test/customer_search/"
+ "/Users/pairuser/workspace/ds-connect-customer-search/src/customer_search/"
+ "/Users/pairuser/workspace/ds-cds-envoy/"
+ "/Users/pairuser/workspace/ds-connect-identity-middleware/test/identity_middleware/"
+ "/Users/pairuser/workspace/ds-connect-customer-search/test/ds_connect_customer_search/"
+ "/Users/pairuser/workspace/ds-connect-customer-search/src/ds_connect_customer_search/"
+ "/Users/pairuser/workspace/ds-cds-envoy/test/ds_cds_envoy/"
+ "/Users/pairuser/workspace/ds-cds-envoy/src/ds_cds_envoy/"
+ "/Users/pairuser/workspace/ds-connect-policies-service/resources/templates/"
+ "/Users/pairuser/"
+ "/Users/pairuser/workspace/ds-connect-router/dev-space/"
+ "/Users/pairuser/workspace/ds-connect-router/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".travis.yml"
+ "#.travis.yml#"
+ ".gitignore"
+ "bower.json"
+ "aaaie-ezpay.scss"
+ "Gruntfile.js"
+ "package.json"
+ "create-service.sh"
+ "digital_connect_service.clj"
+ "project.clj"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/pairuser/workspace/ds-ezpay-custom-element/" (22508 13576 0 0) "test/" "src/" "sonar.properties" "README.md" "package.json" "node_modules/" "Gruntfile.js" "dist/" "bower_components/" "bower.json" ".travis.yml" ".sass-cache/" ".gitignore" ".git/" "#.travis.yml#" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-ezpay-custom-element/src/" (22508 5686 0 0) "tmpl/" "scss/" "js/" "aaaie-ezpay.html" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-ezpay-custom-element/src/scss/" (22508 5678 0 0) "aaaie-ezpay.scss" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-b2c-custom-elements/aaaie-claims/" (22507 64529 0 0) "webpack.production.config.js" "webpack.config.js" "stats.json" "src/" "spec.webpack.js" "sonar-project.properties" "README.md" "package.json" "npm-debug.log" "node_modules/" "mocha.opts" "lib/" "karma.conf.js" "index.html" "Gruntfile.js" "claims-tomcat-deploy.sh" "build.gradle" "_test/" ".stylelintrc" ".sonar/" ".gitignore" ".eslintrc" ".eslintignore" ".babelrc" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-services-ci-scripts/" (22506 58443 0 0) "settings.xml" "script_ext.sh" "README.md" "mac_mini_ds_homepage.sh" "mac_mini_b2c_express.sh" "mac_mini_b2c.sh" "jenkins_tagSelectorDeploy.groovy" "jenkins_returnListOfApplications.groovy" "jenkins_javascript_core.sh" "jenkins_environmentSelector.groovy" "jenkins_elements_transfer.sh" "jenkins_asset_transfer.sh" "docker_restart_liberty.sh" "docker_restart.sh" "docker_deploy_iPortal.sh" "docker_deploy_cdsapi.sh" "docker_copy_jcl.sh" "docker_copy_elements.sh" "docker_copy_b2b_elements.sh" "docker_copy_assets.sh" "digitalserviceplatform.sh" "digitalservice_b2c_portal_dynamic_tag.sh" "devjenkins_static_assets.sh" "devjenkins_mobile_controller_executive.sh" "devjenkins_mobile_controller.sh" "devjenkins_javascript_core.sh" "devjenkins_cds_api_v1.sh" "devjenkins_cds_api.sh" "devjenkins_b2c_portal.sh" "devjenkins_b2c_custom_elements_fast.sh" "devjenkins_b2c_custom_elements_da_130416047.sh" "devjenkins_b2c_custom_elements.sh" "devjenkins_b2b_portal.sh" "devjenkins_b2b_custom_elements_fast.sh" "devjenkins_b2b_custom_elements.sh" "deploy_b2c_elements.sh" "deploy_b2b_elements.sh" "deploy_artifact.sh" "deploy-custom-elements.sh" ".pairs" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/bin/" (22506 54441 0 0) "create-service.sh" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/" (22506 54433 0 0) "test-resources/" "test/" "target/" "src/" "service-template/" "resources/" "README.md" "project.clj" "pom.xml" "LICENSE" "doc/" "deploy.sh" "CHANGELOG.md" "bin/" ".nrepl-port" ".lein-failures" ".hgignore" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-connect-template/resources/leiningen/new/digital_connect_service/" (22506 50534 0 0) "README.md" "project.clj" "install-framework.sh" "gitignore" "deploy.yml" "deploy.sh" "core.clj" "core-test.clj" "codeclimate.yml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/service-template/src/leiningen/new/" (22506 54109 0 0) "digital_connect_service.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/service-template/src/leiningen/" (22506 54109 0 0) "new/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/service-template/src/" (22506 54109 0 0) "leiningen/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/service-template/" (22506 54164 0 0) "src/" "resources/" "project.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/" (22506 42746 0 0) "test/" "t3tr0s-slides/" "spring-da-portal/" "s3cmd/" "ReduxSimpleStarter/" "react-slick/" "react-image-gallery/" "Quote-2.0_05312016/" "Quote-2.0_05272016/" "Quote-2.0/" "policies-gh.zip" "mypolicy-unregister/" "master.zip" "java-saml/" "FakeSoapServer/" "environ/" "DS-Website/" "ds-InstallCert/" "ds-front-end-one-ui/" "ds-connect-router/" "ds-connect-policies-service/" "ds-connect-policies/" "ds-connect-identity-middleware/" "ds-connect-framework/" "ds-connect-customers-service/" "ds-connect-customer-search/" "ds-connect-coverages-service/" "ds-connect-core/" "ds-connect-401-redirect-middleware/" "ds-cds-libraries/" "ds-cds-envoy/" "ds-cds-clojure-reference/" "ds-b2c-custom-elements/" "ds-architecture/" "dpl-template/" "digital-services-homepage/" "digital-connect-template/" "Dev-Portal/" "Design-Website/" "Design-Pattern-Library/" "cheese-board/" "cds-logs/" "CDS-API/" "b2c-portal/" "b2b-portal/" "aaaie-One-UI/" "aaaie-design-portal/" "aaaie-cheese-nips/" ".DS_Store" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-connect-template/" (22506 54014 0 0) "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "LICENSE" "CHANGELOG.md" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-connect-template/src/leiningen/new/" (22506 53927 0 0) "digital_connect_service.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/target/coverage/" (22505 47639 0 0) "index.html" "ds_connect_coverages_service/" "coverage.txt" "coverage.css" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customer-search/" (22501 31155 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "node_modules/" "LICENSE" "lein" "doc/" "deploy.sh" "CHANGELOG.md" ".nrepl-port" ".lein-failures" ".hgignore" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies/" (22501 31412 0 0) "test-resources/" "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "policies.iml" "node_modules/" "LICENSE" "lein" "doc/" "deploy.sh" "CHANGELOG.md" ".nrepl-port" ".lein-failures" ".idea/" ".hgignore" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/" (22501 31576 0 0) "test-resources/" "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "LICENSE" "identity-middleware.iml" "doc/" "deploy.sh" "CHANGELOG.md" ".lein-failures" ".idea/" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/test-resources/" (22505 39362 0 0) "search-results.json" "rppd.xml" "rppd-not-xml.xml" "rppd-bad.xml" "rapd.xml" "rapd-not-xml.xml" "rapd-bad.xml" "logback.xml" "cq5-response.json" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customers-service/test/ds_connect_customers_service/" (22505 22097 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/test/framework/" (22505 41839 0 0) "test/" "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/test/ds_connect_coverages_service/" (22506 40683 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/src/framework/test/" (22505 46809 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/src/framework/" (22506 40967 0 0) "test/" "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-connect-template/resources/leiningen/new/" (22506 42746 0 0) "digital_connect_service/" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-connect-template/resources/leiningen/" (22506 42746 0 0) "new/" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-connect-template/resources/" (22506 42746 0 0) "leiningen/" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-connect-template/src/leiningen/" (22506 42746 0 0) "new/" "../" "./")
+
+ ("/Users/pairuser/workspace/digital-connect-template/src/" (22506 42746 0 0) "leiningen/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/" (22505 48266 0 0) "test-resources/" "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "lein" "doc/" "deploy-to-connect-coverages-dev.yml" "deploy-to-connect-coverages-dev.sh" "CHANGELOG.md" "cf.tar.gz" "cf" ".nrepl-port" ".lein-failures" ".hgignore" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/src/ds_connect_coverages_service/" (22505 47384 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customers-service/src/ds_connect_customers_service/" (22505 29423 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/test/framework/test/" (22501 22074 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customers-service/" (22505 28295 0 0) "test-resources/" "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "LICENSE" "lein" "install-locally.sh" "doc/" "deploy-to-connect-customer-dev.yml" "deploy-to-connect-customer-dev.sh" "customers-service.iml" "CHANGELOG.md" "cf.tar.gz" "cf" ".nrepl-port" ".lein-failures" ".idea/" ".hgignore" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies-service/test/ds_connect_policies_service/" (22501 46816 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies-service/src/ds_connect_policies_service/" (22501 46789 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies-service/" (22501 45896 0 0) "test-resources/" "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "lein" "ds-connect-policies-service.iml" "doc/" "deploy-to-connect-policies-dev.yml" "deploy-to-connect-policies-dev.sh" "CHANGELOG.md" "cf.tar.gz" "cf" ".nrepl-port" ".lein-failures" ".idea/" ".hgignore" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/test/" (22498 58093 0 0) "framework/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/src/" (22498 58084 0 0) "framework/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/src/identity_middleware/" (22497 52458 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/test/ds_connect_framework/" (22498 57970 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-framework/src/ds_connect_framework/" (22498 56932 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/" (22497 38863 0 0) "workspace/" "SoapUI-Tutorials/" "soapui-settings.xml" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "IdeaProjects/" "Downloads/" "Documents/" "Desktop/" "default-soapui-workspace.xml" "bin/" "b.txt" "Applications/" "a.txt" ".vscode/" ".viminfo" ".v8flags.5.0.71.52.pairuser.json" ".v8flags.5.0.71.35.pairuser.json" ".v8flags.4.6.85.31.pairuser.json" ".travis/" ".Trash/" ".ssh/" ".soapuios/" ".ports.json" ".org/" ".oracle_jre_usage/" ".npmrc" ".npm/" ".node_repl_history" ".node-gyp/" ".m2/" ".local/" ".lesshst" ".lein/" ".hgignore_global" ".gradle/" ".gitignore_global" ".gitconfig.old" ".gitconfig" ".gem/" ".forever/" ".emacs.d/" ".emacs" ".DS_Store" ".config/" ".CFUserTextEncoding" ".cf/" ".cache/" ".bashrc" ".bash_sessions/" ".bash_history" ".babel.json" ".atom/" ".android/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies-service/test-resources/" (22497 47214 0 0) "rppd.xml" "rppd-bad.xml" "rapd.xml" "rapd-bad.xml" "logback.xml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies/test-resources/" (22497 27312 0 0) "rppd.xml" "rppd-not-xml.xml" "rppd-bad.xml" "rapd.xml" "rapd-not-xml.xml" "rapd-bad.xml" "logback.xml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies/test/policies/" (22497 30512 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/target/" (22496 11299 0 0) "stale/" "coverage/" "classes/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies/src/policies/" (22497 26828 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/test-resources/" (22497 24570 0 0) "search-results.json" "rppd.xml" "rppd-bad.xml" "rapd.xml" "rapd-bad.xml" "logback.xml" "cq5-response.json" "../" "./")
+
+ ("/Users/pairuser/.lein/" (22497 24286 0 0) "self-installs/" "repl-port" "profiles.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customers-service/test-resources/" (22497 23951 0 0) "logback.xml" "../" "./")
+
+ ("/Users/pairuser/.org/" (22491 2680 0 0) "notes.org" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customer-search/src/customer_search/" (22491 5679 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customer-search/test/customer_search/" (22491 5753 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-cds-envoy/" (22488 8557 0 0) "test-resources/" "test/" "target/" "src/" "sonar-project.properties" "resources/" "README.md" "project.clj" "ds-cds-envoy.iml" "doc/" "CHANGELOG.md" ".lein-failures" ".lein-env" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies/test/" (22488 25533 0 0) "policies/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies/src/" (22488 25527 0 0) "policies/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/test/" (22487 5930 0 0) "ds_connect_coverages_service/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-coverages-service/src/" (22487 5930 0 0) "ds_connect_coverages_service/" "../" "./")
+
+ ("/Users/pairuser/Downloads/" (22482 62987 0 0) "WebStorm-2016.1.3.dmg" "VSCode-darwin-stable.zip" "Vimeo Docs.docx" "tmp/" "SQLProMSSQL.1.0.67.app.zip" "SQLPro for MSSQL.app/" "SourceTree_2.2.4.dmg" "slack-2.0.2.zip" "ShiftIt.app/" "ShiftIt-1.6.3.zip" "selenium-server-standalone-2.53.0.jar" "Search R5 API Reference Guide.docx" "ScrollReverser-1.7.2.zip" "Screenhero.dmg" "Screen Shot 2016-07-11 at 10.21.10 AM.png" "SafariTechnologyPreview.dmg" "prd-b2c-sso.crt.txt" "plantuml.jar" "Persona Sketches 04292016.pptx" "Payment Agreement - Michael Dean.doc" "pattern-intro.svg" "nodejs_buildpack-cached-v1.5.15.zip" "nodejs_buildpack-cached-v1.5.15/" "node-v5.7.1.tar.gz" "node-v5.7.1/" "MFPscan.pdf" "lcov.info" "kitty-kitties-9109284-500-460.jpg" "Karabiner-10.21.0.dmg" "ideaIU-2016.1.1.dmg" "ideaIC-2016.2.2.dmg" "Hotel Zelos Credit Card Authorization Form.pdf" "Evernote_RELEASE_6.7_453545.dmg" "emacs-config/" "Emacs-24.5-1-universal.dmg" "elements.svg" "DS-site-comps.zip" "DS-site-comps 2/" "DS-site-comps/" "DPL-template-comp.png" "DPL-template-comp (1).png" "devjenkins_b2c_custom_elements.sh" "devjenkins_b2b_portal.sh" "Development Procedure.docx" "design-language - level 3 copy.png" "cf-cli-installer_6.21.1_osx.pkg" "cf-cli-installer_6.18.1_osx.pkg" "Brave.dmg" "Atom.app/" "atom-mac.zip" "apache-tomcat-8.5.4.zip" "apache-tomcat-8.5.4/" "96x34_AAA_DS_Logo_Black.svg" "14 design-ecosys_ level 2.png" "13-designPortal---Level-1-Portfolio-cards.png" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customer-search/src/" (22483 4804 0 0) "customer_search/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customer-search/test/" (22483 4812 0 0) "customer_search/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customer-search/test/ds_connect_customer_search/" (22483 4530 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customer-search/src/ds_connect_customer_search/" (22483 4749 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-cds-envoy/src/ds_cds_envoy/" (22482 60888 0 0) "ssl.clj" "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-cds-envoy/test/ds_cds_envoy/" (22472 23424 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-cds-envoy/test/" (22472 22246 0 0) "ds_cds_envoy/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-cds-envoy/src/" (22472 22246 0 0) "ds_cds_envoy/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-router/dev-space/" (22473 63284 0 0) "Staticfile" "nginx.conf" "deploy-to-connect-router-dev.yml" "deploy-to-connect-router-dev.sh" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies-service/resources/templates/" (22480 36202 0 0) "RetrievePropertyPolicyDetails.xml" "RetrieveAutoPolicyDetails.xml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies-service/resources/" (22479 15306 0 0) "templates/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies-service/src/" (22479 1812 0 0) "ds_connect_policies_service/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-policies-service/test/" (22479 1812 0 0) "ds_connect_policies_service/" "../" "./")
+
+ ("/Users/pairuser/.emacs.d/" (22478 57882 0 0) "tramp" "themes/" "site-lisp/" "semanticdb/" "places" "ido.last" "eshell/" "elpa/" "backups/" "auto-save-list/" "ac-comphist.dat" "abbrev_defs" ".smex-items" ".recentf" ".emacs.desktop.lock" ".emacs.desktop" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-router/" (22473 63295 0 0) "dev-space/" ".git/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/test-resources/" (22471 14519 0 0) "logback.xml" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/test/identity_middleware/" (22471 16592 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-customers-service/resources/" (22463 7867 0 0) "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/src/redirect_middleware/" (22468 40319 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/src/" (22468 40366 0 0) "redirect_middleware/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/src/status_middleware/" (22469 50517 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/" (22469 51401 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "LICENSE" "doc/" "CHANGELOG.md" ".nrepl-port" ".lein-failures" ".hgignore" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/test/redirect_middleware/" (22468 40336 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/test/" (22468 40378 0 0) "redirect_middleware/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/" (22468 40389 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "pom.xml" "LICENSE" "doc/" "CHANGELOG.md" ".nrepl-port" ".lein-failures" ".hgignore" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/" (22431 30486 0 0) "xgfdtarl/" "Shared/" "pairuser/" "mac/" "gpnusuk/" "gnmhill/" "gn98hei/" "gm74stu/" "gkf8bam/" "gfdtarl/" "g9ldoug/" "g71dean/" "g62turc/" ".localized" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/test/ds_connect_401_redirect_middleware/" (22468 40336 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-redirect-middleware/src/ds_connect_401_redirect_middleware/" (22468 40319 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/src/" (22468 38486 0 0) "identity_middleware/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-identity-middleware/test/" (22468 38496 0 0) "identity_middleware/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/test/status_middleware/" (22468 37823 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/test/" (22468 37645 0 0) "status_middleware/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/src/" (22468 37629 0 0) "status_middleware/" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/src/ds_connect_status_middleware/" (22468 37275 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/test/ds_connect_status_middleware/" (22468 37249 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/test/ds_connect_401_status_middleware/" (22468 36904 0 0) "core_test.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-401-status-middleware/src/ds_connect_401_status_middleware/" (22462 7541 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-core/src/ds_connect_core/" (22462 10844 0 0) "core.clj" "../" "./")
+
+ ("/Users/pairuser/workspace/ds-connect-core/" (22462 10861 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" "CHANGELOG.md" ".hgignore" ".gitignore" ".git/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

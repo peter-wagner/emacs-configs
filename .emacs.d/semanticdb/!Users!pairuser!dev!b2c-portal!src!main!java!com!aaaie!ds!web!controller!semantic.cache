@@ -1,0 +1,229 @@
+;; Object controller/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "controller/"
+  :tables
+  (list
+    (semanticdb-table "AbstractController.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("com.aaaie.ds.web.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.security.config.SecurityConfiguration" include nil nil [39 101])
+            ("com.aaaie.ds.cds.security.util.Constants" include nil nil [102 150])
+            ("com.aaaie.ds.web.util.UAgentInfo" include nil nil [151 191])
+            ("org.apache.commons.collections.MapUtils" include nil nil [192 239])
+            ("org.apache.commons.lang.StringUtils" include nil nil [240 283])
+            ("org.json.JSONArray" include nil nil [284 310])
+            ("org.json.JSONException" include nil nil [311 341])
+            ("org.json.JSONObject" include nil nil [342 369])
+            ("org.slf4j.Logger" include nil nil [370 394])
+            ("org.slf4j.LoggerFactory" include nil nil [395 426])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [427 489])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [490 548])
+            ("org.springframework.ui.Model" include nil nil [549 585])
+            ("javax.annotation.Resource" include nil nil [587 620])
+            ("javax.inject.Inject" include nil nil [621 648])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [649 694])
+            ("java.io.*" include nil nil [695 712])
+            ("java.net.URL" include nil nil [713 733])
+            ("java.nio.charset.Charset" include nil nil [734 766])
+            ("java.util.*" include nil nil [767 786])
+            ("AbstractController" type
+               (:typemodifiers ("public" "abstract")
+                :interfaces ("Constants" "com.aaaie.ds.web.util.Constants")
+                :members 
+                  ( ("cmsCq5Url" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [891 918])
+                    ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [924 1005])
+                    ("securityConfiguration" variable
+                       (:typemodifiers ("protected")
+                        :type "SecurityConfiguration")
+                        (reparse-symbol class_member_declaration) [1023 1077])
+                    ("uAgentInfo" variable
+                       (:typemodifiers ("protected")
+                        :type "UAgentInfo")
+                        (reparse-symbol class_member_declaration) [1098 1130])
+                    ("apiServiceUrl" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1191 1220])
+                    ("apiScoreSummaryUrl" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1291 1325])
+                    ("onlineGarageAllVehiclesURL" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1390 1432])
+                    ("onlineGarageSpecificVehicleURL" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1496 1542])
+                    ("fakeSoapUrl" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1585 1612])
+                    ("recordFinancialUrl" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1663 1697])
+                    ("setCmsCq5Url" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("cmsCq5Url" variable (:type "String") (reparse-symbol formal_parameters) [1757 1773]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1732 1818])
+                    ("testmode" variable
+                       (:typemodifiers ("protected")
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [1858 1885])
+                    ("url" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1931 1952])
+                    ("ACSIdx" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1990 2014])
+                    ("PartnerSpId" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2057 2086])
+                    ("referer" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2125 2150])
+                    ("association" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2193 2222])
+                    ("etsKey" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2257 2281])
+                    ("ubiACSIdx" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2323 2350])
+                    ("ubietsKey" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2389 2416])
+                    ("ubiEnabled" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2458 2487])
+                    ("fakeSoapEnabled" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2538 2572])
+                    ("cq5UbiPilotUsersUrl" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2627 2664])
+                    ("customerContactServiceURL" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2732 2775])
+                    ("aaaNationalClubRedirectionUrl" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2920 2967])
+                    ("tourFeature" variable
+                       (:typemodifiers ("protected")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3010 3040])
+                    ("setCommonAttributes" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("model" variable (:type "Model") (reparse-symbol formal_parameters) [3081 3092])
+                            ("httpServletRequest" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3093 3130]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3046 6291])
+                    ("getTileDefinitions" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("httpServletRequest" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [6328 6365]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6296 6741])
+                    ("populateVersions" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("model" variable (:type "Model") (reparse-symbol formal_parameters) [6775 6786]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6746 7014])
+                    ("ubiFlag" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("clubCode" variable (:type "String") (reparse-symbol formal_parameters) [7044 7059])
+                            ("custRegId" variable (:type "String") (reparse-symbol formal_parameters) [7060 7076]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [7020 7206])
+                    ("toTitleCase" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("inputString" variable (:type "String") (reparse-symbol formal_parameters) [7246 7264]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7213 8190])
+                    ("hasApostrophe" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("firstName" variable (:type "String") (reparse-symbol formal_parameters) [8277 8293])
+                            ("lastName" variable (:type "String") (reparse-symbol formal_parameters) [8295 8310]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8241 8567])
+                    ("toUpperCase" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("inputString" variable (:type "String") (reparse-symbol formal_parameters) [8606 8624]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8573 8756])
+                    ("isUbiEnabledUser" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("clubCode" variable (:type "String") (reparse-symbol formal_parameters) [8795 8810])
+                            ("custRegId" variable (:type "String") (reparse-symbol formal_parameters) [8811 8827]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8762 8918])
+                    ("getCustServiceContactNumber" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("clubCode" variable (:type "String") (reparse-symbol formal_parameters) [8966 8981]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8924 10075])
+                    ("getCQ5UBIPilotUserList" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("cq5UbiPilotUsersUrl" variable (:type "String") (reparse-symbol formal_parameters) [10120 10146])
+                            ("clubCode" variable (:type "String") (reparse-symbol formal_parameters) [10147 10162])
+                            ("custRegId" variable (:type "String") (reparse-symbol formal_parameters) [10163 10179]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [10081 13691])
+                    ("readJsonFromUrl" function
+                       (:throws ("IOException" "JSONException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [13916 13926]))                          
+                        :type "JSONObject")
+                        (reparse-symbol class_member_declaration) [13875 14318])
+                    ("readAll" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("rd" variable (:type "Reader") (reparse-symbol formal_parameters) [14497 14506]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [14467 14713]))                  
+                :type "class")
+                nil [789 14719]))          
+      :file "AbstractController.java"
+      :pointmax 14721
+      :fsize 14720
+      :lastmodtime '(22337 63768 0 0)
+      :unmatched-syntax '((STRING_LITERAL 2988 . 3004) (IDENTIFIER 2980 . 2985) (EQ 2986 . 2987) (STRING_LITERAL 2880 . 2914) (IDENTIFIER 2872 . 2877) (EQ 2878 . 2879) (SEMICOLON 2858 . 2859) (GT 2844 . 2845) (COMMA 2836 . 2837) (IDENTIFIER 2781 . 2790) (PRIVATE 2818 . 2825) (LT 2829 . 2830) (STRING_LITERAL 2798 . 2812) (IDENTIFIER 2791 . 2795) (EQ 2796 . 2797) (STRING_LITERAL 2689 . 2726) (IDENTIFIER 2681 . 2686) (EQ 2687 . 2688) (STRING_LITERAL 2593 . 2621) (IDENTIFIER 2585 . 2590) (EQ 2591 . 2592) (STRING_LITERAL 2508 . 2532) (IDENTIFIER 2500 . 2505) (EQ 2506 . 2507) (STRING_LITERAL 2437 . 2452) (IDENTIFIER 2429 . 2434) (EQ 2435 . 2436) (STRING_LITERAL 2371 . 2383) (IDENTIFIER 2363 . 2368) (EQ 2369 . 2370) (STRING_LITERAL 2302 . 2317) (IDENTIFIER 2294 . 2299) (EQ 2300 . 2301) (STRING_LITERAL 2243 . 2251) (IDENTIFIER 2235 . 2240) (EQ 2241 . 2242) (STRING_LITERAL 2171 . 2187) (IDENTIFIER 2163 . 2168) (EQ 2169 . 2170) (STRING_LITERAL 2107 . 2119) (IDENTIFIER 2099 . 2104) (EQ 2105 . 2106) (STRING_LITERAL 2035 . 2051) (IDENTIFIER 2027 . 2032) (EQ 2033 . 2034) (STRING_LITERAL 1973 . 1984) (IDENTIFIER 1965 . 1970) (EQ 1971 . 1972) (STRING_LITERAL 1906 . 1925) (IDENTIFIER 1898 . 1903) (EQ 1904 . 1905) (STRING_LITERAL 1839 . 1852) (IDENTIFIER 1831 . 1836) (EQ 1837 . 1838) (STRING_LITERAL 1710 . 1726) (STRING_LITERAL 1633 . 1657) (IDENTIFIER 1625 . 1630) (EQ 1631 . 1632) (STRING_LITERAL 1563 . 1579) (IDENTIFIER 1555 . 1560) (EQ 1561 . 1562) (STRING_LITERAL 1453 . 1490) (IDENTIFIER 1445 . 1450) (EQ 1451 . 1452) (STRING_LITERAL 1346 . 1384) (IDENTIFIER 1338 . 1343) (EQ 1344 . 1345) (STRING_LITERAL 1241 . 1285) (IDENTIFIER 1233 . 1238) (EQ 1239 . 1240) (STRING_LITERAL 1151 . 1185) (IDENTIFIER 1143 . 1148) (EQ 1149 . 1150))))
+  :file "!Users!pairuser!dev!b2c-portal!src!main!java!com!aaaie!ds!web!controller!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1261 @@
+;; Object controller/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "controller/"
+  :tables
+  (list
+    (semanticdb-table "DirectAccessController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("java.io.*" include nil nil [39 56])
+            ("java.net.MalformedURLException" include nil nil [57 95])
+            ("java.net.URL" include nil nil [96 116])
+            ("java.nio.charset.StandardCharsets" include nil nil [117 158])
+            ("java.nio.file.*" include nil nil [159 182])
+            ("java.util.*" include nil nil [183 202])
+            ("java.util.List" include nil nil [203 225])
+            ("java.util.regex.Pattern" include nil nil [226 257])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [259 304])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [305 351])
+            ("javax.ws.rs.DefaultValue" include nil nil [352 384])
+            ("javax.ws.rs.QueryParam" include nil nil [385 415])
+            ("org.apache.http.HttpResponse" include nil nil [417 453])
+            ("org.apache.http.client.ClientProtocolException" include nil nil [454 508])
+            ("org.apache.http.client.HttpClient" include nil nil [509 550])
+            ("org.apache.http.client.methods.HttpGet" include nil nil [551 597])
+            ("org.apache.http.impl.client.HttpClientBuilder" include nil nil [598 651])
+            ("org.perf4j.aop.Profiled" include nil nil [652 683])
+            ("org.slf4j.Logger" include nil nil [684 708])
+            ("org.slf4j.LoggerFactory" include nil nil [709 740])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [741 803])
+            ("org.springframework.core.io.InputStreamResource" include nil nil [804 859])
+            ("org.springframework.http.HttpHeaders" include nil nil [860 904])
+            ("org.springframework.http.HttpStatus" include nil nil [905 948])
+            ("org.springframework.http.MediaType" include nil nil [949 991])
+            ("org.springframework.http.ResponseEntity" include nil nil [992 1039])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [1040 1100])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [1101 1163])
+            ("org.springframework.web.bind.annotation.RequestMethod" include nil nil [1164 1225])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [1226 1288])
+            ("scala.util.parsing.combinator.token.Tokens" include nil nil [1290 1340])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [1342 1379])
+            ("com.aaaie.ds.cds.cache.annotations.Cacheable" include nil nil [1380 1432])
+            ("com.aaaie.ds.cds.exceptions.*" include nil nil [1433 1470])
+            ("DirectAccessController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1626 1711])
+                    ("getJwtFromPingFederateSTS" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "NoContentException")
+                        :arguments 
+                          ( ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2053 2079])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [2081 2109]))                          )
+                        (reparse-symbol class_member_declaration) [2027 2379]))                  
+                :type "class")
+                nil [1584 2381]))          
+      :file "DirectAccessController.java"
+      :pointmax 2384
+      :fsize 2383
+      :lastmodtime '(22338 24474 0 0)
+      :unmatched-syntax '((RSHIFT 2024 . 2026) (LT 2017 . 2018) (IDENTIFIER 1760 . 1775) (IDENTIFIER 1907 . 1917) (IDENTIFIER 1944 . 1953) (PUBLIC 1993 . 1999) (LT 2012 . 2013) (STRING_LITERAL 1960 . 1987) (IDENTIFIER 1954 . 1957) (EQ 1958 . 1959) (IDENTIFIER 1918 . 1931) (EQ 1932 . 1933) (BRACE_BLOCK 1834 . 1901) (IDENTIFIER 1823 . 1831) (EQ 1832 . 1833) (EQ 1801 . 1802) (COMMA 1792 . 1793) (STRING_LITERAL 1784 . 1792) (IDENTIFIER 1776 . 1781) (EQ 1782 . 1783) (IDENTIFIER 1568 . 1583)))
+    (semanticdb-table "CustomersController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.DAO.ClaimDAO" include nil nil [39 76])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [77 114])
+            ("com.aaaie.ds.cds.business.mappers.util.DocumentsToBeRetrieved" include nil nil [115 184])
+            ("com.aaaie.ds.cds.business.mappers.util.LevelOfDetailsNeeded" include nil nil [185 252])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [253 321])
+            ("com.aaaie.ds.cds.business.mappers.util.PolicyToBeValidatedAgainstCustomerKey" include nil nil [322 406])
+            ("com.aaaie.ds.cds.business.services.CustomerService" include nil nil [407 465])
+            ("com.aaaie.ds.cds.business.services.DocumentService" include nil nil [466 524])
+            ("com.aaaie.ds.cds.cache.annotations.Cacheable" include nil nil [525 577])
+            ("com.aaaie.ds.cds.exceptions.*" include nil nil [578 615])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.ClaimCoverage" include nil nil [616 680])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.PolicyClaimSummaries" include nil nil [681 752])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.PolicyClaimSummary" include nil nil [753 822])
+            ("com.aaaie.ds.cds.model.documents.DocumentLocation" include nil nil [823 880])
+            ("com.aaaie.ds.cds.model.documents.PolicyDocuments" include nil nil [881 937])
+            ("com.aaaie.ds.cds.model.pbs.PolicyBillingDetails" include nil nil [938 993])
+            ("com.aaaie.ds.cds.model.policybillinghistory.PolicyHistoryResponse" include nil nil [994 1067])
+            ("com.aaaie.ds.cds.model.policydetail.LinkedPolicy" include nil nil [1068 1124])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [1125 1175])
+            ("com.aaaie.ds.cds.model.policydetail.PolicyDetail" include nil nil [1176 1232])
+            ("com.aaaie.ds.cds.util.ClaimUtils" include nil nil [1233 1273])
+            ("com.aaaie.ds.cds.util.SafeLiteSignatureUtil" include nil nil [1274 1325])
+            ("com.aaaie.ds.cds.util.TimeStampUtil" include nil nil [1326 1369])
+            ("org.springframework.http.HttpHeaders" include nil nil [1370 1414])
+            ("org.apache.http.HttpResponse" include nil nil [1415 1451])
+            ("org.apache.http.client.ClientProtocolException" include nil nil [1452 1506])
+            ("org.perf4j.aop.Profiled" include nil nil [1507 1538])
+            ("org.slf4j.Logger" include nil nil [1539 1563])
+            ("org.slf4j.LoggerFactory" include nil nil [1564 1595])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [1596 1658])
+            ("org.springframework.core.io.InputStreamResource" include nil nil [1659 1714])
+            ("org.springframework.http.MediaType" include nil nil [1715 1757])
+            ("org.springframework.http.ResponseEntity" include nil nil [1758 1805])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [1806 1866])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [1867 1929])
+            ("org.springframework.web.bind.annotation.RequestMethod" include nil nil [1930 1991])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [1992 2054])
+            ("org.apache.http.client.HttpClient" include nil nil [2055 2096])
+            ("org.apache.http.client.methods.HttpGet" include nil nil [2097 2143])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [2144 2189])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [2190 2236])
+            ("javax.ws.rs.DefaultValue" include nil nil [2237 2269])
+            ("javax.ws.rs.QueryParam" include nil nil [2270 2300])
+            ("java.io.*" include nil nil [2301 2318])
+            ("java.net.MalformedURLException" include nil nil [2319 2357])
+            ("java.net.URL" include nil nil [2358 2378])
+            ("java.nio.charset.StandardCharsets" include nil nil [2379 2420])
+            ("java.nio.file.*" include nil nil [2421 2444])
+            ("java.util.List" include nil nil [2445 2467])
+            ("org.springframework.http.HttpStatus" include nil nil [2468 2511])
+            ("org.apache.http.impl.client.HttpClientBuilder" include nil nil [2512 2565])
+            ("scala.util.parsing.combinator.token.Tokens" include nil nil [2566 2616])
+            ("java.util.*" include nil nil [2618 2637])
+            ("java.util.regex.Pattern" include nil nil [2638 2669])
+            ("CustomersController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [2871 2953])
+                    ("getBillingDetails" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "NoContentException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [3575 3588])
+                            ("autopay" variable (:type "boolean") (reparse-symbol formal_parameters) [3636 3651])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3653 3679])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [3681 3709]))                          )
+                        (reparse-symbol class_member_declaration) [3536 4140])
+                    ("getPoliciesSummary" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [4578 4591])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [4593 4619])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [4621 4649]))                          )
+                        (reparse-symbol class_member_declaration) [4538 5253])
+                    ("getPolicies" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [5677 5690])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [5692 5718]))                          )
+                        (reparse-symbol class_member_declaration) [5644 6181])
+                    ("getPolicyDetails" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [6856 6869])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [6892 6904])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [6906 6932]))                          )
+                        (reparse-symbol class_member_declaration) [6818 7814])
+                    ("getDiscounts" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [8373 8386])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [8388 8414]))                          )
+                        (reparse-symbol class_member_declaration) [8339 8870])
+                    ("linkPolicy" function
+                       (:constructor-flag t
+                        :throws ("PolicyLinkageFailureException" "PolicyAlreadyLinkedException" "PolicyNotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [9696 9709])
+                            ("" variable (:type "last4DigitPolicyNumber") (reparse-symbol formal_parameters) [9732 9754])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [9756 9782]))                          )
+                        (reparse-symbol class_member_declaration) [9664 10236])
+                    ("getDocuments" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [10646 10659])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [10682 10694])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [10696 10722]))                          )
+                        (reparse-symbol class_member_declaration) [10612 11202])
+                    ("getDocument" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [11494 11507])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [11530 11542])
+                            ("" variable (:type "objectId") (reparse-symbol formal_parameters) [11565 11573])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [11575 11601]))                          )
+                        (reparse-symbol class_member_declaration) [11461 12199])
+                    ("getInputStreamResourceResponseEntity" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("documentURL" variable (:type "String") (reparse-symbol formal_parameters) [12286 12304]))                          )
+                        (reparse-symbol class_member_declaration) [12249 14375])
+                    ("getPolicyBillingHistory" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [14816 14829])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [14831 14857]))                          )
+                        (reparse-symbol class_member_declaration) [14771 15266])
+                    ("getClaimsSummary" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [16000 16013])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [16015 16041])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [16043 16071]))                          )
+                        (reparse-symbol class_member_declaration) [15962 16567])
+                    ("getClaimAddress" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [17420 17433])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [17456 17468])
+                            ("" variable (:type "claimNumber") (reparse-symbol formal_parameters) [17490 17501])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [17502 17528])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [17530 17558]))                          )
+                        (reparse-symbol class_member_declaration) [17383 17972]))                  
+                :type "class")
+                nil [2832 17975]))          
+      :file "CustomersController.java"
+      :pointmax 17978
+      :fsize 17977
+      :lastmodtime '(22338 31169 0 0)
+      :unmatched-syntax '((GT 17381 . 17382) (IDENTIFIER 17052 . 17067) (IDENTIFIER 17264 . 17274) (IDENTIFIER 17301 . 17310) (PUBLIC 17341 . 17347) (LT 17360 . 17361) (STRING_LITERAL 17317 . 17335) (IDENTIFIER 17311 . 17314) (EQ 17315 . 17316) (IDENTIFIER 17275 . 17288) (EQ 17289 . 17290) (BRACE_BLOCK 17191 . 17258) (IDENTIFIER 17180 . 17188) (EQ 17189 . 17190) (EQ 17147 . 17148) (COMMA 17138 . 17139) (STRING_LITERAL 17076 . 17138) (IDENTIFIER 17068 . 17073) (EQ 17074 . 17075) (RSHIFT 15959 . 15961) (LT 15940 . 15941) (IDENTIFIER 15656 . 15671) (IDENTIFIER 15839 . 15849) (IDENTIFIER 15876 . 15885) (PUBLIC 15916 . 15922) (LT 15935 . 15936) (STRING_LITERAL 15892 . 15910) (IDENTIFIER 15886 . 15889) (EQ 15890 . 15891) (IDENTIFIER 15850 . 15863) (EQ 15864 . 15865) (BRACE_BLOCK 15766 . 15833) (IDENTIFIER 15755 . 15763) (EQ 15764 . 15765) (EQ 15722 . 15723) (COMMA 15713 . 15714) (STRING_LITERAL 15680 . 15713) (IDENTIFIER 15672 . 15677) (EQ 15678 . 15679) (GT 14769 . 14770) (IDENTIFIER 14470 . 14485) (IDENTIFIER 14653 . 14662) (IDENTIFIER 14691 . 14701) (PUBLIC 14728 . 14734) (LT 14747 . 14748) (IDENTIFIER 14702 . 14715) (EQ 14716 . 14717) (STRING_LITERAL 14669 . 14685) (IDENTIFIER 14663 . 14666) (EQ 14667 . 14668) (BRACE_BLOCK 14580 . 14647) (IDENTIFIER 14569 . 14577) (EQ 14578 . 14579) (EQ 14536 . 14537) (COMMA 14527 . 14528) (STRING_LITERAL 14494 . 14527) (IDENTIFIER 14486 . 14491) (EQ 14492 . 14493) (GT 12247 . 12248) (PRIVATE 12205 . 12212) (LT 12227 . 12228) (GT 11459 . 11460) (IDENTIFIER 11208 . 11223) (IDENTIFIER 11380 . 11389) (PUBLIC 11418 . 11424) (LT 11439 . 11440) (STRING_LITERAL 11396 . 11412) (IDENTIFIER 11390 . 11393) (EQ 11394 . 11395) (EQ 11316 . 11317) (COMMA 11307 . 11308) (STRING_LITERAL 11232 . 11307) (IDENTIFIER 11224 . 11229) (EQ 11230 . 11231) (GT 10610 . 10611) (IDENTIFIER 10300 . 10315) (IDENTIFIER 10502 . 10512) (IDENTIFIER 10539 . 10548) (PUBLIC 10575 . 10581) (LT 10594 . 10595) (STRING_LITERAL 10555 . 10569) (IDENTIFIER 10549 . 10552) (EQ 10553 . 10554) (IDENTIFIER 10513 . 10526) (EQ 10527 . 10528) (BRACE_BLOCK 10429 . 10496) (IDENTIFIER 10418 . 10426) (EQ 10427 . 10428) (EQ 10385 . 10386) (COMMA 10376 . 10377) (STRING_LITERAL 10324 . 10376) (IDENTIFIER 10316 . 10321) (EQ 10322 . 10323) (GT 9662 . 9663) (IDENTIFIER 9343 . 9358) (IDENTIFIER 9559 . 9569) (IDENTIFIER 9596 . 9605) (PUBLIC 9630 . 9636) (LT 9649 . 9650) (STRING_LITERAL 9612 . 9624) (IDENTIFIER 9606 . 9609) (EQ 9610 . 9611) (IDENTIFIER 9570 . 9583) (EQ 9584 . 9585) (BRACE_BLOCK 9486 . 9553) (IDENTIFIER 9475 . 9483) (EQ 9484 . 9485) (EQ 9442 . 9443) (COMMA 9421 . 9422) (STRING_LITERAL 9367 . 9421) (IDENTIFIER 9359 . 9364) (EQ 9365 . 9366) (RSHIFT 8336 . 8338) (LT 8323 . 8324) (IDENTIFIER 8048 . 8063) (IDENTIFIER 8226 . 8236) (IDENTIFIER 8263 . 8272) (PUBLIC 8299 . 8305) (LT 8318 . 8319) (STRING_LITERAL 8279 . 8293) (IDENTIFIER 8273 . 8276) (EQ 8277 . 8278) (IDENTIFIER 8237 . 8250) (EQ 8251 . 8252) (BRACE_BLOCK 8153 . 8220) (IDENTIFIER 8142 . 8150) (EQ 8151 . 8152) (EQ 8109 . 8110) (COMMA 8100 . 8101) (STRING_LITERAL 8072 . 8100) (IDENTIFIER 8064 . 8069) (EQ 8070 . 8071) (GT 6816 . 6817) (IDENTIFIER 6507 . 6522) (IDENTIFIER 6707 . 6717) (IDENTIFIER 6744 . 6753) (PUBLIC 6784 . 6790) (LT 6803 . 6804) (STRING_LITERAL 6760 . 6778) (IDENTIFIER 6754 . 6757) (EQ 6758 . 6759) (IDENTIFIER 6718 . 6731) (EQ 6732 . 6733) (BRACE_BLOCK 6634 . 6701) (IDENTIFIER 6623 . 6631) (EQ 6632 . 6633) (EQ 6590 . 6591) (COMMA 6581 . 6582) (STRING_LITERAL 6531 . 6581) (IDENTIFIER 6523 . 6528) (EQ 6529 . 6530) (RSHIFT 5641 . 5643) (LT 5634 . 5635) (IDENTIFIER 5361 . 5376) (IDENTIFIER 5538 . 5548) (IDENTIFIER 5575 . 5584) (PUBLIC 5610 . 5616) (LT 5629 . 5630) (STRING_LITERAL 5591 . 5604) (IDENTIFIER 5585 . 5588) (EQ 5589 . 5590) (IDENTIFIER 5549 . 5562) (EQ 5563 . 5564) (BRACE_BLOCK 5465 . 5532) (IDENTIFIER 5454 . 5462) (EQ 5463 . 5464) (EQ 5421 . 5422) (COMMA 5412 . 5413) (STRING_LITERAL 5385 . 5412) (IDENTIFIER 5377 . 5382) (EQ 5383 . 5384) (RSHIFT 4535 . 4537) (LT 4522 . 4523) (IDENTIFIER 4234 . 4249) (IDENTIFIER 4419 . 4429) (IDENTIFIER 4456 . 4465) (PUBLIC 4498 . 4504) (LT 4517 . 4518) (STRING_LITERAL 4472 . 4492) (IDENTIFIER 4466 . 4469) (EQ 4470 . 4471) (IDENTIFIER 4430 . 4443) (EQ 4444 . 4445) (BRACE_BLOCK 4346 . 4413) (IDENTIFIER 4335 . 4343) (EQ 4344 . 4345) (EQ 4302 . 4303) (COMMA 4293 . 4294) (STRING_LITERAL 4258 . 4293) (IDENTIFIER 4250 . 4255) (EQ 4256 . 4257) (PAREN_BLOCK 3624 . 3635) (IDENTIFIER 3590 . 3603) (PAREN_BLOCK 3603 . 3612) (RSHIFT 3533 . 3535) (LT 3512 . 3513) (IDENTIFIER 3410 . 3420) (IDENTIFIER 3447 . 3456) (PUBLIC 3488 . 3494) (LT 3507 . 3508) (STRING_LITERAL 3463 . 3482) (IDENTIFIER 3457 . 3460) (EQ 3461 . 3462) (IDENTIFIER 3421 . 3434) (EQ 3435 . 3436) (BRACE_BLOCK 3337 . 3404) (IDENTIFIER 3326 . 3334) (EQ 3335 . 3336) (EQ 3293 . 3294) (COMMA 3284 . 3285) (STRING_LITERAL 3258 . 3284) (IDENTIFIER 3250 . 3255) (EQ 3256 . 3257) (IDENTIFIER 3133 . 3141) (SEMICOLON 3141 . 3142) (IDENTIFIER 3092 . 3102) (SEMICOLON 3102 . 3103) (IDENTIFIER 3043 . 3058) (SEMICOLON 3058 . 3059) (IDENTIFIER 2959 . 2969) (IDENTIFIER 2990 . 3005) (SEMICOLON 3005 . 3006) (PAREN_BLOCK 2809 . 2831) (IDENTIFIER 2794 . 2809) (IDENTIFIER 2778 . 2793)))
+    (semanticdb-table "AgentController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.business.services.*" include nil nil [39 83])
+            ("com.aaaie.ds.cds.dataProvider.database.dao.RecentDocumentsDataProvider" include nil nil [84 162])
+            ("com.aaaie.ds.cds.dataProvider.database.dao.RecentPolicyDataProvider" include nil nil [163 238])
+            ("com.aaaie.ds.cds.dataProvider.database.entities.RecentDocument" include nil nil [239 309])
+            ("com.aaaie.ds.cds.dataProvider.database.entities.RecentPolicy" include nil nil [310 378])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [379 432])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [433 489])
+            ("com.aaaie.ds.cds.model.agent.AgentUserSummary" include nil nil [490 543])
+            ("com.aaaie.ds.cds.model.agent.customer.events.Event" include nil nil [544 602])
+            ("com.aaaie.ds.cds.model.agent.forms.FormsDocuments" include nil nil [603 660])
+            ("com.aaaie.ds.cds.model.agent.policy.activity.ActivityHistory" include nil nil [661 729])
+            ("com.aaaie.ds.cds.model.agent.policy.additional.AdditionalPolicy" include nil nil [730 801])
+            ("com.aaaie.ds.cds.model.agent.policy.billing.history.BillingHistory" include nil nil [802 876])
+            ("com.aaaie.ds.cds.model.agent.policy.claims.PolicyClaimSummaries" include nil nil [877 948])
+            ("com.aaaie.ds.cds.model.agent.policy.search.SearchResult" include nil nil [949 1012])
+            ("com.aaaie.ds.cds.model.agent.policy.transactions.PolicyTransactions" include nil nil [1013 1088])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutoPayEnrollmentStatus" include nil nil [1089 1163])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollStatusRequest" include nil nil [1164 1241])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollmentDetailResponse" include nil nil [1242 1324])
+            ("com.aaaie.ds.cds.model.documents.DocumentLocation" include nil nil [1325 1382])
+            ("com.aaaie.ds.cds.model.documents.PolicyDocuments" include nil nil [1383 1439])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.request.PolicyPaymentRequest" include nil nil [1440 1518])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.response.PolicyPaymentResponse" include nil nil [1519 1599])
+            ("com.aaaie.ds.cds.model.pbs.PolicyBillingDetails" include nil nil [1600 1655])
+            ("com.aaaie.ds.cds.model.policydetail.PolicyDetail" include nil nil [1656 1712])
+            ("com.aaaie.ds.cds.model.zipcode.validation.ZipCodeValidation" include nil nil [1713 1780])
+            ("com.aaaie.ds.cds.security.interceptor.client.InsurancePortalSecurityInterceptor" include nil nil [1781 1868])
+            ("org.apache.http.HttpResponse" include nil nil [1869 1905])
+            ("org.apache.http.client.ClientProtocolException" include nil nil [1906 1960])
+            ("org.apache.http.client.HttpClient" include nil nil [1961 2002])
+            ("org.apache.http.client.methods.HttpGet" include nil nil [2003 2049])
+            ("org.apache.http.impl.client.HttpClientBuilder" include nil nil [2050 2103])
+            ("org.perf4j.aop.Profiled" include nil nil [2104 2135])
+            ("org.slf4j.Logger" include nil nil [2136 2160])
+            ("org.slf4j.LoggerFactory" include nil nil [2161 2192])
+            ("org.springframework.core.io.InputStreamResource" include nil nil [2193 2248])
+            ("org.springframework.http.HttpHeaders" include nil nil [2249 2293])
+            ("org.springframework.http.HttpStatus" include nil nil [2294 2337])
+            ("org.springframework.http.MediaType" include nil nil [2338 2380])
+            ("org.springframework.http.ResponseEntity" include nil nil [2381 2428])
+            ("org.springframework.web.bind.annotation.*" include nil nil [2429 2478])
+            ("org.springframework.web.client.HttpClientErrorException" include nil nil [2479 2542])
+            ("javax.annotation.PostConstruct" include nil nil [2544 2582])
+            ("javax.inject.Inject" include nil nil [2583 2610])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [2611 2656])
+            ("javax.servlet.http.HttpSession" include nil nil [2657 2695])
+            ("java.io.IOException" include nil nil [2696 2723])
+            ("java.net.MalformedURLException" include nil nil [2724 2762])
+            ("java.net.URL" include nil nil [2763 2783])
+            ("java.util.HashMap" include nil nil [2784 2809])
+            ("java.util.LinkedList" include nil nil [2810 2838])
+            ("java.util.List" include nil nil [2839 2861])
+            ("java.util.Map" include nil nil [2862 2883])
+            ("AgentController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [2970 3045])
+                    ("agentService" variable
+                       (:typemodifiers ("private")
+                        :type "AgentService")
+                        (reparse-symbol class_member_declaration) [3063 3097])
+                    ("agentEventsService" variable
+                       (:typemodifiers ("private")
+                        :type "AgentEventsService")
+                        (reparse-symbol class_member_declaration) [3115 3161])
+                    ("agentPolicyTransactionService" variable
+                       (:typemodifiers ("private")
+                        :type "AgentPolicyTransactionService")
+                        (reparse-symbol class_member_declaration) [3179 3247])
+                    ("agentBillingService" variable
+                       (:typemodifiers ("private")
+                        :type "AgentBillingService")
+                        (reparse-symbol class_member_declaration) [3265 3313])
+                    ("zipcodeService" variable
+                       (:typemodifiers ("private")
+                        :type "ZipcodeService")
+                        (reparse-symbol class_member_declaration) [3331 3369])
+                    ("recentPolicyDataProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RecentPolicyDataProvider")
+                        (reparse-symbol class_member_declaration) [3387 3445])
+                    ("recentDocumentsDataProvider" variable
+                       (:typemodifiers ("private")
+                        :type "RecentDocumentsDataProvider")
+                        (reparse-symbol class_member_declaration) [3463 3527])
+                    ("responseHeaders" variable
+                       (:typemodifiers ("private")
+                        :type "HttpHeaders")
+                        (reparse-symbol class_member_declaration) [3537 3573])
+                    ("init" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3598 3828])
+                    ("getAgentSummary" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [4113 4120]))                          )
+                        (reparse-symbol class_member_declaration) [4076 4390])
+                    ("getAgentSummaryByDataSource" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [4707 4714])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [4737 4747]))                          
+                        :type "AgentUserSummary")
+                        (reparse-symbol class_member_declaration) [4634 4923])
+                    ("getZipcodeValidation" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [5229 5236])
+                            ("" variable (:type "zipcode") (reparse-symbol formal_parameters) [5259 5266])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [5268 5294]))                          
+                        :type "ZipCodeValidation")
+                        (reparse-symbol class_member_declaration) [5162 5485])
+                    ("getFormsDocuments" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [5787 5794])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [5840 5846])
+                            ("" variable (:type "clubStates") (reparse-symbol formal_parameters) [5862 5872]))                          )
+                        (reparse-symbol class_member_declaration) [5748 6172])
+                    ("getCustomerEvents" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [6567 6574])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [6625 6631])
+                            ("" variable (:type "stateLegacyIdMap") (reparse-symbol formal_parameters) [6647 6663]))                          )
+                        (reparse-symbol class_member_declaration) [6528 6929])
+                    ("hasBob" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [7184 7191])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [7242 7248])
+                            ("" variable (:type "stateLegacyIdMap") (reparse-symbol formal_parameters) [7264 7280]))                          
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [7141 7515])
+                    ("truncateStateLegacyIdMap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [7577 7583])
+                            ("" variable (:type "stateLegacyIdMap") (reparse-symbol formal_parameters) [7598 7614]))                          )
+                        (reparse-symbol class_member_declaration) [7548 7904])
+                    ("getPolicyDetails" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [8220 8227])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [8250 8262])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [8285 8295])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [8318 8328])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [8330 8356]))                          
+                        :type "PolicyDetail")
+                        (reparse-symbol class_member_declaration) [8162 8555])
+                    ("getQuoteVisible" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [8815 8822]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [8763 9099])
+                    ("getQuoteVisible" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [9532 9539])
+                            ("" variable (:type "clubCode") (reparse-symbol formal_parameters) [9562 9570])
+                            ("" variable (:type "agentType") (reparse-symbol formal_parameters) [9593 9602])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [9648 9654])
+                            ("" variable (:type "riskStates") (reparse-symbol formal_parameters) [9670 9680]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9480 10051])
+                    ("getBillingSummary" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [10372 10379])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [10402 10414])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [10437 10447])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [10449 10475]))                          )
+                        (reparse-symbol class_member_declaration) [10333 10699])
+                    ("getBillingSummary" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [11032 11039])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [11062 11074])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [11097 11107])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [11130 11140])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [11142 11168]))                          )
+                        (reparse-symbol class_member_declaration) [10993 11405])
+                    ("getMultipleBillingSummary" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [11762 11769])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [11798 11810])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [11839 11849])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [11878 11888])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [11890 11916]))                          )
+                        (reparse-symbol class_member_declaration) [11715 12161])
+                    ("getBillingHistory" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [12470 12477])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [12500 12512])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [12535 12545])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [12568 12578])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [12580 12606]))                          
+                        :type "BillingHistory")
+                        (reparse-symbol class_member_declaration) [12409 12818])
+                    ("getPolicyTransactions" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [13156 13163])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [13186 13198])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [13221 13231])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [13254 13264])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [13266 13292]))                          
+                        :type "PolicyTransactions")
+                        (reparse-symbol class_member_declaration) [13087 13530])
+                    ("getAdditionalPolicies" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [14139 14146])
+                            ("" variable (:type "customerEid") (reparse-symbol formal_parameters) [14169 14180])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [14203 14215])
+                            ("" variable (:type "clubState") (reparse-symbol formal_parameters) [14238 14247])
+                            ("" variable (:type "agentType") (reparse-symbol formal_parameters) [14270 14279])
+                            ("" variable (:type "agentClubCode") (reparse-symbol formal_parameters) [14302 14315])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [14367 14373])
+                            ("" variable (:type "stateLegacyIdMap") (reparse-symbol formal_parameters) [14387 14403]))                          )
+                        (reparse-symbol class_member_declaration) [14096 14685])
+                    ("getActivityHistory" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [15007 15014])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [15037 15049])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [15072 15082])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [15105 15115])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [15117 15143]))                          
+                        :type "ActivityHistory")
+                        (reparse-symbol class_member_declaration) [14944 15359])
+                    ("findAllRecentPolices" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [15643 15650]))                          )
+                        (reparse-symbol class_member_declaration) [15601 15756])
+                    ("getRecentPolicies" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("agentId" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [16039 16059])
+                            ("email" variable (:type "String") (reparse-symbol formal_parameters) [16105 16117]))                          )
+                        (reparse-symbol class_member_declaration) [16007 16498])
+                    ("putRecentPolicies" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("agentId" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [16766 16786])
+                            ("" variable (:type "recentPolicy") (reparse-symbol formal_parameters) [16814 16826]))                          )
+                        (reparse-symbol class_member_declaration) [16734 17197])
+                    ("customerSearch" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "HttpClientErrorException")
+                        :arguments 
+                          ( ("agentId" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [17457 17477])
+                            ("channelType" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [17493 17517])
+                            ("" variable (:type "payload") (reparse-symbol formal_parameters) [17539 17546]))                          )
+                        (reparse-symbol class_member_declaration) [17428 17772])
+                    ("getUbi" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "HttpClientErrorException")
+                        :arguments 
+                          ( ("agentId" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [18000 18020])
+                            ("policyNumber" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [18036 18061])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [18063 18089]))                          )
+                        (reparse-symbol class_member_declaration) [17979 18404])
+                    ("autoComplete" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "HttpClientErrorException")
+                        :arguments 
+                          ( ("agentId" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [18658 18678])
+                            ("channelType" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [18694 18718])
+                            ("" variable (:type "payload") (reparse-symbol formal_parameters) [18740 18747]))                          )
+                        (reparse-symbol class_member_declaration) [18631 18972])
+                    ("findPolicy" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [19247 19254])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [19277 19289])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [19291 19317]))                          
+                        :type "SearchResult")
+                        (reparse-symbol class_member_declaration) [19195 19666])
+                    ("logout" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [19841 19867])
+                            ("" variable (:type "agentId") (reparse-symbol formal_parameters) [19890 19897]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [19822 20275])
+                    ("getClaimSummaries" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [20600 20607])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [20630 20642])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [20665 20675])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [20677 20703]))                          
+                        :type "PolicyClaimSummaries")
+                        (reparse-symbol class_member_declaration) [20533 20912])
+                    ("getDocuments" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [21361 21368])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [21391 21403])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [21426 21436])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [21459 21469])
+                            ("" variable (:type "riskState") (reparse-symbol formal_parameters) [21492 21501])
+                            ("" variable (:type "productCode") (reparse-symbol formal_parameters) [21524 21535])
+                            ("" variable (:type "status") (reparse-symbol formal_parameters) [21558 21564])
+                            ("" variable (:type "termEffDate") (reparse-symbol formal_parameters) [21587 21598])
+                            ("" variable (:type "termExpDate") (reparse-symbol formal_parameters) [21621 21632]))                          
+                        :type "PolicyDocuments")
+                        (reparse-symbol class_member_declaration) [21304 21894])
+                    ("getDocumentUrl" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [22145 22152])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [22175 22187])
+                            ("" variable (:type "objectId") (reparse-symbol formal_parameters) [22210 22218])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [22220 22246]))                          )
+                        (reparse-symbol class_member_declaration) [22109 22725])
+                    ("getDeclarationPage" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [23210 23217])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [23240 23252])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [23275 23285])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [23308 23318])
+                            ("" variable (:type "riskState") (reparse-symbol formal_parameters) [23341 23350])
+                            ("" variable (:type "productCode") (reparse-symbol formal_parameters) [23373 23384])
+                            ("" variable (:type "status") (reparse-symbol formal_parameters) [23407 23413])
+                            ("" variable (:type "termEffDate") (reparse-symbol formal_parameters) [23436 23447])
+                            ("" variable (:type "termExpDate") (reparse-symbol formal_parameters) [23470 23481]))                          )
+                        (reparse-symbol class_member_declaration) [23170 24062])
+                    ("getDeclarationPageVisibility" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [24547 24554])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [24577 24589])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [24612 24622])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [24645 24655])
+                            ("" variable (:type "riskState") (reparse-symbol formal_parameters) [24678 24687])
+                            ("" variable (:type "productCode") (reparse-symbol formal_parameters) [24710 24721])
+                            ("" variable (:type "status") (reparse-symbol formal_parameters) [24744 24750])
+                            ("" variable (:type "termEffDate") (reparse-symbol formal_parameters) [24773 24784])
+                            ("" variable (:type "termExpDate") (reparse-symbol formal_parameters) [24807 24818]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [24482 25382])
+                    ("getInputStreamResourceResponseEntity" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("documentURL" variable (:type "String") (reparse-symbol formal_parameters) [25469 25487]))                          )
+                        (reparse-symbol class_member_declaration) [25432 27530])
+                    ("findAllRecentDocuments" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [27821 27828]))                          )
+                        (reparse-symbol class_member_declaration) [27777 27937])
+                    ("getRecentDocuments" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("agentId" variable
+                               (:typemodifiers ("final")
+                                :type "String")
+                                (reparse-symbol formal_parameters) [28225 28245])
+                            ("email" variable (:type "String") (reparse-symbol formal_parameters) [28291 28303]))                          )
+                        (reparse-symbol class_member_declaration) [28192 28688])
+                    ("putRecentDocuments" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [28968 28975])
+                            ("" variable (:type "recentDocument") (reparse-symbol formal_parameters) [29005 29019]))                          )
+                        (reparse-symbol class_member_declaration) [28928 29403])
+                    ("issueDirectPayment" function
+                       (:throws ("SystemErrorException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "policyPaymentRequest") (reparse-symbol formal_parameters) [29746 29766])
+                            ("" variable (:type "agentId") (reparse-symbol formal_parameters) [29789 29796])
+                            ("" variable (:type "legacyId") (reparse-symbol formal_parameters) [29819 29827])
+                            ("" variable (:type "agency") (reparse-symbol formal_parameters) [29850 29856])
+                            ("" variable (:type "club") (reparse-symbol formal_parameters) [29879 29883])
+                            ("" variable (:type "branch") (reparse-symbol formal_parameters) [29906 29912])
+                            ("" variable (:type "office") (reparse-symbol formal_parameters) [29935 29941]))                          
+                        :type "PolicyPaymentResponse")
+                        (reparse-symbol class_member_declaration) [29664 30238])
+                    ("getAutopayEnrollmentDetails" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [30637 30644])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [30667 30679])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [30702 30712])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [30735 30745]))                          
+                        :type "AutopayEnrollmentDetailResponse")
+                        (reparse-symbol class_member_declaration) [30549 31008])
+                    ("autoPayTransaction" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "agentId") (reparse-symbol formal_parameters) [31236 31243])
+                            ("" variable (:type "transaction") (reparse-symbol formal_parameters) [31266 31277])
+                            ("" variable (:type "autopayEnrollStatusRequest") (reparse-symbol formal_parameters) [31319 31345]))                          
+                        :type "AutoPayEnrollmentStatus")
+                        (reparse-symbol class_member_declaration) [31165 31802]))                  
+                :type "class")
+                nil [2935 31804]))          
+      :file "AgentController.java"
+      :pointmax 31805
+      :fsize 31804
+      :lastmodtime '(22338 31169 0 0)
+      :unmatched-syntax '((STRING_LITERAL 31139 . 31159) (IDENTIFIER 31133 . 31136) (EQ 31137 . 31138) (EQ 31097 . 31098) (COMMA 31088 . 31089) (STRING_LITERAL 31042 . 31088) (IDENTIFIER 31034 . 31039) (EQ 31040 . 31041) (STRING_LITERAL 30517 . 30543) (IDENTIFIER 30511 . 30514) (EQ 30515 . 30516) (BRACE_BLOCK 30428 . 30495) (IDENTIFIER 30417 . 30425) (EQ 30426 . 30427) (EQ 30384 . 30385) (COMMA 30375 . 30376) (STRING_LITERAL 30272 . 30375) (IDENTIFIER 30264 . 30269) (EQ 30270 . 30271) (STRING_LITERAL 29641 . 29661) (IDENTIFIER 29635 . 29638) (EQ 29639 . 29640) (IDENTIFIER 29579 . 29587) (EQ 29588 . 29589) (EQ 29557 . 29558) (COMMA 29548 . 29549) (STRING_LITERAL 29437 . 29548) (IDENTIFIER 29429 . 29434) (EQ 29435 . 29436) (GT 28926 . 28927) (IDENTIFIER 28694 . 28709) (IDENTIFIER 28858 . 28867) (PUBLIC 28900 . 28906) (LT 28911 . 28912) (STRING_LITERAL 28874 . 28894) (IDENTIFIER 28868 . 28871) (EQ 28872 . 28873) (BRACE_BLOCK 28786 . 28852) (IDENTIFIER 28775 . 28783) (EQ 28784 . 28785) (EQ 28754 . 28755) (COMMA 28746 . 28747) (STRING_LITERAL 28718 . 28746) (IDENTIFIER 28710 . 28715) (EQ 28716 . 28717) (IDENTIFIER 28247 . 28260) (PAREN_BLOCK 28260 . 28290) (RSHIFT 28189 . 28191) (LT 28174 . 28175) (IDENTIFIER 27943 . 27958) (IDENTIFIER 28106 . 28115) (PUBLIC 28148 . 28154) (LT 28169 . 28170) (STRING_LITERAL 28122 . 28142) (IDENTIFIER 28116 . 28119) (EQ 28120 . 28121) (BRACE_BLOCK 28034 . 28100) (IDENTIFIER 28023 . 28031) (EQ 28032 . 28033) (EQ 28003 . 28004) (COMMA 27995 . 27996) (STRING_LITERAL 27967 . 27995) (IDENTIFIER 27959 . 27964) (EQ 27965 . 27966) (GT 27775 . 27776) (IDENTIFIER 27536 . 27551) (IDENTIFIER 27703 . 27712) (PUBLIC 27749 . 27755) (LT 27760 . 27761) (STRING_LITERAL 27719 . 27743) (IDENTIFIER 27713 . 27716) (EQ 27717 . 27718) (BRACE_BLOCK 27631 . 27697) (IDENTIFIER 27620 . 27628) (EQ 27629 . 27630) (EQ 27600 . 27601) (COMMA 27592 . 27593) (STRING_LITERAL 27560 . 27592) (IDENTIFIER 27552 . 27557) (EQ 27558 . 27559) (GT 25430 . 25431) (PRIVATE 25388 . 25395) (LT 25410 . 25411) (STRING_LITERAL 24446 . 24476) (IDENTIFIER 24440 . 24443) (EQ 24444 . 24445) (BRACE_BLOCK 24357 . 24424) (IDENTIFIER 24346 . 24354) (EQ 24355 . 24356) (EQ 24325 . 24326) (COMMA 24316 . 24317) (STRING_LITERAL 24092 . 24316) (IDENTIFIER 24084 . 24089) (EQ 24090 . 24091) (GT 23168 . 23169) (IDENTIFIER 22731 . 22746) (IDENTIFIER 23084 . 23093) (PUBLIC 23127 . 23133) (LT 23148 . 23149) (STRING_LITERAL 23100 . 23120) (IDENTIFIER 23094 . 23097) (EQ 23098 . 23099) (BRACE_BLOCK 23010 . 23077) (IDENTIFIER 22999 . 23007) (EQ 23008 . 23009) (EQ 22978 . 22979) (COMMA 22969 . 22970) (STRING_LITERAL 22755 . 22969) (IDENTIFIER 22747 . 22752) (EQ 22753 . 22754) (GT 22107 . 22108) (IDENTIFIER 21904 . 21919) (IDENTIFIER 22028 . 22037) (PUBLIC 22066 . 22072) (LT 22087 . 22088) (STRING_LITERAL 22044 . 22060) (IDENTIFIER 22038 . 22041) (EQ 22042 . 22043) (EQ 22003 . 22004) (COMMA 21994 . 21995) (STRING_LITERAL 21928 . 21994) (IDENTIFIER 21920 . 21925) (EQ 21926 . 21927) (STRING_LITERAL 21284 . 21298) (IDENTIFIER 21278 . 21281) (EQ 21282 . 21283) (BRACE_BLOCK 21195 . 21262) (IDENTIFIER 21184 . 21192) (EQ 21193 . 21194) (EQ 21163 . 21164) (COMMA 21154 . 21155) (STRING_LITERAL 20946 . 21154) (IDENTIFIER 20938 . 20943) (EQ 20944 . 20945) (STRING_LITERAL 20508 . 20527) (IDENTIFIER 20502 . 20505) (EQ 20506 . 20507) (BRACE_BLOCK 20419 . 20486) (IDENTIFIER 20408 . 20416) (EQ 20417 . 20418) (EQ 20387 . 20388) (COMMA 20378 . 20379) (STRING_LITERAL 20305 . 20378) (IDENTIFIER 20297 . 20302) (EQ 20303 . 20304) (STRING_LITERAL 19808 . 19816) (IDENTIFIER 19802 . 19805) (EQ 19806 . 19807) (IDENTIFIER 19765 . 19770) (EQ 19771 . 19772) (EQ 19724 . 19725) (COMMA 19715 . 19716) (STRING_LITERAL 19696 . 19715) (IDENTIFIER 19688 . 19693) (EQ 19694 . 19695) (STRING_LITERAL 19177 . 19189) (IDENTIFIER 19171 . 19174) (EQ 19175 . 19176) (BRACE_BLOCK 19088 . 19155) (IDENTIFIER 19077 . 19085) (EQ 19086 . 19087) (EQ 19056 . 19057) (COMMA 19047 . 19048) (STRING_LITERAL 19002 . 19047) (IDENTIFIER 18994 . 18999) (EQ 19000 . 19001) (GT 18629 . 18630) (IDENTIFIER 18410 . 18425) (IDENTIFIER 18565 . 18574) (PUBLIC 18601 . 18607) (LT 18622 . 18623) (STRING_LITERAL 18581 . 18595) (IDENTIFIER 18575 . 18578) (EQ 18579 . 18580) (BRACE_BLOCK 18525 . 18559) (IDENTIFIER 18514 . 18522) (EQ 18523 . 18524) (EQ 18493 . 18494) (COMMA 18485 . 18486) (STRING_LITERAL 18434 . 18485) (IDENTIFIER 18426 . 18431) (EQ 18432 . 18433) (GT 17977 . 17978) (IDENTIFIER 17778 . 17793) (IDENTIFIER 17919 . 17928) (PUBLIC 17949 . 17955) (LT 17970 . 17971) (STRING_LITERAL 17935 . 17943) (IDENTIFIER 17929 . 17932) (EQ 17933 . 17934) (BRACE_BLOCK 17879 . 17913) (IDENTIFIER 17868 . 17876) (EQ 17877 . 17878) (EQ 17848 . 17849) (COMMA 17840 . 17841) (STRING_LITERAL 17802 . 17840) (IDENTIFIER 17794 . 17799) (EQ 17800 . 17801) (GT 17426 . 17427) (IDENTIFIER 17203 . 17218) (IDENTIFIER 17360 . 17369) (PUBLIC 17398 . 17404) (LT 17419 . 17420) (STRING_LITERAL 17376 . 17392) (IDENTIFIER 17370 . 17373) (EQ 17374 . 17375) (BRACE_BLOCK 17320 . 17354) (IDENTIFIER 17309 . 17317) (EQ 17318 . 17319) (EQ 17288 . 17289) (COMMA 17280 . 17281) (STRING_LITERAL 17227 . 17280) (IDENTIFIER 17219 . 17224) (EQ 17225 . 17226) (GT 16732 . 16733) (IDENTIFIER 16504 . 16519) (IDENTIFIER 16667 . 16676) (PUBLIC 16708 . 16714) (LT 16719 . 16720) (STRING_LITERAL 16683 . 16702) (IDENTIFIER 16677 . 16680) (EQ 16681 . 16682) (BRACE_BLOCK 16595 . 16661) (IDENTIFIER 16584 . 16592) (EQ 16593 . 16594) (EQ 16563 . 16564) (COMMA 16555 . 16556) (STRING_LITERAL 16528 . 16555) (IDENTIFIER 16520 . 16525) (EQ 16526 . 16527) (IDENTIFIER 16061 . 16074) (PAREN_BLOCK 16074 . 16104) (RSHIFT 16004 . 16006) (LT 15991 . 15992) (IDENTIFIER 15762 . 15777) (IDENTIFIER 15924 . 15933) (PUBLIC 15965 . 15971) (LT 15986 . 15987) (STRING_LITERAL 15940 . 15959) (IDENTIFIER 15934 . 15937) (EQ 15938 . 15939) (BRACE_BLOCK 15852 . 15918) (IDENTIFIER 15841 . 15849) (EQ 15850 . 15851) (EQ 15821 . 15822) (COMMA 15813 . 15814) (STRING_LITERAL 15786 . 15813) (IDENTIFIER 15778 . 15783) (EQ 15784 . 15785) (GT 15599 . 15600) (IDENTIFIER 15365 . 15380) (IDENTIFIER 15531 . 15540) (PUBLIC 15575 . 15581) (LT 15586 . 15587) (STRING_LITERAL 15547 . 15569) (IDENTIFIER 15541 . 15544) (EQ 15545 . 15546) (BRACE_BLOCK 15459 . 15525) (IDENTIFIER 15448 . 15456) (EQ 15457 . 15458) (EQ 15428 . 15429) (COMMA 15420 . 15421) (STRING_LITERAL 15389 . 15420) (IDENTIFIER 15381 . 15386) (EQ 15387 . 15388) (STRING_LITERAL 14918 . 14938) (IDENTIFIER 14912 . 14915) (EQ 14916 . 14917) (BRACE_BLOCK 14830 . 14896) (IDENTIFIER 14819 . 14827) (EQ 14828 . 14829) (EQ 14799 . 14800) (COMMA 14791 . 14792) (STRING_LITERAL 14715 . 14791) (IDENTIFIER 14707 . 14712) (EQ 14713 . 14714) (IDENTIFIER 14375 . 14385) (GT 14385 . 14386) (LT 14366 . 14367) (IDENTIFIER 14317 . 14332) (PAREN_BLOCK 14332 . 14362) (GT 14094 . 14095) (IDENTIFIER 13711 . 13726) (IDENTIFIER 14021 . 14030) (PUBLIC 14066 . 14072) (LT 14077 . 14078) (STRING_LITERAL 14037 . 14060) (IDENTIFIER 14031 . 14034) (EQ 14035 . 14036) (BRACE_BLOCK 13948 . 14015) (IDENTIFIER 13937 . 13945) (EQ 13946 . 13947) (EQ 13916 . 13917) (COMMA 13907 . 13908) (STRING_LITERAL 13735 . 13907) (IDENTIFIER 13727 . 13732) (EQ 13733 . 13734) (STRING_LITERAL 13058 . 13081) (IDENTIFIER 13052 . 13055) (EQ 13056 . 13057) (BRACE_BLOCK 12970 . 13036) (IDENTIFIER 12959 . 12967) (EQ 12968 . 12969) (EQ 12939 . 12940) (COMMA 12931 . 12932) (STRING_LITERAL 12852 . 12931) (IDENTIFIER 12844 . 12849) (EQ 12850 . 12851) (STRING_LITERAL 12384 . 12403) (IDENTIFIER 12378 . 12381) (EQ 12382 . 12383) (BRACE_BLOCK 12295 . 12362) (IDENTIFIER 12284 . 12292) (EQ 12293 . 12294) (EQ 12263 . 12264) (COMMA 12254 . 12255) (STRING_LITERAL 12191 . 12254) (IDENTIFIER 12183 . 12188) (EQ 12189 . 12190) (GT 11876 . 11877) (IDENTIFIER 11851 . 11864) (LT 11869 . 11870) (GT 11837 . 11838) (IDENTIFIER 11812 . 11825) (LT 11830 . 11831) (GT 11796 . 11797) (IDENTIFIER 11771 . 11784) (LT 11789 . 11790) (GT 11713 . 11714) (IDENTIFIER 11411 . 11426) (IDENTIFIER 11632 . 11641) (PUBLIC 11681 . 11687) (LT 11692 . 11693) (STRING_LITERAL 11648 . 11675) (IDENTIFIER 11642 . 11645) (EQ 11646 . 11647) (BRACE_BLOCK 11559 . 11626) (IDENTIFIER 11548 . 11556) (EQ 11557 . 11558) (EQ 11527 . 11528) (COMMA 11518 . 11519) (STRING_LITERAL 11435 . 11518) (IDENTIFIER 11427 . 11432) (EQ 11433 . 11434) (GT 10991 . 10992) (IDENTIFIER 10705 . 10720) (IDENTIFIER 10918 . 10927) (PUBLIC 10959 . 10965) (LT 10970 . 10971) (STRING_LITERAL 10934 . 10953) (IDENTIFIER 10928 . 10931) (EQ 10932 . 10933) (BRACE_BLOCK 10845 . 10912) (IDENTIFIER 10834 . 10842) (EQ 10843 . 10844) (EQ 10813 . 10814) (COMMA 10804 . 10805) (STRING_LITERAL 10729 . 10804) (IDENTIFIER 10721 . 10726) (EQ 10727 . 10728) (GT 10331 . 10332) (IDENTIFIER 10061 . 10076) (IDENTIFIER 10258 . 10267) (PUBLIC 10299 . 10305) (LT 10310 . 10311) (STRING_LITERAL 10274 . 10293) (IDENTIFIER 10268 . 10271) (EQ 10272 . 10273) (BRACE_BLOCK 10186 . 10252) (IDENTIFIER 10175 . 10183) (EQ 10184 . 10185) (EQ 10155 . 10156) (COMMA 10147 . 10148) (STRING_LITERAL 10085 . 10147) (IDENTIFIER 10077 . 10082) (EQ 10083 . 10084) (RSHIFT 9667 . 9669) (IDENTIFIER 9656 . 9660) (LT 9660 . 9661) (LT 9647 . 9648) (IDENTIFIER 9604 . 9619) (PAREN_BLOCK 9619 . 9643) (STRING_LITERAL 9457 . 9474) (IDENTIFIER 9451 . 9454) (EQ 9455 . 9456) (BRACE_BLOCK 9368 . 9435) (IDENTIFIER 9357 . 9365) (EQ 9366 . 9367) (EQ 9336 . 9337) (COMMA 9327 . 9328) (STRING_LITERAL 9247 . 9327) (IDENTIFIER 9239 . 9244) (EQ 9245 . 9246) (STRING_LITERAL 8740 . 8757) (IDENTIFIER 8734 . 8737) (EQ 8738 . 8739) (BRACE_BLOCK 8651 . 8718) (IDENTIFIER 8640 . 8648) (EQ 8649 . 8650) (EQ 8619 . 8620) (COMMA 8610 . 8611) (STRING_LITERAL 8585 . 8610) (IDENTIFIER 8577 . 8582) (EQ 8583 . 8584) (STRING_LITERAL 8138 . 8156) (IDENTIFIER 8132 . 8135) (EQ 8136 . 8137) (BRACE_BLOCK 8049 . 8116) (IDENTIFIER 8038 . 8046) (EQ 8047 . 8048) (EQ 8017 . 8018) (COMMA 8008 . 8009) (STRING_LITERAL 7934 . 8008) (IDENTIFIER 7926 . 7931) (EQ 7932 . 7933) (RSHIFT 7595 . 7597) (IDENTIFIER 7584 . 7588) (LT 7588 . 7589) (IDENTIFIER 7573 . 7576) (LT 7576 . 7577) (GT 7546 . 7547) (COMMA 7539 . 7540) (PRIVATE 7521 . 7528) (LT 7532 . 7533) (RSHIFT 7261 . 7263) (IDENTIFIER 7250 . 7254) (LT 7254 . 7255) (LT 7241 . 7242) (IDENTIFIER 7192 . 7207) (PAREN_BLOCK 7207 . 7237) (STRING_LITERAL 7127 . 7135) (IDENTIFIER 7121 . 7124) (EQ 7125 . 7126) (BRACE_BLOCK 7038 . 7105) (IDENTIFIER 7027 . 7035) (EQ 7036 . 7037) (EQ 7006 . 7007) (COMMA 6997 . 6998) (STRING_LITERAL 6959 . 6997) (IDENTIFIER 6951 . 6956) (EQ 6957 . 6958) (RSHIFT 6644 . 6646) (IDENTIFIER 6633 . 6637) (LT 6637 . 6638) (LT 6624 . 6625) (IDENTIFIER 6575 . 6590) (PAREN_BLOCK 6590 . 6620) (GT 6526 . 6527) (IDENTIFIER 6284 . 6299) (IDENTIFIER 6468 . 6477) (PUBLIC 6509 . 6515) (LT 6520 . 6521) (STRING_LITERAL 6484 . 6503) (IDENTIFIER 6478 . 6481) (EQ 6482 . 6483) (BRACE_BLOCK 6395 . 6462) (IDENTIFIER 6384 . 6392) (EQ 6393 . 6394) (EQ 6363 . 6364) (COMMA 6354 . 6355) (STRING_LITERAL 6308 . 6354) (IDENTIFIER 6300 . 6305) (EQ 6306 . 6307) (RSHIFT 5859 . 5861) (IDENTIFIER 5848 . 5852) (LT 5852 . 5853) (LT 5839 . 5840) (IDENTIFIER 5796 . 5811) (PAREN_BLOCK 5811 . 5835) (GT 5746 . 5747) (IDENTIFIER 5491 . 5506) (IDENTIFIER 5669 . 5678) (PUBLIC 5710 . 5716) (LT 5731 . 5732) (STRING_LITERAL 5685 . 5704) (IDENTIFIER 5679 . 5682) (EQ 5683 . 5684) (BRACE_BLOCK 5596 . 5663) (IDENTIFIER 5585 . 5593) (EQ 5594 . 5595) (EQ 5564 . 5565) (COMMA 5555 . 5556) (STRING_LITERAL 5515 . 5555) (IDENTIFIER 5507 . 5512) (EQ 5513 . 5514) (STRING_LITERAL 5134 . 5156) (IDENTIFIER 5128 . 5131) (EQ 5132 . 5133) (BRACE_BLOCK 5045 . 5112) (IDENTIFIER 5034 . 5042) (EQ 5043 . 5044) (EQ 5013 . 5014) (COMMA 5004 . 5005) (STRING_LITERAL 4953 . 5004) (IDENTIFIER 4945 . 4950) (EQ 4951 . 4952) (STRING_LITERAL 4599 . 4628) (IDENTIFIER 4593 . 4596) (EQ 4597 . 4598) (BRACE_BLOCK 4510 . 4577) (IDENTIFIER 4499 . 4507) (EQ 4508 . 4509) (EQ 4478 . 4479) (COMMA 4469 . 4470) (STRING_LITERAL 4420 . 4469) (IDENTIFIER 4412 . 4417) (EQ 4418 . 4419) (GT 4074 . 4075) (IDENTIFIER 3834 . 3849) (IDENTIFIER 3997 . 4006) (PUBLIC 4036 . 4042) (LT 4057 . 4058) (STRING_LITERAL 4013 . 4030) (IDENTIFIER 4007 . 4010) (EQ 4011 . 4012) (BRACE_BLOCK 3924 . 3991) (IDENTIFIER 3913 . 3921) (EQ 3922 . 3923) (EQ 3892 . 3893) (COMMA 3883 . 3884) (STRING_LITERAL 3858 . 3883) (IDENTIFIER 3850 . 3855) (EQ 3856 . 3857) (PAREN_BLOCK 2916 . 2934) (IDENTIFIER 2901 . 2916) (IDENTIFIER 2885 . 2900)))
+    (semanticdb-table "WalletController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [39 76])
+            ("com.aaaie.ds.cds.business.services.WalletService" include nil nil [77 133])
+            ("com.aaaie.ds.cds.cache.annotations.Cacheable" include nil nil [134 186])
+            ("com.aaaie.ds.cds.exceptions.NoContentException" include nil nil [187 241])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [242 295])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [296 352])
+            ("com.aaaie.ds.cds.model.error.ErrorResponse" include nil nil [353 403])
+            ("com.aaaie.ds.cds.model.wallet.PaymentWallet" include nil nil [404 455])
+            ("com.aaaie.ds.cds.model.wallet.WalletTransactionType" include nil nil [456 515])
+            ("com.aaaie.ds.cds.model.wallet.request.WalletRequest" include nil nil [516 575])
+            ("com.aaaie.ds.cds.model.wallet.response.WalletResponse" include nil nil [576 637])
+            ("org.apache.commons.lang.StringUtils" include nil nil [638 681])
+            ("org.perf4j.aop.Profiled" include nil nil [682 713])
+            ("org.slf4j.Logger" include nil nil [714 738])
+            ("org.slf4j.LoggerFactory" include nil nil [739 770])
+            ("org.springframework.http.HttpStatus" include nil nil [771 814])
+            ("org.springframework.http.MediaType" include nil nil [815 857])
+            ("org.springframework.web.bind.annotation.*" include nil nil [858 907])
+            ("javax.inject.Inject" include nil nil [909 936])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [937 983])
+            ("WalletController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1073 1149])
+                    ("walletService" variable
+                       (:typemodifiers ("private")
+                        :type "WalletService")
+                        (reparse-symbol class_member_declaration) [1167 1203])
+                    ("getWalletDetail" function
+                       (:throws ("SystemErrorException" "NotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [1498 1511])
+                            ("httpServletResponse" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [1512 1551]))                          
+                        :type "PaymentWallet")
+                        (reparse-symbol class_member_declaration) [1440 1943])
+                    ("createAndUpdateWallet" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "NoContentException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [2226 2239])
+                            ("" variable (:type "walletRequest") (reparse-symbol formal_parameters) [2268 2281]))                          )
+                        (reparse-symbol class_member_declaration) [2183 3332])
+                    ("deleteWallet" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "NoContentException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [3610 3623])
+                            ("" variable (:type "walletRequest") (reparse-symbol formal_parameters) [3652 3665]))                          )
+                        (reparse-symbol class_member_declaration) [3576 4600])
+                    ("handle" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("exception" variable (:type "NotFoundException") (reparse-symbol formal_parameters) [4780 4807]))                          
+                        :type "ErrorResponse")
+                        (reparse-symbol class_member_declaration) [4752 5025]))                  
+                :type "class")
+                nil [1037 5027]))          
+      :file "WalletController.java"
+      :pointmax 5028
+      :fsize 5027
+      :lastmodtime '(22028 23560 0 0)
+      :unmatched-syntax '((CLASS 4683 . 4688) (IDENTIFIER 4659 . 4664) (EQ 4664 . 4665) (GT 3574 . 3575) (IDENTIFIER 3337 . 3352) (IDENTIFIER 3504 . 3513) (PUBLIC 3540 . 3546) (LT 3559 . 3560) (STRING_LITERAL 3520 . 3534) (IDENTIFIER 3514 . 3517) (EQ 3518 . 3519) (BRACE_BLOCK 3432 . 3498) (IDENTIFIER 3421 . 3429) (EQ 3430 . 3431) (EQ 3400 . 3401) (COMMA 3392 . 3393) (STRING_LITERAL 3361 . 3392) (IDENTIFIER 3353 . 3358) (EQ 3359 . 3360) (GT 2181 . 2182) (IDENTIFIER 1949 . 1964) (IDENTIFIER 2103 . 2112) (PUBLIC 2147 . 2153) (LT 2166 . 2167) (STRING_LITERAL 2119 . 2141) (IDENTIFIER 2113 . 2116) (EQ 2117 . 2118) (BRACE_BLOCK 2031 . 2097) (IDENTIFIER 2020 . 2028) (EQ 2029 . 2030) (EQ 1999 . 2000) (COMMA 1991 . 1992) (STRING_LITERAL 1973 . 1991) (IDENTIFIER 1965 . 1970) (EQ 1971 . 1972) (STRING_LITERAL 1378 . 1395) (IDENTIFIER 1372 . 1375) (EQ 1376 . 1377) (BRACE_BLOCK 1290 . 1356) (IDENTIFIER 1279 . 1287) (EQ 1288 . 1289) (EQ 1259 . 1260) (COMMA 1251 . 1252) (STRING_LITERAL 1233 . 1251) (IDENTIFIER 1225 . 1230) (EQ 1231 . 1232) (PAREN_BLOCK 1016 . 1036) (IDENTIFIER 1001 . 1016) (IDENTIFIER 985 . 1000)))
+    (semanticdb-table "DocumentsController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [39 76])
+            ("com.aaaie.ds.cds.business.mappers.util.DocumentsToBeRetrieved" include nil nil [77 146])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [147 215])
+            ("com.aaaie.ds.cds.business.services.DocumentService" include nil nil [216 274])
+            ("com.aaaie.ds.cds.cache.annotations.Cacheable" include nil nil [275 327])
+            ("com.aaaie.ds.cds.exceptions.BadRequestException" include nil nil [328 383])
+            ("com.aaaie.ds.cds.exceptions.CustomerDetailsRetrievalFailureException" include nil nil [384 460])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [461 514])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [515 571])
+            ("com.aaaie.ds.cds.model.documents.DocumentLocation" include nil nil [572 629])
+            ("com.aaaie.ds.cds.model.documents.PolicyDocuments" include nil nil [630 686])
+            ("com.aaaie.ds.cds.model.policydetail.PolicyDetail" include nil nil [687 743])
+            ("com.aaaie.ds.cds.util.DateUtil" include nil nil [744 782])
+            ("org.apache.commons.lang.StringUtils" include nil nil [784 827])
+            ("org.apache.http.HttpResponse" include nil nil [828 864])
+            ("org.apache.http.client.ClientProtocolException" include nil nil [865 919])
+            ("org.apache.http.client.HttpClient" include nil nil [920 961])
+            ("org.apache.http.client.methods.HttpGet" include nil nil [962 1008])
+            ("org.apache.http.impl.client.HttpClientBuilder" include nil nil [1009 1062])
+            ("org.perf4j.aop.Profiled" include nil nil [1063 1094])
+            ("org.slf4j.Logger" include nil nil [1095 1119])
+            ("org.slf4j.LoggerFactory" include nil nil [1120 1151])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [1152 1214])
+            ("org.springframework.core.io.InputStreamResource" include nil nil [1215 1270])
+            ("org.springframework.http.HttpHeaders" include nil nil [1271 1315])
+            ("org.springframework.http.HttpStatus" include nil nil [1316 1359])
+            ("org.springframework.http.MediaType" include nil nil [1360 1402])
+            ("org.springframework.http.ResponseEntity" include nil nil [1403 1450])
+            ("org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" include nil nil [1451 1523])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [1524 1584])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [1585 1647])
+            ("org.springframework.web.bind.annotation.RequestMethod" include nil nil [1648 1709])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [1710 1772])
+            ("javax.inject.Inject" include nil nil [1774 1801])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [1802 1847])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [1848 1894])
+            ("javax.ws.rs.QueryParam" include nil nil [1895 1925])
+            ("java.io.IOException" include nil nil [1927 1954])
+            ("java.net.MalformedURLException" include nil nil [1955 1993])
+            ("java.net.URL" include nil nil [1994 2014])
+            ("java.util.Date" include nil nil [2015 2037])
+            ("java.util.List" include nil nil [2038 2060])
+            ("DocumentsController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [2158 2240])
+                    ("getIDCardsForCustomer" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [2749 2762])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2764 2790])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [2791 2819]))                          )
+                        (reparse-symbol class_member_declaration) [2706 3446])
+                    ("getIDCardsForPolicy" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [3874 3887])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [3910 3922])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3924 3950]))                          )
+                        (reparse-symbol class_member_declaration) [3833 4571])
+                    ("getDocumentUrlForTransactionHistory" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "BadRequestException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [5001 5014])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [5036 5048])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [5149 5159])
+                            ("" variable (:type "type") (reparse-symbol formal_parameters) [5181 5185])
+                            ("billType" variable (:type "String") (reparse-symbol formal_parameters) [5289 5304])
+                            ("transactionDate" variable (:type "String") (reparse-symbol formal_parameters) [5415 5437])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [5439 5465]))                          )
+                        (reparse-symbol class_member_declaration) [4944 7133])
+                    ("getPolicyDeclarationDocumentURL" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [7487 7500])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [7597 7609])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [7685 7711]))                          )
+                        (reparse-symbol class_member_declaration) [7434 8217])
+                    ("getInputStreamResourceResponseEntity" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("documentURL" variable (:type "String") (reparse-symbol formal_parameters) [8305 8323]))                          )
+                        (reparse-symbol class_member_declaration) [8268 10389]))                  
+                :type "class")
+                nil [2116 10391]))          
+      :file "DocumentsController.java"
+      :pointmax 10392
+      :fsize 10391
+      :lastmodtime '(22109 55679 0 0)
+      :unmatched-syntax '((GT 8266 . 8267) (PRIVATE 8224 . 8231) (LT 8246 . 8247) (GT 7432 . 7433) (IDENTIFIER 7198 . 7213) (IDENTIFIER 7316 . 7325) (PUBLIC 7391 . 7397) (LT 7412 . 7413) (STRING_LITERAL 7332 . 7346) (IDENTIFIER 7326 . 7329) (EQ 7330 . 7331) (EQ 7291 . 7292) (COMMA 7282 . 7283) (STRING_LITERAL 7222 . 7282) (IDENTIFIER 7214 . 7219) (EQ 7220 . 7221) (IDENTIFIER 5384 . 5395) (PAREN_BLOCK 5395 . 5414) (IDENTIFIER 5265 . 5276) (PAREN_BLOCK 5276 . 5288) (GT 4942 . 4943) (IDENTIFIER 4692 . 4707) (IDENTIFIER 4821 . 4830) (IDENTIFIER 4880 . 4890) (PUBLIC 4906 . 4912) (LT 4925 . 4926) (NUMBER_LITERAL 4897 . 4900) (IDENTIFIER 4891 . 4894) (EQ 4895 . 4896) (STRING_LITERAL 4837 . 4874) (IDENTIFIER 4831 . 4834) (EQ 4835 . 4836) (EQ 4796 . 4797) (COMMA 4787 . 4788) (STRING_LITERAL 4716 . 4787) (IDENTIFIER 4708 . 4713) (EQ 4714 . 4715) (GT 3831 . 3832) (IDENTIFIER 3508 . 3523) (IDENTIFIER 3716 . 3725) (IDENTIFIER 3759 . 3769) (PUBLIC 3796 . 3802) (LT 3815 . 3816) (IDENTIFIER 3770 . 3783) (EQ 3784 . 3785) (STRING_LITERAL 3732 . 3753) (IDENTIFIER 3726 . 3729) (EQ 3730 . 3731) (BRACE_BLOCK 3643 . 3710) (IDENTIFIER 3632 . 3640) (EQ 3641 . 3642) (EQ 3591 . 3592) (COMMA 3582 . 3583) (STRING_LITERAL 3532 . 3582) (IDENTIFIER 3524 . 3529) (EQ 3530 . 3531) (RSHIFT 2703 . 2705) (LT 2687 . 2688) (IDENTIFIER 2581 . 2590) (IDENTIFIER 2626 . 2636) (PUBLIC 2663 . 2669) (LT 2682 . 2683) (IDENTIFIER 2637 . 2650) (EQ 2651 . 2652) (STRING_LITERAL 2597 . 2620) (IDENTIFIER 2591 . 2594) (EQ 2595 . 2596) (BRACE_BLOCK 2508 . 2575) (IDENTIFIER 2497 . 2505) (EQ 2506 . 2507) (EQ 2456 . 2457) (COMMA 2447 . 2448) (STRING_LITERAL 2421 . 2447) (IDENTIFIER 2413 . 2418) (EQ 2419 . 2420) (IDENTIFIER 2246 . 2256) (IDENTIFIER 2277 . 2292) (SEMICOLON 2292 . 2293) (PAREN_BLOCK 2093 . 2115) (IDENTIFIER 2078 . 2093) (IDENTIFIER 2062 . 2077)))
+    (semanticdb-table "PaymentController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [39 76])
+            ("com.aaaie.ds.cds.business.services.PaymentService" include nil nil [77 134])
+            ("com.aaaie.ds.cds.cache.annotations.Cacheable" include nil nil [135 187])
+            ("com.aaaie.ds.cds.exceptions.CustomerDetailsRetrievalFailureException" include nil nil [188 264])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [265 318])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [319 375])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutoPayEnrollmentStatus" include nil nil [376 450])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollStatusRequest" include nil nil [451 528])
+            ("com.aaaie.ds.cds.model.autopayEnrollDetail.AutopayEnrollmentDetailResponse" include nil nil [529 611])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.request.PaymentItem" include nil nil [612 681])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.request.PolicyPaymentRequest" include nil nil [682 760])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.response.PolicyPaymentResponse" include nil nil [761 841])
+            ("com.aaaie.ds.cds.model.wallet.LastPaymentTransaction" include nil nil [842 902])
+            ("com.aaaie.ds.cds.util.Constants" include nil nil [903 942])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [943 997])
+            ("org.apache.commons.lang.StringUtils" include nil nil [998 1041])
+            ("org.perf4j.aop.Profiled" include nil nil [1042 1073])
+            ("org.slf4j.Logger" include nil nil [1074 1098])
+            ("org.slf4j.LoggerFactory" include nil nil [1099 1130])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [1131 1193])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [1194 1252])
+            ("org.springframework.http.MediaType" include nil nil [1253 1295])
+            ("org.springframework.web.bind.annotation.*" include nil nil [1296 1345])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [1347 1392])
+            ("java.util.List" include nil nil [1393 1415])
+            ("PaymentController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1506 1583])
+                    ("paymentService" variable
+                       (:typemodifiers ("public")
+                        :type "PaymentService")
+                        (reparse-symbol class_member_declaration) [1604 1641])
+                    ("serviceError" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1697 1725])
+                    ("issueDirectPayment" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "policyPaymentRequest") (reparse-symbol formal_parameters) [2059 2079])
+                            ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [2101 2114])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2115 2141]))                          )
+                        (reparse-symbol class_member_declaration) [2006 2697])
+                    ("autoPayEnrollment" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [2978 2991])
+                            ("" variable (:type "autopayEnrollStatusRequest") (reparse-symbol formal_parameters) [3032 3058])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3059 3085]))                          )
+                        (reparse-symbol class_member_declaration) [2939 3662])
+                    ("autoPayEnrollUnEnroll" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [3958 3971])
+                            ("" variable (:type "autopayEnrollStatus") (reparse-symbol formal_parameters) [4012 4031])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [4032 4058]))                          )
+                        (reparse-symbol class_member_declaration) [3915 4618])
+                    ("getAutopayEnrollmentDetails" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [5064 5077])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [5100 5112])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [5114 5140]))                          )
+                        (reparse-symbol class_member_declaration) [5015 5505])
+                    ("validateIDPPayload" function
+                       (:throws ("SystemErrorException")
+                        :arguments 
+                          ( ("policyPaymentRequest" variable (:type "PolicyPaymentRequest") (reparse-symbol formal_parameters) [5536 5577]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5512 6933])
+                    ("getPaymentTransaction" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [7332 7345])
+                            ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [7368 7380])
+                            ("" variable (:type "dataSource") (reparse-symbol formal_parameters) [7402 7412])
+                            ("" variable (:type "policyType") (reparse-symbol formal_parameters) [7434 7444])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [7446 7472]))                          )
+                        (reparse-symbol class_member_declaration) [7289 7821]))                  
+                :type "class")
+                nil [1469 7825]))          
+      :file "PaymentController.java"
+      :pointmax 7826
+      :fsize 7825
+      :lastmodtime '(22338 24474 0 0)
+      :unmatched-syntax '((GT 7287 . 7288) (IDENTIFIER 6938 . 6953) (IDENTIFIER 7166 . 7175) (IDENTIFIER 7208 . 7218) (PUBLIC 7245 . 7251) (LT 7264 . 7265) (IDENTIFIER 7219 . 7232) (EQ 7233 . 7234) (STRING_LITERAL 7182 . 7202) (IDENTIFIER 7176 . 7179) (EQ 7180 . 7181) (BRACE_BLOCK 7093 . 7160) (IDENTIFIER 7082 . 7090) (EQ 7091 . 7092) (EQ 7049 . 7050) (COMMA 7040 . 7041) (STRING_LITERAL 6962 . 7040) (IDENTIFIER 6954 . 6959) (EQ 6960 . 6961) (GT 5013 . 5014) (IDENTIFIER 4679 . 4694) (IDENTIFIER 4877 . 4886) (IDENTIFIER 4925 . 4935) (PUBLIC 4962 . 4968) (LT 4981 . 4982) (IDENTIFIER 4936 . 4949) (EQ 4950 . 4951) (STRING_LITERAL 4893 . 4919) (IDENTIFIER 4887 . 4890) (EQ 4891 . 4892) (BRACE_BLOCK 4804 . 4871) (IDENTIFIER 4793 . 4801) (EQ 4802 . 4803) (EQ 4760 . 4761) (COMMA 4751 . 4752) (STRING_LITERAL 4703 . 4751) (IDENTIFIER 4695 . 4700) (EQ 4701 . 4702) (GT 3914 . 3915) (IDENTIFIER 3728 . 3743) (IDENTIFIER 3826 . 3835) (PUBLIC 3871 . 3877) (LT 3890 . 3891) (STRING_LITERAL 3842 . 3865) (IDENTIFIER 3836 . 3839) (EQ 3840 . 3841) (EQ 3800 . 3801) (COMMA 3792 . 3793) (STRING_LITERAL 3752 . 3792) (IDENTIFIER 3744 . 3749) (EQ 3750 . 3751) (GT 2937 . 2938) (IDENTIFIER 2761 . 2776) (IDENTIFIER 2851 . 2860) (PUBLIC 2894 . 2900) (LT 2913 . 2914) (STRING_LITERAL 2867 . 2888) (IDENTIFIER 2861 . 2864) (EQ 2865 . 2866) (EQ 2825 . 2826) (COMMA 2817 . 2818) (STRING_LITERAL 2785 . 2817) (IDENTIFIER 2777 . 2782) (EQ 2783 . 2784) (GT 2004 . 2005) (IDENTIFIER 1731 . 1746) (IDENTIFIER 1921 . 1930) (PUBLIC 1963 . 1969) (LT 1982 . 1983) (STRING_LITERAL 1937 . 1957) (IDENTIFIER 1931 . 1934) (EQ 1935 . 1936) (IDENTIFIER 1855 . 1863) (EQ 1864 . 1865) (EQ 1801 . 1802) (COMMA 1792 . 1793) (STRING_LITERAL 1755 . 1792) (IDENTIFIER 1747 . 1752) (EQ 1753 . 1754) (STRING_LITERAL 1654 . 1691) (PAREN_BLOCK 1448 . 1468) (IDENTIFIER 1433 . 1448) (IDENTIFIER 1417 . 1432)))
+    (semanticdb-table "TourController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("java.io.BufferedReader" include nil nil [39 69])
+            ("java.io.IOException" include nil nil [70 97])
+            ("java.io.InputStream" include nil nil [98 125])
+            ("java.io.InputStreamReader" include nil nil [126 159])
+            ("java.io.Reader" include nil nil [160 182])
+            ("java.net.URL" include nil nil [183 203])
+            ("java.nio.charset.Charset" include nil nil [204 236])
+            ("com.aaaie.ds.cds.model.tour.TourResponse" include nil nil [238 286])
+            ("org.json.JSONArray" include nil nil [287 313])
+            ("org.json.JSONException" include nil nil [314 344])
+            ("org.json.JSONObject" include nil nil [345 372])
+            ("org.perf4j.aop.Profiled" include nil nil [373 404])
+            ("org.slf4j.Logger" include nil nil [405 429])
+            ("org.slf4j.LoggerFactory" include nil nil [430 461])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [462 524])
+            ("org.springframework.http.MediaType" include nil nil [525 567])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [568 628])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [629 691])
+            ("org.springframework.web.bind.annotation.RequestMethod" include nil nil [692 753])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [754 816])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [817 875])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [877 914])
+            ("com.aaaie.ds.cds.dataProvider.services.CustomerRegistrationService" include nil nil [915 989])
+            ("com.aaaie.ds.cds.model.registrationTimeInfo.RegistrationTimeInfoResponse" include nil nil [990 1070])
+            ("TourController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1153 1230])
+                    ("cq5TourClubsUrl" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1274 1307])
+                    ("getTourFlag" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [1649 1662])
+                            ("" variable (:type "clubCode") (reparse-symbol formal_parameters) [1685 1693]))                          )
+                        (reparse-symbol class_member_declaration) [1616 2947])
+                    ("isCQ5TourEnabled" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("clubCode" variable (:type "int") (reparse-symbol formal_parameters) [2982 2994]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2950 4374])
+                    ("readJsonFromUrl" function
+                       (:throws ("IOException" "JSONException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [4576 4586]))                          
+                        :type "JSONObject")
+                        (reparse-symbol class_member_declaration) [4535 4906])
+                    ("readAll" function
+                       (:throws ("IOException")
+                        :typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("rd" variable (:type "Reader") (reparse-symbol formal_parameters) [5069 5078]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5039 5243]))                  
+                :type "class")
+                nil [1121 5245]))          
+      :file "TourController.java"
+      :pointmax 5245
+      :fsize 5244
+      :lastmodtime '(22286 33643 0 0)
+      :unmatched-syntax '((GT 1614 . 1615) (IDENTIFIER 1537 . 1546) (PUBLIC 1582 . 1588) (LT 1601 . 1602) (STRING_LITERAL 1553 . 1579) (IDENTIFIER 1547 . 1550) (EQ 1551 . 1552) (IDENTIFIER 1488 . 1496) (EQ 1497 . 1498) (EQ 1455 . 1456) (COMMA 1446 . 1447) (STRING_LITERAL 1405 . 1446) (IDENTIFIER 1397 . 1402) (EQ 1403 . 1404) (IDENTIFIER 1310 . 1320) (IDENTIFIER 1350 . 1377) (SEMICOLON 1377 . 1378) (STRING_LITERAL 1248 . 1271) (IDENTIFIER 1240 . 1245) (EQ 1246 . 1247) (PAREN_BLOCK 1103 . 1120) (IDENTIFIER 1088 . 1103) (IDENTIFIER 1072 . 1087)))
+    (semanticdb-table "EZPayController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [39 76])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [77 145])
+            ("com.aaaie.ds.cds.business.services.EZPayService" include nil nil [146 201])
+            ("com.aaaie.ds.cds.cache.annotations.Cacheable" include nil nil [202 254])
+            ("com.aaaie.ds.cds.exceptions.CustomerDetailsRetrievalFailureException" include nil nil [255 331])
+            ("com.aaaie.ds.cds.exceptions.NoContentException" include nil nil [332 386])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [387 440])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [441 497])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.request.PaymentItem" include nil nil [498 567])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.request.PolicyPaymentRequest" include nil nil [568 646])
+            ("com.aaaie.ds.cds.model.issueDirectPayment.response.PolicyPaymentResponse" include nil nil [647 727])
+            ("com.aaaie.ds.cds.model.policybilling.ShortPolicyBillingDetails" include nil nil [728 798])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [799 849])
+            ("com.aaaie.ds.cds.util.Constants" include nil nil [850 889])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [890 944])
+            ("org.apache.commons.lang.StringUtils" include nil nil [945 988])
+            ("org.perf4j.aop.Profiled" include nil nil [989 1020])
+            ("org.slf4j.Logger" include nil nil [1021 1045])
+            ("org.slf4j.LoggerFactory" include nil nil [1046 1077])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [1078 1140])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [1141 1199])
+            ("org.springframework.http.MediaType" include nil nil [1200 1242])
+            ("org.springframework.web.bind.annotation.*" include nil nil [1243 1292])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [1294 1339])
+            ("java.util.List" include nil nil [1340 1362])
+            ("EZPayController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1595 1673])
+                    ("serviceError" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1776 1804])
+                    ("getBillingDetails" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException" "NoContentException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "policyNumber") (reparse-symbol formal_parameters) [2250 2262])
+                            ("" variable (:type "type") (reparse-symbol formal_parameters) [2285 2289])
+                            ("" variable (:type "zipcode") (reparse-symbol formal_parameters) [2311 2318])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2319 2345]))                          )
+                        (reparse-symbol class_member_declaration) [2211 2839])
+                    ("issueDirectPayment" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "CustomerDetailsRetrievalFailureException")
+                        :arguments 
+                          ( ("" variable (:type "policyPaymentRequest") (reparse-symbol formal_parameters) [3121 3141])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3142 3168]))                          )
+                        (reparse-symbol class_member_declaration) [3068 3698])
+                    ("validateIDPPayload" function
+                       (:throws ("SystemErrorException")
+                        :arguments 
+                          ( ("policyPaymentRequest" variable (:type "PolicyPaymentRequest") (reparse-symbol formal_parameters) [3727 3768]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3703 5090]))                  
+                :type "class")
+                nil [1560 5093]))          
+      :file "EZPayController.java"
+      :pointmax 5094
+      :fsize 5093
+      :lastmodtime '(22286 33643 0 0)
+      :unmatched-syntax '((GT 3066 . 3067) (IDENTIFIER 2863 . 2878) (IDENTIFIER 2989 . 2998) (PUBLIC 3025 . 3031) (LT 3044 . 3045) (STRING_LITERAL 3005 . 3019) (IDENTIFIER 2999 . 3002) (EQ 3003 . 3004) (IDENTIFIER 2940 . 2948) (EQ 2949 . 2950) (EQ 2906 . 2907) (COMMA 2897 . 2898) (STRING_LITERAL 2887 . 2897) (IDENTIFIER 2879 . 2884) (EQ 2885 . 2886) (RSHIFT 2208 . 2210) (LT 2182 . 2183) (IDENTIFIER 1886 . 1901) (IDENTIFIER 2085 . 2095) (IDENTIFIER 2122 . 2131) (PUBLIC 2158 . 2164) (LT 2177 . 2178) (STRING_LITERAL 2138 . 2152) (IDENTIFIER 2132 . 2135) (EQ 2136 . 2137) (IDENTIFIER 2096 . 2109) (EQ 2110 . 2111) (BRACE_BLOCK 2012 . 2079) (IDENTIFIER 2001 . 2009) (EQ 2010 . 2011) (EQ 1968 . 1969) (COMMA 1959 . 1960) (STRING_LITERAL 1910 . 1959) (IDENTIFIER 1902 . 1907) (EQ 1908 . 1909) (STRING_LITERAL 1733 . 1770) (IDENTIFIER 1679 . 1689) (IDENTIFIER 1707 . 1719) (SEMICOLON 1719 . 1720) (PAREN_BLOCK 1541 . 1559) (IDENTIFIER 1526 . 1541) (IDENTIFIER 1510 . 1525)))
+    (semanticdb-table "ContentController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [39 76])
+            ("com.aaaie.ds.cds.business.services.ContentService" include nil nil [77 134])
+            ("com.aaaie.ds.cds.cache.annotations.Cacheable" include nil nil [135 187])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [188 241])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [242 298])
+            ("com.aaaie.ds.cds.model.content.PartCommContentList" include nil nil [299 357])
+            ("org.perf4j.aop.Profiled" include nil nil [358 389])
+            ("org.slf4j.Logger" include nil nil [390 414])
+            ("org.slf4j.LoggerFactory" include nil nil [415 446])
+            ("org.springframework.http.MediaType" include nil nil [447 489])
+            ("org.springframework.web.bind.annotation.*" include nil nil [490 539])
+            ("javax.annotation.Resource" include nil nil [541 574])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [575 620])
+            ("java.util.List" include nil nil [621 643])
+            ("java.util.Map" include nil nil [644 665])
+            ("ContentController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [749 831])
+                    ("contentService" variable
+                       (:typemodifiers ("private")
+                        :type "ContentService")
+                        (reparse-symbol class_member_declaration) [845 883])
+                    ("getFAQHome" function
+                       (:throws ("SystemErrorException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [1143 1169]))                          
+                        :type "ResponseBody")
+                        (reparse-symbol class_member_declaration) [1112 1323])
+                    ("getFAQDetails" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("" variable (:type "clubCode") (reparse-symbol formal_parameters) [1659 1667])
+                            ("ubiCustomer" variable (:type "boolean") (reparse-symbol formal_parameters) [1682 1701])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [1702 1728]))                          )
+                        (reparse-symbol class_member_declaration) [1624 1906])
+                    ("getCustomerServiceContact" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("" variable (:type "clubCode") (reparse-symbol formal_parameters) [2250 2258])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2263 2289]))                          )
+                        (reparse-symbol class_member_declaration) [2203 2466])
+                    ("getStateDynamicCustomerServNumber" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("" variable (:type "stateCode") (reparse-symbol formal_parameters) [2835 2844])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2866 2892]))                          )
+                        (reparse-symbol class_member_declaration) [2780 3080])
+                    ("getContentList" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("" variable (:type "states") (reparse-symbol formal_parameters) [3381 3387])
+                            ("" variable (:type "agencyId") (reparse-symbol formal_parameters) [3410 3418])
+                            ("" variable (:type "time") (reparse-symbol formal_parameters) [3441 3445])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3450 3476]))                          )
+                        (reparse-symbol class_member_declaration) [3345 3638])
+                    ("getAllContentList" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException")
+                        :arguments 
+                          ( ("" variable (:type "states") (reparse-symbol formal_parameters) [3951 3957])
+                            ("" variable (:type "time") (reparse-symbol formal_parameters) [3980 3984])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3986 4012]))                          )
+                        (reparse-symbol class_member_declaration) [3912 4177])
+                    ("getQuickLinks" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "clubCode") (reparse-symbol formal_parameters) [4461 4469])
+                            ("hasLegacyId" variable (:type "boolean") (reparse-symbol formal_parameters) [4485 4504])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [4506 4532]))                          )
+                        (reparse-symbol class_member_declaration) [4426 4701])
+                    ("getAllQuickLinks" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("hasLegacyId" variable (:type "boolean") (reparse-symbol formal_parameters) [4976 4995])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [4997 5023]))                          )
+                        (reparse-symbol class_member_declaration) [4945 5150]))                  
+                :type "class")
+                nil [712 5152]))          
+      :file "ContentController.java"
+      :pointmax 5153
+      :fsize 5152
+      :lastmodtime '(22338 24474 0 0)
+      :unmatched-syntax '((RSHIFT 4942 . 4944) (COMMA 4935 . 4936) (LT 4928 . 4929) (IDENTIFIER 4707 . 4722) (IDENTIFIER 4872 . 4881) (PUBLIC 4912 . 4918) (LT 4923 . 4924) (STRING_LITERAL 4888 . 4906) (IDENTIFIER 4882 . 4885) (EQ 4886 . 4887) (BRACE_BLOCK 4818 . 4866) (IDENTIFIER 4807 . 4815) (EQ 4816 . 4817) (EQ 4786 . 4787) (COMMA 4777 . 4778) (STRING_LITERAL 4731 . 4777) (IDENTIFIER 4723 . 4728) (EQ 4729 . 4730) (RSHIFT 4423 . 4425) (COMMA 4416 . 4417) (LT 4409 . 4410) (IDENTIFIER 4183 . 4198) (IDENTIFIER 4356 . 4365) (PUBLIC 4393 . 4399) (LT 4404 . 4405) (STRING_LITERAL 4372 . 4387) (IDENTIFIER 4366 . 4369) (EQ 4370 . 4371) (BRACE_BLOCK 4302 . 4350) (IDENTIFIER 4291 . 4299) (EQ 4300 . 4301) (EQ 4270 . 4271) (COMMA 4261 . 4262) (STRING_LITERAL 4207 . 4261) (IDENTIFIER 4199 . 4204) (EQ 4205 . 4206) (GT 3910 . 3911) (IDENTIFIER 3644 . 3659) (IDENTIFIER 3830 . 3839) (PUBLIC 3871 . 3877) (LT 3890 . 3891) (STRING_LITERAL 3846 . 3865) (IDENTIFIER 3840 . 3843) (EQ 3844 . 3845) (BRACE_BLOCK 3743 . 3824) (IDENTIFIER 3732 . 3740) (EQ 3741 . 3742) (EQ 3711 . 3712) (COMMA 3702 . 3703) (STRING_LITERAL 3668 . 3702) (IDENTIFIER 3660 . 3665) (EQ 3666 . 3667) (GT 3343 . 3344) (IDENTIFIER 3084 . 3099) (IDENTIFIER 3269 . 3278) (PUBLIC 3304 . 3310) (LT 3323 . 3324) (STRING_LITERAL 3285 . 3301) (IDENTIFIER 3279 . 3282) (EQ 3283 . 3284) (BRACE_BLOCK 3191 . 3263) (IDENTIFIER 3180 . 3188) (EQ 3189 . 3190) (EQ 3159 . 3160) (COMMA 3150 . 3151) (STRING_LITERAL 3108 . 3150) (IDENTIFIER 3100 . 3105) (EQ 3106 . 3107) (RSHIFT 2777 . 2779) (COMMA 2769 . 2770) (LT 2762 . 2763) (IDENTIFIER 2469 . 2484) (IDENTIFIER 2648 . 2658) (IDENTIFIER 2685 . 2694) (PUBLIC 2739 . 2745) (LT 2758 . 2759) (STRING_LITERAL 2701 . 2736) (IDENTIFIER 2695 . 2698) (EQ 2699 . 2700) (IDENTIFIER 2659 . 2672) (EQ 2673 . 2674) (BRACE_BLOCK 2570 . 2642) (IDENTIFIER 2559 . 2567) (EQ 2568 . 2569) (EQ 2538 . 2539) (COMMA 2529 . 2530) (STRING_LITERAL 2493 . 2529) (IDENTIFIER 2485 . 2490) (EQ 2491 . 2492) (RSHIFT 2200 . 2202) (COMMA 2192 . 2193) (LT 2185 . 2186) (IDENTIFIER 1909 . 1924) (IDENTIFIER 2079 . 2088) (IDENTIFIER 2128 . 2138) (PUBLIC 2162 . 2168) (LT 2181 . 2182) (IDENTIFIER 2139 . 2152) (EQ 2153 . 2154) (STRING_LITERAL 2095 . 2122) (IDENTIFIER 2089 . 2092) (EQ 2093 . 2094) (BRACE_BLOCK 2001 . 2073) (IDENTIFIER 1990 . 1998) (EQ 1999 . 2000) (EQ 1969 . 1970) (COMMA 1960 . 1961) (STRING_LITERAL 1933 . 1960) (IDENTIFIER 1925 . 1930) (EQ 1931 . 1932) (RSHIFT 1621 . 1623) (COMMA 1613 . 1614) (LT 1606 . 1607) (IDENTIFIER 1326 . 1341) (IDENTIFIER 1512 . 1521) (IDENTIFIER 1549 . 1559) (PUBLIC 1583 . 1589) (LT 1602 . 1603) (IDENTIFIER 1560 . 1573) (EQ 1574 . 1575) (STRING_LITERAL 1528 . 1543) (IDENTIFIER 1522 . 1525) (EQ 1526 . 1527) (BRACE_BLOCK 1434 . 1506) (IDENTIFIER 1423 . 1431) (EQ 1432 . 1433) (EQ 1402 . 1403) (COMMA 1393 . 1394) (STRING_LITERAL 1350 . 1393) (IDENTIFIER 1342 . 1347) (EQ 1348 . 1349) (STRING_LITERAL 1097 . 1109) (IDENTIFIER 1091 . 1094) (EQ 1095 . 1096) (IDENTIFIER 1055 . 1068) (EQ 1069 . 1070) (BRACE_BLOCK 966 . 1038) (IDENTIFIER 955 . 963) (EQ 964 . 965) (EQ 934 . 935) (COMMA 925 . 926) (STRING_LITERAL 910 . 925) (IDENTIFIER 902 . 907) (EQ 908 . 909) (PAREN_BLOCK 698 . 711) (IDENTIFIER 683 . 698) (IDENTIFIER 667 . 682)))
+    (semanticdb-table "BankController.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.controller" package nil nil [1 37])
+            ("com.aaaie.ds.cds.ResponseBody" include nil nil [39 76])
+            ("com.aaaie.ds.cds.business.services.BankService" include nil nil [77 131])
+            ("com.aaaie.ds.cds.cache.annotations.Cacheable" include nil nil [132 184])
+            ("com.aaaie.ds.cds.exceptions.NotFoundException" include nil nil [185 238])
+            ("com.aaaie.ds.cds.exceptions.SystemErrorException" include nil nil [239 295])
+            ("com.aaaie.ds.cds.model.bank.BankDetails" include nil nil [296 343])
+            ("org.perf4j.aop.Profiled" include nil nil [344 375])
+            ("org.slf4j.Logger" include nil nil [376 400])
+            ("org.slf4j.LoggerFactory" include nil nil [401 432])
+            ("org.springframework.beans.factory.annotation.Autowired" include nil nil [433 495])
+            ("org.springframework.http.MediaType" include nil nil [496 538])
+            ("org.springframework.web.bind.annotation.PathVariable" include nil nil [539 599])
+            ("org.springframework.web.bind.annotation.RequestMapping" include nil nil [600 662])
+            ("org.springframework.web.bind.annotation.RequestMethod" include nil nil [663 724])
+            ("org.springframework.web.bind.annotation.RestController" include nil nil [725 787])
+            ("BankController" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [873 947])
+                    ("bankService" variable
+                       (:typemodifiers ("private")
+                        :type "BankService")
+                        (reparse-symbol class_member_declaration) [968 1000])
+                    ("getBankDetails" function
+                       (:constructor-flag t
+                        :throws ("SystemErrorException" "NotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "routingNumber") (reparse-symbol formal_parameters) [1327 1340])
+                            ("" variable (:type "customerRegID") (reparse-symbol formal_parameters) [1362 1375]))                          )
+                        (reparse-symbol class_member_declaration) [1291 1571]))                  
+                :type "class")
+                nil [839 1573]))          
+      :file "BankController.java"
+      :pointmax 1574
+      :fsize 1573
+      :lastmodtime '(22028 23560 0 0)
+      :unmatched-syntax '((GT 1289 . 1290) (IDENTIFIER 1006 . 1021) (IDENTIFIER 1183 . 1192) (IDENTIFIER 1221 . 1231) (PUBLIC 1258 . 1264) (LT 1277 . 1278) (IDENTIFIER 1232 . 1245) (EQ 1246 . 1247) (STRING_LITERAL 1199 . 1215) (IDENTIFIER 1193 . 1196) (EQ 1197 . 1198) (BRACE_BLOCK 1111 . 1177) (IDENTIFIER 1100 . 1108) (EQ 1109 . 1110) (EQ 1080 . 1081) (COMMA 1072 . 1073) (STRING_LITERAL 1030 . 1072) (IDENTIFIER 1022 . 1027) (EQ 1028 . 1029) (PAREN_BLOCK 820 . 838) (IDENTIFIER 805 . 820) (IDENTIFIER 789 . 804))))
+  :file "!Users!pairuser!dev!CDS-API!src!main!java!com!aaaie!ds!cds!controller!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

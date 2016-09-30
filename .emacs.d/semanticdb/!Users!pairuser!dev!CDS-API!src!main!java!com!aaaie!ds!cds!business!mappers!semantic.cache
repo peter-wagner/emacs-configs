@@ -1,0 +1,291 @@
+;; Object mappers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mappers/"
+  :tables
+  (list
+    (semanticdb-table "LinkedPolicyMapperUtil.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.mappers" package nil nil [1 43])
+            ("com.aaaie.ds.cds.exceptions.PolicyAlreadyLinkedException" include nil nil [45 109])
+            ("com.aaaie.ds.cds.exceptions.PolicyNotFoundException" include nil nil [110 169])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [170 220])
+            ("com.aaaie.ds.cds.soa.client.*" include nil nil [221 258])
+            ("com.aaaie.ds.cds.soa.client.record.registration.details.RecordRegistrationDetailsRequest" include nil nil [259 355])
+            ("com.aaaie.ds.cds.soa.client.record.registration.details.RegistrationHeader" include nil nil [356 438])
+            ("com.aaaie.ds.cds.util.Constants" include nil nil [439 478])
+            ("com.aaaie.ds.cds.utils.IPAddressUtil" include nil nil [479 523])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [524 578])
+            ("org.apache.commons.lang.BooleanUtils" include nil nil [579 623])
+            ("org.slf4j.Logger" include nil nil [624 648])
+            ("org.slf4j.LoggerFactory" include nil nil [649 680])
+            ("java.util.ArrayList" include nil nil [682 709])
+            ("java.util.List" include nil nil [710 732])
+            ("LinkedPolicyMapperUtil" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [776 867])
+                    ("constructRecordCustomerRequest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [1013 1033])
+                            ("policy" variable (:type "Policy") (reparse-symbol formal_parameters) [1035 1048]))                          
+                        :type "RecordCustomerDetailRequest")
+                        (reparse-symbol class_member_declaration) [947 2390])
+                    ("populateApplicationContext" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("recordRegistrationDetailsRequest" variable (:type "RecordRegistrationDetailsRequest") (reparse-symbol formal_parameters) [2437 2502])
+                            ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [2503 2523]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2397 3232])
+                    ("constructRecordRegistrationDetailsRequest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [3406 3426])
+                            ("policy" variable (:type "Policy") (reparse-symbol formal_parameters) [3428 3441])
+                            ("enterpriseCustomerID" variable (:type "String") (reparse-symbol formal_parameters) [3442 3469]))                          
+                        :type "RecordRegistrationDetailsRequest")
+                        (reparse-symbol class_member_declaration) [3324 4789])
+                    ("isPolicyEligibleForLinking" function
+                       (:constructor-flag t
+                        :throws ("PolicyAlreadyLinkedException" "PolicyNotFoundException")
+                        :arguments 
+                          ( ("" variable (:type "policies") (reparse-symbol formal_parameters) [5305 5313])
+                            ("last4DigitPolicyNumber" variable (:type "String") (reparse-symbol formal_parameters) [5315 5344]))                          )
+                        (reparse-symbol class_member_declaration) [5265 6745]))                  
+                :type "class")
+                nil [734 6747]))          
+      :file "LinkedPolicyMapperUtil.java"
+      :pointmax 6748
+      :fsize 6747
+      :lastmodtime '(22286 33643 0 0)
+      :unmatched-syntax '((GT 5303 . 5304) (IDENTIFIER 5292 . 5296) (LT 5296 . 5297) (GT 5263 . 5264) (PUBLIC 5245 . 5251) (LT 5256 . 5257)))
+    (semanticdb-table "RetrieveDocumentMapperUtil.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.mappers" package nil nil [1 43])
+            ("com.aaaie.ds.cds.model.documents.DocumentLocation" include nil nil [45 102])
+            ("com.aaaie.ds.cds.soa.client.retrieve.document.ApplicationContext" include nil nil [103 175])
+            ("com.aaaie.ds.cds.soa.client.retrieve.document.ObjectReference" include nil nil [176 245])
+            ("com.aaaie.ds.cds.soa.client.retrieve.document.RetrieveDocumentRequest" include nil nil [246 323])
+            ("com.aaaie.ds.cds.soa.client.retrieve.document.RetrieveDocumentResponse" include nil nil [324 402])
+            ("com.aaaie.ds.cds.util.Constants" include nil nil [403 442])
+            ("com.aaaie.ds.cds.utils.IPAddressUtil" include nil nil [443 487])
+            ("org.springframework.stereotype.Component" include nil nil [488 536])
+            ("RetrieveDocumentMapperUtil" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("constructRetrieveDocumentSOAPRequest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("objectId" variable (:type "String") (reparse-symbol formal_parameters) [663 678])
+                            ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [680 700]))                          
+                        :type "RetrieveDocumentRequest")
+                        (reparse-symbol class_member_declaration) [595 1477])
+                    ("retrieveDocumentURL" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("retrieveDocumentResponse" variable (:type "RetrieveDocumentResponse") (reparse-symbol formal_parameters) [1527 1576]))                          
+                        :type "DocumentLocation")
+                        (reparse-symbol class_member_declaration) [1483 1829]))                  
+                :type "class")
+                nil [549 1831]))          
+      :file "RetrieveDocumentMapperUtil.java"
+      :pointmax 1832
+      :fsize 1831
+      :lastmodtime '(22028 23559 0 0)
+      :unmatched-syntax '((IDENTIFIER 538 . 548)))
+    (semanticdb-table "RetrieveAgreementRelatedDocumentsMapperUtil.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.mappers" package nil nil [1 43])
+            ("com.aaaie.ds.cds.business.mappers.util.DocumentsToBeRetrieved" include nil nil [45 114])
+            ("com.aaaie.ds.cds.model.documents.Document" include nil nil [115 164])
+            ("com.aaaie.ds.cds.model.documents.DocumentsInPolicy" include nil nil [165 223])
+            ("com.aaaie.ds.cds.model.documents.PolicyDocuments" include nil nil [224 280])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [281 331])
+            ("com.aaaie.ds.cds.model.policydetail.PolicyDetail" include nil nil [332 388])
+            ("com.aaaie.ds.cds.soa.client.retrieve.agreement.related.documents.DocumentProfile" include nil nil [389 477])
+            ("com.aaaie.ds.cds.soa.client.retrieve.agreement.related.documents.RetrieveAgreementRelatedDocumentsRequest" include nil nil [478 591])
+            ("com.aaaie.ds.cds.soa.client.retrieve.agreement.related.documents.RetrieveAgreementRelatedDocumentsResponse" include nil nil [592 706])
+            ("com.aaaie.ds.cds.util.Constants" include nil nil [707 746])
+            ("com.aaaie.ds.cds.util.DateUtil" include nil nil [747 785])
+            ("com.aaaie.ds.cds.utils.IPAddressUtil" include nil nil [786 830])
+            ("org.apache.commons.lang.StringUtils" include nil nil [831 874])
+            ("org.slf4j.Logger" include nil nil [875 899])
+            ("org.slf4j.LoggerFactory" include nil nil [900 931])
+            ("org.springframework.stereotype.Component" include nil nil [932 980])
+            ("java.util.*" include nil nil [982 1001])
+            ("RetrieveAgreementRelatedDocumentsMapperUtil" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1077 1183])
+                    ("transformUIRequestToSOAPRequest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("policy" variable (:type "Policy") (reparse-symbol formal_parameters) [1269 1282])
+                            ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [1284 1304]))                          
+                        :type "RetrieveAgreementRelatedDocumentsRequest")
+                        (reparse-symbol class_member_declaration) [1189 3378])
+                    ("transformSOAPResponseToDocumentsList" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("retrieveDocumentResponse" variable (:type "RetrieveAgreementRelatedDocumentsResponse") (reparse-symbol formal_parameters) [3444 3510])
+                            ("policyDetail" variable (:type "PolicyDetail") (reparse-symbol formal_parameters) [3576 3601])
+                            ("documentsToBeRetrievedEnum" variable (:type "DocumentsToBeRetrieved") (reparse-symbol formal_parameters) [3667 3716]))                          
+                        :type "PolicyDocuments")
+                        (reparse-symbol class_member_declaration) [3384 12399])
+                    ("processDocument" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("policyDetail" variable (:type "PolicyDetail") (reparse-symbol formal_parameters) [12434 12459])
+                            ("processDate" variable (:type "String") (reparse-symbol formal_parameters) [12460 12478])
+                            ("documentTitle" variable (:type "String") (reparse-symbol formal_parameters) [12479 12499])
+                            ("document" variable (:type "Document") (reparse-symbol formal_parameters) [12500 12517])
+                            ("" variable (:type "idCardsDocumentList") (reparse-symbol formal_parameters) [12533 12552])
+                            ("" variable (:type "nonIdCardsDocumentList") (reparse-symbol formal_parameters) [12568 12590]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12405 13871])
+                    ("getPrevTermEffDate" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("effDate" variable (:type "String") (reparse-symbol formal_parameters) [13912 13926])
+                            ("expDate" variable (:type "String") (reparse-symbol formal_parameters) [13928 13942]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13878 15751])
+                    ("transformUIRequestToSOAPRequestForBillingHistory" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("policy" variable (:type "PolicyDetail") (reparse-symbol formal_parameters) [15854 15873])
+                            ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [15875 15895]))                          
+                        :type "RetrieveAgreementRelatedDocumentsRequest")
+                        (reparse-symbol class_member_declaration) [15757 17972])
+                    ("transformSOAPResponseToDocumentsListForBillingHistory" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("retrieveDocumentResponse" variable (:type "RetrieveAgreementRelatedDocumentsResponse") (reparse-symbol formal_parameters) [18046 18112])
+                            ("billType" variable (:type "String") (reparse-symbol formal_parameters) [18178 18193])
+                            ("transactionDate" variable (:type "Date") (reparse-symbol formal_parameters) [18194 18214]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [17978 22319])
+                    ("getMostRecentDate" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("prvProcessDate" variable (:type "String") (reparse-symbol formal_parameters) [22358 22379])
+                            ("processDateDate" variable (:type "String") (reparse-symbol formal_parameters) [22381 22403]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [22325 22996])
+                    ("formatPolicyNumber" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [23036 23055]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [23002 23302]))                  
+                :type "class")
+                nil [1014 23304]))          
+      :file "RetrieveAgreementRelatedDocumentsMapperUtil.java"
+      :pointmax 23305
+      :fsize 23304
+      :lastmodtime '(22286 33643 0 0)
+      :unmatched-syntax '((GT 12566 . 12567) (IDENTIFIER 12553 . 12557) (LT 12557 . 12558) (GT 12531 . 12532) (IDENTIFIER 12518 . 12522) (LT 12522 . 12523) (IDENTIFIER 1003 . 1013)))
+    (semanticdb-table "RetrieveCustomerDetailsMapperUtil.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.business.mappers" package nil nil [1 43])
+            ("com.aaaie.ds.cds.business.mappers.util.PoliciesToBeRetrieved" include nil nil [45 113])
+            ("com.aaaie.ds.cds.business.mappers.util.RolesToBeConsidered" include nil nil [114 180])
+            ("com.aaaie.ds.cds.model.policydetail.Policy" include nil nil [181 231])
+            ("com.aaaie.ds.cds.soa.client.retrievecustomer.*" include nil nil [232 286])
+            ("com.aaaie.ds.cds.util.AESEncryption" include nil nil [287 330])
+            ("com.aaaie.ds.cds.util.Constants" include nil nil [331 370])
+            ("com.aaaie.ds.cds.utils.DateUtil" include nil nil [371 410])
+            ("com.aaaie.ds.cds.utils.IPAddressUtil" include nil nil [411 455])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [457 511])
+            ("org.apache.commons.lang.BooleanUtils" include nil nil [512 556])
+            ("org.apache.commons.lang.StringUtils" include nil nil [557 600])
+            ("org.slf4j.Logger" include nil nil [601 625])
+            ("org.slf4j.LoggerFactory" include nil nil [626 657])
+            ("org.springframework.beans.factory.annotation.Required" include nil nil [658 719])
+            ("org.springframework.beans.factory.annotation.Value" include nil nil [720 778])
+            ("org.springframework.stereotype.Component" include nil nil [779 827])
+            ("javax.inject.Inject" include nil nil [829 856])
+            ("javax.servlet.http.Cookie" include nil nil [857 890])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [891 936])
+            ("java.util.*" include nil nil [937 956])
+            ("RetrieveCustomerDetailsMapperUtil" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("log" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1022 1115])
+                    ("application" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1121 1148])
+                    ("subSystem" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1153 1178])
+                    ("setApplication" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("application" variable (:type "String") (reparse-symbol formal_parameters) [1324 1342]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1297 1391])
+                    ("setSubSystem" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("subSystem" variable (:type "String") (reparse-symbol formal_parameters) [1487 1503]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1462 1548])
+                    ("transformUIRequestToSOAPRequest" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("customerRegID" variable (:type "String") (reparse-symbol formal_parameters) [1624 1644]))                          
+                        :type "RetrieveCustomerDetailsRequest")
+                        (reparse-symbol class_member_declaration) [1554 2463])
+                    ("transformSOAPResponseToUIResponse" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("retrieveCustomerDetailsResponse" variable (:type "RetrieveCustomerDetailsResponse") (reparse-symbol formal_parameters) [3025 3088])
+                            ("policiesToBeRetrievedEnum" variable (:type "PoliciesToBeRetrieved") (reparse-symbol formal_parameters) [3150 3197])
+                            ("rolesToBeConsideredEnum" variable (:type "RolesToBeConsidered") (reparse-symbol formal_parameters) [3259 3302])
+                            ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [3303 3329]))                          )
+                        (reparse-symbol class_member_declaration) [2991 12960])
+                    ("getEnterpriseCustomerID" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("retrieveCustomerDetailsResponse" variable (:type "RetrieveCustomerDetailsResponse") (reparse-symbol formal_parameters) [13004 13067]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12966 13414])
+                    ("readSecurityCookie" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [13753 13779])
+                            ("cookieName" variable (:type "String") (reparse-symbol formal_parameters) [13781 13798]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [13720 14255])
+                    ("getCustomer" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("retrieveCustomerDetailsResponse" variable (:type "RetrieveCustomerDetailsResponse") (reparse-symbol formal_parameters) [14443 14506]))                          
+                        :type "Customer")
+                        (reparse-symbol class_member_declaration) [14414 14770]))                  
+                :type "class")
+                nil [969 14773]))          
+      :file "RetrieveCustomerDetailsMapperUtil.java"
+      :pointmax 14774
+      :fsize 14773
+      :lastmodtime '(22338 31169 0 0)
+      :unmatched-syntax '((GT 2989 . 2990) (PUBLIC 2971 . 2977) (LT 2982 . 2983) (STRING_LITERAL 1418 . 1456) (STRING_LITERAL 1251 . 1291) (IDENTIFIER 1184 . 1191) (IDENTIFIER 1210 . 1223) (SEMICOLON 1223 . 1224) (IDENTIFIER 958 . 968))))
+  :file "!Users!pairuser!dev!CDS-API!src!main!java!com!aaaie!ds!cds!business!mappers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

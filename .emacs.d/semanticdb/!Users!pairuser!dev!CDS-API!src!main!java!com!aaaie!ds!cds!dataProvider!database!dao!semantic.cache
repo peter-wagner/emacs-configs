@@ -1,0 +1,57 @@
+;; Object dao/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dao/"
+  :tables
+  (list
+    (semanticdb-table "DirectAccessDAO.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.aaaie.ds.cds.dataProvider.database.dao" package nil nil [1 52])
+            ("com.aaaie.ds.cds.dataProvider.database.entities.DirectAccess" include nil nil [54 122])
+            ("DirectAccessDAO" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("getUserByUsername" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("USERNAME" variable (:type "String") (reparse-symbol formal_parameters) [201 216]))                          
+                        :type "DirectAccess")
+                        (reparse-symbol interface_member_declaration) [163 218])
+                    ("storeDirectAccessUser" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("direactAccessUser" variable (:type "DirectAccess") (reparse-symbol formal_parameters) [261 291]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [224 293])
+                    ("updateUserInDB" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("firstName" variable (:type "String") (reparse-symbol formal_parameters) [326 342])
+                            ("lastName" variable (:type "String") (reparse-symbol formal_parameters) [344 359])
+                            ("zipCode" variable (:type "String") (reparse-symbol formal_parameters) [361 375])
+                            ("mdmid" variable (:type "String") (reparse-symbol formal_parameters) [377 389])
+                            ("policy_number" variable (:type "String") (reparse-symbol formal_parameters) [391 411])
+                            ("username" variable (:type "String") (reparse-symbol formal_parameters) [413 428]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [299 430])
+                    ("getMdmId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("direactAccessId" variable (:type "String") (reparse-symbol formal_parameters) [465 487]))                          
+                        :type "DirectAccess")
+                        (reparse-symbol interface_member_declaration) [436 489])
+                    ("updatePolicyNumber" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("daId" variable (:type "String") (reparse-symbol formal_parameters) [526 537])
+                            ("policyNumber" variable (:type "String") (reparse-symbol formal_parameters) [539 558]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [495 560]))                  
+                :type "interface")
+                nil [124 562]))          
+      :file "DirectAccessDAO.java"
+      :pointmax 563
+      :unmatched-syntax nil))
+  :file "!Users!pairuser!dev!CDS-API!src!main!java!com!aaaie!ds!cds!dataProvider!database!dao!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

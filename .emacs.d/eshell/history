@@ -1,0 +1,13 @@
+ls
+ls -l
+pwd
+ls -l
+(* 2 4)
+(def cool "oh yea")
+(cool)
+(defun cool "oh yeah")
+(cool)
+(defun cool () "oh yeah"))
+(defun cool () '("oh yeah")))
+(defun cool ()      (message "yea"))
+(cool)
