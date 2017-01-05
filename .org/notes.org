@@ -323,4 +323,15 @@ x-digital-user-id = "Sub from x-digital-jwt and not JWT anymore, just value"
         }
 ** "CT" rules
 * Misc
-
+* Mobile
+** deploy
+*** Club14 is code base for mobile app
+*** CSAA-IOS-Deploy run /bin/bump_submodules.sh is used to pull/rebase the Club14 code and deploy to hockyapp
+*** CDS-Mobile-Controller is java app with service calls for Club14 and AAA-Mobile-ID-Card
+**** needs full deployment by middleware
+*** AAA-Mobile-ID-Card is mobile based app for insurance cards
+** arch
+*** mobile id card calls self to determin how many cards a user has
+**** then calls mobile controller to get details for each id card
+*** native ios call mobile controller for all id card
+* 
