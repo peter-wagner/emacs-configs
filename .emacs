@@ -36,7 +36,7 @@
 (setq org-todo-keywords
        '((sequence "TODO" "DO ASAP" "DO NEXT" "|" "DONE" "SCHEDULED")))
 
-(setenv "PATH" (concat (getenv "PATH") ":/Users/pairuser/bin"))
+(setenv "PATH" (concat (getenv "PATH") ":/Users/peterwagner/bin"))
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
 
@@ -99,7 +99,7 @@
 (mouse-avoidance-mode 'cat-and-mouse)
 (abbrev-mode t)
 (icomplete-mode t)
-(setq org-directory "/Users/pairuser/.org/")
+(setq org-directory "/Users/peterwagner/.org/")
 
 (tool-bar-mode -1)
 (setq mouse-wheel-scroll-amount '(4 ((shift) . 4) ((control) . nil)))
@@ -360,7 +360,7 @@
 
 
 (desktop-save-mode 1)
-(setq desktop-path '("/Users/pairuser/.emacs.d/"))
+(setq desktop-path '("/Users/peterwagner/.emacs.d/"))
 (setq desktop-save 'ask-if-new)
 
 
