@@ -2,10 +2,12 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/peterwagner/workspace/direct-access-portal-connect-route/src/" . "direct_access_portal_connect_route/")
+ ("/Users/peterwagner/workspace/direct-access-portal-connect-route/" . "src/")
  ("/Users/peterwagner/workspace/cheese-board/src-clojure/" . "cheese_board/")
  ("/Users/peterwagner/workspace/cheese-board/" . "src-clojure/")
- ("/Users/peterwagner/workspace/" . "connect-id-translator/")
- ("/Users/peterwagner/" . ".org/")
+ ("/Users/peterwagner/workspace/" . "direct-access-portal-connect-route/")
+ ("/Users/peterwagner/" . "workspace/")
  ("/Users/pairuser/workspace/concourse-images/" . "java-node-with-certs-for-nexus/")
  ("/Users/pairuser/workspace/baseline-performance/src/" . "baseline_performance/")
  ("/Users/pairuser/workspace/demo-service/test/" . "demo_service/")
@@ -319,6 +321,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/peterwagner/workspace/direct-access-portal-connect-route/src/direct_access_portal_connect_route/"
+ "/Users/peterwagner/workspace/direct-access-portal-connect-route/"
+ "/Users/peterwagner/"
  "/Users/peterwagner/.org/"
  "/Users/peterwagner/workspace/connect-id-translator/"
  "/Users/peterwagner/workspace/cheese-board/src-clojure/cheese_board/"
@@ -366,13 +371,13 @@
  "/Users/pairuser/workspace/react-test-route/src-js/src/"
  "/Users/pairuser/workspace/ds-connect-front-end/test/connect_front_end/"
  "/Users/pairuser/workspace/ds-connect-front-end/out/"
- "/Users/pairuser/workspace/ds-connect-front-end/out/goog/"
- "/Users/pairuser/workspace/ds-connect-front-end/"
- "/Users/pairuser/workspace/ds-connect-front-end/src/connect_front_end/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "core.clj"
+ "README.md"
+ ".emacs"
  "notes.org"
  "project.clj"
  "handler.clj"
@@ -380,20 +385,23 @@
  "build-and-push.sh"
  "pipeline.yml"
  "deploy.sh"
- "core.clj"
- "navi-pipeline.yml"
- "siege-tests.sh"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/peterwagner/.org/" (22657 33882 0 0) "notes.org" "../" "./")
+ ("/Users/peterwagner/workspace/direct-access-portal-connect-route/src/direct_access_portal_connect_route/" (22695 6665 0 0) "policies.clj" "page_utils.clj" "dashboard.clj" "core.clj" "../" "./")
 
- ("/Users/peterwagner/" (22658 19807 0 0) "workspace/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Peter’s MacBook Pro-5.2" ".viminfo" ".Trash/" ".parinfer-file-extensions.txt" ".org/" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".m2/" ".local/" ".lein/" ".gitconfig" ".emacs.d/" ".emacs" ".eclipse/" ".DS_Store" ".dbeaver/" ".config/" ".CFUserTextEncoding" ".cf/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".atom/" "../" "./")
+ ("/Users/peterwagner/workspace/direct-access-portal-connect-route/src/" (22694 2098 0 0) "direct_access_portal_connect_route/" "../" "./")
+
+ ("/Users/peterwagner/workspace/direct-access-portal-connect-route/" (22694 15754 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "direct-access-portal-connect-route.iml" "deploy-direct-access-portal-connect-route-dev.yml" "deploy-direct-access-portal-connect-route-dev.sh" "bin/" ".lein-failures" ".lein-env" ".idea/" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
+
+ ("/Users/peterwagner/workspace/" (22694 2096 0 0) "spring-da-portal/" "spotify-cli/" "node-sonos/" "id-card-connect-service/" "emacs-configs/" "ds-InstallCert/" "ds-ID-card-custom-element/" "ds-connect-framework/" "ds-cds-direct-access/" "ds-architecture/" "direct-access-portal-connect-route/" "direct-access-pipeline/" "connect-id-translator/" "codox/" "cheese-board/" "alexa-mypolicy/" "aaaie-cheese-nips/" ".DS_Store" "../" "./")
+
+ ("/Users/peterwagner/" (22695 10534 0 0) "workspace/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Peter’s Work MacBook Pro-5.2" ".zcompdump-Peter’s MacBook Pro-5.2" ".viminfo" ".Trash/" ".ssh/" ".sonos.json" ".parinfer-file-extensions.txt" ".org/" ".oracle_jre_usage/" ".oh-my-zsh/" ".npm/" ".node-gyp/" ".m2/" ".local/" ".lein/" ".gitconfig" ".flyrc" ".emacs.d/" ".emacs" ".eclipse/" ".DS_Store" ".dbeaver/" ".cups/" ".config/" ".CFUserTextEncoding" ".cf/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".babel.json" ".atom/" "../" "./")
+
+ ("/Users/peterwagner/.org/" (22695 6303 0 0) "notes.org" "../" "./")
 
  ("/Users/peterwagner/workspace/connect-id-translator/" (22658 14557 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "direct-access-id-translator.iml" "deploy-connect-id-translator-dev.yml" "deploy-connect-id-translator-dev.sh" "connect-id-translator.iml" "bin/" ".lein-env" ".idea/" ".gitignore" ".git/" ".codeclimate.yml" "../" "./")
-
- ("/Users/peterwagner/workspace/" (22658 12322 0 0) "emacs-configs/" "ds-InstallCert/" "ds-connect-framework/" "ds-architecture/" "connect-id-translator/" "cheese-board/" "../" "./")
 
  ("/Users/peterwagner/workspace/cheese-board/" (22658 17867 0 0) "webpack.production.config.js" "webpack.config.js" "test-build.sh" "test-all-mocha.opts" "test/" "src-js/" "src-confirmation/" "src-clojure/" "spec.webpack.js" "sonar-project.properties" "server.js" "resources/" "README.md" "public/" "project.clj" "Procfile" "package.json-bak1" "package.json" "npm-debug.log" "node_modules/" "mocha.opts" "login/" "log4j.properties" "Email_update.md" "config.js" "ci/" "cf-push.sh" "build_package.sh" "build.sh" "app.js" "apache-config.txt" "_test_/" ".stylelintrc" ".pairs" ".npmrc" ".gitignore" ".git/" ".eslintignore" ".cfignore" ".babelrc" "../" "./")
 
@@ -580,12 +588,6 @@
  ("/Users/pairuser/workspace/it-works/bin/" (22553 198 0 0) "launch.sh" "../" "./")
 
  ("/Users/pairuser/workspace/final-route/" (22552 63111 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "launch.sh" "gitignore" "final-route.iml" "deploy-final-route-dev.yml" "deploy-final-route-dev.sh" ".lein-repl-history" ".lein-env" ".idea/" ".codeclimate.yml" "../" "./")
-
- ("/Users/pairuser/workspace/ds-connect-framework/src/claims/" (22547 39187 0 0) "core.clj" "../" "./")
-
- ("/Users/pairuser/workspace/ds-connect-framework/test/mdm_translation/" (22547 51342 0 0) "core_test.clj" "../" "./")
-
- ("/Users/pairuser/workspace/ds-connect-framework/src/documents/" (22551 27585 0 0) "core.clj" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

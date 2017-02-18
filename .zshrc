@@ -61,6 +61,16 @@ source $ZSH/oh-my-zsh.sh
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:/Users/peterwagner/bin:/opt/apache-mave-3.3.9:$PATH
 alias itn="itunes"
+alias connect go="~/workspace/ds-connect-framework/bin/launch-env.sh"
+alias connect stop="~/workspace/ds-connect-framework/bin/crash-env.sh"
+alias sonos="sonos-simple-cli"
+alias sono="sonos-simple-cli"
+alias son="sonos-simple-cli"
+alias ss="sonos-simple-cli"
+alias s="sonos-simple-cli"
+alias spot="spotify"
+alias spt="spotify"
+alias sp="spotify"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
